@@ -5,6 +5,7 @@
 <channel id="CNLA_PAN.co"><display-name>Cartoon Network Panregional</display-name></channel>
 <channel id="CNLA_MX.mx"><display-name>Cartoon Network México</display-name></channel>
 
+JUEVES
 <programme start="20260806060000 -0500" stop="20260806070200 -0500" channel="CNLA_PAN.co">
 <title lang="es">El increíble mundo de Gumball</title>
 <sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
@@ -234,6 +235,223 @@
 </programme>
 
 <programme start="20260807045900 -0500" stop="20260807060000 -0500" channel="CNLA_PAN.co">
+<title lang="es">Los Jóvenes Titanes en Acción</title>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
+</programme>
+
+VIERNES
+<programme start="20260807060000 -0500" stop="20260807070100 -0500" channel="CNLA_PAN.co">
+<title lang="es">El increíble mundo de Gumball</title>
+<sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
+<desc lang="es">Conoce a los Watterson: Mamá, Papá, Anaís, Darwin y Gumball. Gumball es un gato de doce años con dotes para la 'desgracia' y un grupo de raros amigos.</desc>
+</programme>
+
+<programme start="20260807070100 -0500" stop="20260807072900 -0500" channel="CNLA_PAN.co">
+<title lang="es">Los Jóvenes Titanes en Acción</title>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
+</programme>
+
+<programme start="20260807072900 -0500" stop="20260807080700 -0500" channel="CNLA_PAN.co">
+<title lang="es">Escandalositos</title>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Escandalositos sigue a los pequeños hermanos osos Pardo, Panda y Polar mientras viajan en una caja mágica a fantásticos mundos diferentes en busca de su hogar perfecto.</desc>
+</programme>
+
+<programme start="20260807080700 -0500" stop="20260807085900 -0500" channel="CNLA_PAN.co">
+<title lang="es">Escandalosos</title>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Pardo, Panda y Polar son tres osos en busca de un camino que los lleve a la adaptación.</desc>
+</programme>
+
+<programme start="20260807085900 -0500" stop="20260409092500 -0500" channel="CNLA_PAN.co">
+<title lang="es">El Chapulín y los Colorado</title>
+<sub-title lang="es">Comedia, aventuras y superhéroes</sub-title>
+<desc lang="es">El Chapulín Colorado y su ocurrente familia enfrentan villanos y rutinas, demostrando que la risa y la bondad también salvan el día.</desc>
+</programme>
+
+<programme start="20260807092500 -0500" stop="202608079100200 -0500" channel="CNLA_PAN.co">
+<title lang="es">El maravillosamente extraño mundo de Gumball</title>
+<sub-title lang="es">Comedia absurda, sátira, fantasía surrealista y aventuras cotidianas</sub-title>
+<desc lang="es">Sigue las desventuras de Gumball Watterson, un gato de 12 años que va a la escuela primaria en la ciudad de Elmore.</desc>
+</programme>
+
+<programme start="20260807100200 -0500" stop="20260807110300 -0500" channel="CNLA_PAN.co">
+<title lang="es">Los Jóvenes Titanes en Acción</title>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
+</programme>
+
+<programme start="20260807110300 -0500" stop="202608079111900 -0500" channel="CNLA_PAN.co">
+<title lang="es">Un show más: Las cintas perdidas</title>
+<sub-title lang="es">Comedia, aventuras y contenido excéntrico</sub-title>
+<desc lang="es">Mordecai y Rigby son mejores amigos, y trabajan y viven en un parque de la ciudad. Por algún motivo, sus trabajos mundanos siempre terminan en un caos surrealista, lo cual molesta muchísimo a su jefe y a sus compañeros de trabajo.</desc>
+</programme>
+
+<programme start="20260807111900 -0500" stop="20260807115900 -0500" channel="CNLA_PAN.co">
+<title lang="es">El increíble mundo de Gumball</title>
+<sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
+<desc lang="es">Conoce a los Watterson: Mamá, Papá, Anaís, Darwin y Gumball. Gumball es un gato de doce años con dotes para la 'desgracia' y un grupo de raros amigos.</desc>
+</programme>
+
+<programme start="20260807115900 -0500" stop="20260807122600 -0500" channel="CNLA_PAN.co">
+<title lang="es">El mundo de Craig</title>
+<sub-title lang="es">Aventuras, comedia, drama y rebanadas de vida (slice of life).</sub-title>
+<desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso gobernado por tribus de niños que conforman una verdadera sociedad infantil.</desc>
+</programme>
+
+<programme start="20260807122600 -0500" stop="20260806125200 -0500" channel="CNLA_PAN.co">
+<title lang="es">Summer Memories</title>
+<sub-title lang="es">Comedia surrealista, aventuras y fragmentos de vida (slice of life)</sub-title>
+<desc lang="es">Seguimos las aventuras en el tiempo y el espacio de los mejores amigos Jason y Ronnie, mientras Jason recuerda el verano más crucial de su vida (que fue hace sólo unas semanas).</desc>
+</programme>
+
+<programme start="20260807125200 -0500" stop="20260806132900 -0500" channel="CNLA_PAN.co">
+<title lang="es">Escandalosos</title>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Pardo, Panda y Polar son tres osos en busca de un camino que los lleve a la adaptación.</desc>
+</programme>
+
+<programme start="20260807132900 -0500" stop="20260807134600 -0500" channel="CNLA_PAN.co">
+<title lang="es">Big Blue: Aventuras en Submarinos</title>
+<sub-title lang="es">Aventuras, comedia de situación y fantasía marina.</sub-title>
+<desc lang="es">"Nunca hay un momento aburrido en el Big Blue. La capitana Lettie y la tripulación Calypso siempre están listos para afrontar cualquier desafío que se les presente.</desc>
+</programme>
+
+<programme start="20260807134600 -0500" stop="20260807135700 -0500" channel="CNLA_PAN.co">
+<title lang="es">El submarino de Jim</title>
+<sub-title lang="es">Comedia absurda, aventuras y contenido familiar</sub-title>
+<desc lang="es">Cuando Jim, un joven e ingenuo delfín, recibe la tarea de pilotar el primer submarino sobre ruedas del mundo, emprende un viaje a través de los continentes con sus mejores amigos... en busca de un destino improbable: las legendarias aguas cristalinas de un lugar llamado Las Vegas.</desc>
+</programme>
+
+<programme start="20260807135700 -0500" stop="20260807142400 -0500" channel="CNLA_PAN.co">
+<title lang="es">Un jefe en pañales: de vuelta en la cuna</title>
+<sub-title lang="es">Comedia, aventuras y fantasía familiar</sub-title>
+<desc lang="es">Cuando lo acusan de un crimen corporativo, Ted Templeton vuelve a ser bebé y se muda con su hermano Tim, haciéndose pasar por uno de sus hijos.</desc>
+</programme>
+
+<programme start="20260807142400 -0500" stop="20260807150200 -0500" channel="CNLA_PAN.co">
+<title lang="es">Clarence</title>
+<sub-title lang="es">Comedia de situación (sitcom), aventuras cotidianas y rebanadas de vida (slice of life).</sub-title>
+<desc lang="es">Clarence es un niño entusiasta de 9 años, que ve lo bueno en todo y en todos, ¡y quiere probarlo todo porque todo es asombroso!</desc>
+</programme>
+
+<programme start="20260807150200 -0500" stop="20260807162600 -0500" channel="CNLA_PAN.co">
+<title lang="es">TEEN TITANS GO VS TEEN TITANS</title>
+<sub-title lang="es">Animación</sub-title>
+<desc lang="es">Los cómicos Jóvenes Titanes de "Los Jóvenes Titanes en acción" se ven las caras con sus versiones serias cuando villanos de ambos mundos se unen para enfrentar a ambos equipos. Ahora, ellos tendrán que dejar de lado sus diferencias para salvar el universo.</desc>
+</programme>
+
+<programme start="20260807162600 -0500" stop="202608079170300 -0500" channel="CNLA_PAN.co">
+<title lang="es">El maravillosamente extraño mundo de Gumball</title>
+<sub-title lang="es">Comedia absurda, sátira, fantasía surrealista y aventuras cotidianas</sub-title>
+<desc lang="es">Sigue las desventuras de Gumball Watterson, un gato de 12 años que va a la escuela primaria en la ciudad de Elmore.</desc>
+</programme>
+
+<programme start="20260807170300 -0500" stop="20260409173000 -0500" channel="CNLA_PAN.co">
+<title lang="es">El Chapulín y los Colorado</title>
+<sub-title lang="es">Comedia, aventuras y superhéroes</sub-title>
+<desc lang="es">El Chapulín Colorado y su ocurrente familia enfrentan villanos y rutinas, demostrando que la risa y la bondad también salvan el día.</desc>
+</programme>
+
+<programme start="20260807173000 -0500" stop="20260807174400 -0500" channel="CNLA_PAN.co">
+<title lang="es">Big Blue: Aventuras en Submarinos</title>
+<sub-title lang="es">Aventuras, comedia de situación y fantasía marina.</sub-title>
+<desc lang="es">"Nunca hay un momento aburrido en el Big Blue. La capitana Lettie y la tripulación Calypso siempre están listos para afrontar cualquier desafío que se les presente.</desc>
+</programme>
+
+<programme start="20260807174400 -0500" stop="20260807175500 -0500" channel="CNLA_PAN.co">
+<title lang="es">El submarino de Jim</title>
+<sub-title lang="es">Comedia absurda, aventuras y contenido familiar</sub-title>
+<desc lang="es">Cuando Jim, un joven e ingenuo delfín, recibe la tarea de pilotar el primer submarino sobre ruedas del mundo, emprende un viaje a través de los continentes con sus mejores amigos... en busca de un destino improbable: las legendarias aguas cristalinas de un lugar llamado Las Vegas.</desc>
+</programme>
+
+<programme start="20260807175500 -0500" stop="20260807183400 -0500" channel="CNLA_PAN.co">
+<title lang="es">El increíble mundo de Gumball</title>
+<sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
+<desc lang="es">Conoce a los Watterson: Mamá, Papá, Anaís, Darwin y Gumball. Gumball es un gato de doce años con dotes para la 'desgracia' y un grupo de raros amigos.</desc>
+</programme>
+  
+<programme start="20260807183400 -0500" stop="20260807190000 -0500" channel="CNLA_PAN.co">
+<title lang="es">Hora de Aventura</title>
+<sub-title lang="es">Fantasía, aventura épica, comedia absurda y drama de madurez</sub-title>
+<desc lang="es">Hora de Aventura presenta a Finn y Jake, dos héroes que viven grandes aventuras en la mágica Tierra de Ooo.</desc>
+</programme>
+
+<programme start="20260807190000 -0500" stop="20260807192800 -0500" channel="CNLA_PAN.co">
+<title lang="es">Los Jóvenes Titanes en Acción</title>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
+</programme>
+
+<programme start="20260807192800 -0500" stop="202608079194100 -0500" channel="CNLA_PAN.co">
+<title lang="es">Un show más: Las cintas perdidas</title>
+<sub-title lang="es">Comedia, aventuras y contenido excéntrico</sub-title>
+<desc lang="es">Mordecai y Rigby son mejores amigos, y trabajan y viven en un parque de la ciudad. Por algún motivo, sus trabajos mundanos siempre terminan en un caos surrealista, lo cual molesta muchísimo a su jefe y a sus compañeros de trabajo.</desc>
+</programme>
+
+<programme start="20260807194100 -0500" stop="202608079200600 -0500" channel="CNLA_PAN.co">
+<title lang="es">El maravillosamente extraño mundo de Gumball</title>
+<sub-title lang="es">Comedia absurda, sátira, fantasía surrealista y aventuras cotidianas</sub-title>
+<desc lang="es">Sigue las desventuras de Gumball Watterson, un gato de 12 años que va a la escuela primaria en la ciudad de Elmore.</desc>
+</programme>
+
+<programme start="20260807200600 -0500" stop="20260807213300 -0500" channel="CNLA_PAN.co">
+<title lang="es">Shrek para Siempre</title>
+<sub-title lang="es">Animación</sub-title>
+<desc lang="es">En lugar de espantar a los aldeanos como antes, un recluido Shrek ahora accede a autografiar horquillas para siembra. Anhelando los días de "ogro real", Shrek hace un pacto con el afable Rumpelstiltskin. Pero de pronto Shrek se encuentra en una retorcida versión alterna de Muy Muy Lejano, donde Fiona es un ogro de caza, Rumpelstiltskin el rey, Burro nunca ha conocido a Shrek, el Gato con Botas es obeso y perezoso, y Shrek y Fiona no se conocían. Ahora, está en las manos de Shrek deshacer todo lo que hizo con la esperanza de salvar a sus amigos, restaurar su mundo y recuperar a su amor.</desc>
+</programme>
+
+<programme start="20260807213300 -0500" stop="20260807214400 -0500" channel="CNLA_PAN.co">
+<title lang="es">Escandalositos</title>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Escandalositos sigue a los pequeños hermanos osos Pardo, Panda y Polar mientras viajan en una caja mágica a fantásticos mundos diferentes en busca de su hogar perfecto.</desc>
+</programme>
+
+<programme start="20260807214400 -0500" stop="20260807220000 -0500" channel="CNLA_PAN.co">
+<title lang="es">Escandalositos</title>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Escandalositos sigue a los pequeños hermanos osos Pardo, Panda y Polar mientras viajan en una caja mágica a fantásticos mundos diferentes en busca de su hogar perfecto.</desc>
+</programme>
+
+<programme start="20260807220000 -0500" stop="20260807225400 -0500" channel="CNLA_PAN.co">
+<title lang="es">Hora de Aventura</title>
+<sub-title lang="es">Fantasía, aventura épica, comedia absurda y drama de madurez</sub-title>
+<desc lang="es">Hora de Aventura presenta a Finn y Jake, dos héroes que viven grandes aventuras en la mágica Tierra de Ooo.</desc>
+</programme>
+
+<programme start="20260807225400 -0500" stop="20260808000600 -0500" channel="CNLA_PAN.co">
+<title lang="es">Un Show Más</title>
+<sub-title lang="es">Comedia, aventuras, fantasía surrealista y cultura pop de los 80.</sub-title>
+<desc lang="es">Mordecai y Rigby son dos amigos de veintitantos años que trabajan como jardineros en un parque local, pero sus intentos de flojear siempre los llevan a meterse en problemas con su jefe y desatar el caos cósmico.</desc>
+</programme>
+
+<programme start="20260808000600 -0500" stop="20260808005500 -0500" channel="CNLA_PAN.co">
+<title lang="es">Escandalosos</title>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Pardo, Panda y Polar son tres osos en busca de un camino que los lleve a la adaptación.</desc>
+</programme>
+
+<programme start="20260808005500 -0500" stop="20260808023400 -0500" channel="CNLA_PAN.co">
+<title lang="es">El increíble mundo de Gumball</title>
+<sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
+<desc lang="es">Conoce a los Watterson: Mamá, Papá, Anaís, Darwin y Gumball. Gumball es un gato de doce años con dotes para la 'desgracia' y un grupo de raros amigos.</desc>
+</programme>
+  
+<programme start="20260808023400 -0500" stop="20260808035900 -0500" channel="CNLA_PAN.co">
+<title lang="es">Steven Universe</title>
+<sub-title lang="es">Grito de ayuda</sub-title>
+<desc lang="es">Un disturbio mágico interrumpe el programa favorito de Steven.</desc>
+</programme>
+
+<programme start="20260808035900 -0500" stop="20260808050000 -0500" channel="CNLA_PAN.co">
+<title lang="es">El mundo de Craig</title>
+<sub-title lang="es">Aventuras, comedia, drama y rebanadas de vida (slice of life).</sub-title>
+<desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso gobernado por tribus de niños que conforman una verdadera sociedad infantil.</desc>
+</programme>
+
+<programme start="20260807050000 -0500" stop="20260807060000 -0500" channel="CNLA_PAN.co">
 <title lang="es">Los Jóvenes Titanes en Acción</title>
 <sub-title lang="es">Comedia, animación y superhéroes</sub-title>
 <desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
@@ -554,7 +772,7 @@
 <programme start="20260807150700 -0600" stop="20260807162600 -0600" channel="CNLA_MX.mx">
 <title lang="es">TEEN TITANS GO VS TEEN TITANS</title>
 <sub-title lang="es">Animación</sub-title>
-<desc lang="es">Cuando Shrek se casó con Fiona, lo último que se imaginó es que podría convertirse en el siguiente rey. Pero cuando su suegro, el rey Harold, muere sin previo aviso, es exactamente lo que le espera. Y si Shrek, con la valiosa ayuda de Asno y del Gato con Botas, no encuentra un rey adecuado para el Reino de Muy Muy Lejano, el ogro tendrá que sentarse en el trono. Artie, el primo de Fiona, un vago nato que sigue en el instituto, es el candidato más prometedor, pero acaba siendo un auténtico reto para los tres.</desc>
+<desc lang="es">Los cómicos Jóvenes Titanes de "Los Jóvenes Titanes en acción" se ven las caras con sus versiones serias cuando villanos de ambos mundos se unen para enfrentar a ambos equipos. Ahora, ellos tendrán que dejar de lado sus diferencias para salvar el universo.</desc>
 </programme>
 
 <programme start="20260807162600 -0600" stop="202608079165100 -0600" channel="CNLA_MX.mx">
