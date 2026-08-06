@@ -3,1254 +3,240 @@
 <script id="eppiocemhmnlbhjplcgkofciiegomcon"/>
 <div id="in-page-channel-node-id" data-channel-name="cartoon_network_panregional"/>
 <channel id="CNLA_PAN.co"><display-name>Cartoon Network Panregional</display-name></channel>
+<channel id="CNLA_MX.mx"><display-name>Cartoon Network México</display-name></channel>
 
-<programme start="20260409060000 -0500" stop="20260409061100 -0500" channel="CNLA_PAN.co">
+<programme start="20260806060000 -0500" stop="20260806070200 -0500" channel="CNLA_PAN.co">
 <title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El nombre</sub-title>
-<desc lang="es">Cuando mamá le revela a Gumball que su verdadero nombre es Zach, adopta una personalidad cursi y molesta. Su familia intenta hacerlo volver antes de que desaparezca para siempre.</desc>
+<sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
+<desc lang="es">Conoce a los Watterson: Mamá, Papá, Anaís, Darwin y Gumball. Gumball es un gato de doce años con dotes para la 'desgracia' y un grupo de raros amigos.</desc>
 </programme>
 
-<programme start="20260409061100 -0500" stop="20260409062500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La foto</sub-title>
-<desc lang="es">Es el día de la foto escolar y Gumball debe conseguir una buena imagen antes de que sea demasiado tarde.</desc>
-</programme>
-
-<programme start="20260409062500 -0500" stop="20260409063700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">Los fantasmas</sub-title>
-<desc lang="es">Gumball y Darwin intentan ayudar a los monstruos a recuperar su capacidad de asustar.</desc>
-</programme>
-
-<programme start="20260409063700 -0500" stop="20260409065100 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La actualización</sub-title>
-<desc lang="es">Bobert recibe una actualización que trae consecuencias inesperadas.</desc>
-</programme>
-
-<programme start="20260409065100 -0500" stop="20260409070200 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La subida</sub-title>
-<desc lang="es">Gumball y Darwin quedan atrapados en el mundo digital de Elmore.</desc>
-</programme>
-
-<programme start="20260409070200 -0500" stop="20260409071500 -0500" channel="CNLA_PAN.co">
+<programme start="20260806070200 -0500" stop="20260806072700 -0500" channel="CNLA_PAN.co">
 <title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Conocimiento</sub-title>
-<desc lang="es">Starfire busca aprender más, pero teme cambiar demasiado.</desc>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
 </programme>
 
-<programme start="20260409071500 -0500" stop="20260409072600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">La fábrica de Pascua</sub-title>
-<desc lang="es">Los Titanes viven una extraña aventura relacionada con la Pascua.</desc>
-</programme>
-
-<programme start="20260409072600 -0500" stop="20260409073800 -0500" channel="CNLA_PAN.co">
+<programme start="20260806072700 -0500" stop="20260806080500 -0500" channel="CNLA_PAN.co">
 <title lang="es">Escandalositos</title>
-<sub-title lang="es">Una historia de dos osos de hielo</sub-title>
-<desc lang="es">Los osos viven una divertida aventura en su viaje.</desc>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Escandalositos sigue a los pequeños hermanos osos Pardo, Panda y Polar mientras viajan en una caja mágica a fantásticos mundos diferentes en busca de su hogar perfecto.</desc>
 </programme>
 
-<programme start="20260409073800 -0500" stop="20260409075200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<sub-title lang="es">La caja mágica</sub-title>
-<desc lang="es">Una misteriosa caja lleva a los osos a una nueva aventura.</desc>
-</programme>
-
-<programme start="20260409075200 -0500" stop="20260409080300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<sub-title lang="es">Osos del templo</sub-title>
-<desc lang="es">Los osos exploran un templo lleno de misterios.</desc>
-</programme>
-
-<programme start="20260409080300 -0500" stop="20260409081400 -0500" channel="CNLA_PAN.co">
+<programme start="20260806080500 -0500" stop="20260806085700 -0500" channel="CNLA_PAN.co">
 <title lang="es">Escandalosos</title>
-<sub-title lang="es">Almuerzo con Tabes</sub-title>
-<desc lang="es">Tabes investiga quién robó su almuerzo.</desc>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Pardo, Panda y Polar son tres osos en busca de un camino que los lleve a la adaptación.</desc>
 </programme>
 
-<programme start="20260409081400 -0500" stop="20260409082800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Rescate ranger</sub-title>
-<desc lang="es">Los osos intentan rescatar a Charlie.</desc>
+<programme start="20260806085700 -0500" stop="20260409092300 -0500" channel="CNLA_PAN.co">
+<title lang="es">El Chapulín y los Colorado</title>
+<sub-title lang="es">Comedia, aventuras y superhéroes</sub-title>
+<desc lang="es">El Chapulín Colorado y su ocurrente familia enfrentan villanos y rutinas, demostrando que la risa y la bondad también salvan el día.</desc>
 </programme>
 
-<programme start="20260409082800 -0500" stop="20260409083900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Colmena</sub-title>
-<desc lang="es">Los osos se convierten en sirvientes de unas abejas.</desc>
-</programme>
-
-<programme start="20260409083900 -0500" stop="20260409085300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">A pescar</sub-title>
-<desc lang="es">Un pez gigante ataca durante una excursión.</desc>
-</programme>
-
-<programme start="20260409085300 -0500" stop="20260409090400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Juegos de guardabosques</sub-title>
-<desc lang="es">Grizz ayuda en un partido de kickball.</desc>
-</programme>
-
-<programme start="20260409090400 -0500" stop="20260409092900 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Chapulín y los Colorados</title>
-<sub-title lang="es">La vida es mejor junto al mar</sub-title>
-<desc lang="es">Una aventura que demuestra que el mar no siempre es lo que parece.</desc>
-</programme>
-
-<programme start="20260409092900 -0500" stop="20260409094400 -0500" channel="CNLA_PAN.co">
+<programme start="20260806092300 -0500" stop="202608069100000 -0500" channel="CNLA_PAN.co">
 <title lang="es">El maravillosamente extraño mundo de Gumball</title>
-<sub-title lang="es">El asado</sub-title>
-<desc lang="es">Gumball enfrenta una situación incómoda durante un evento social.</desc>
+<sub-title lang="es">Comedia absurda, sátira, fantasía surrealista y aventuras cotidianas</sub-title>
+<desc lang="es">Sigue las desventuras de Gumball Watterson, un gato de 12 años que va a la escuela primaria en la ciudad de Elmore.</desc>
 </programme>
 
-<programme start="20260409094400 -0500" stop="20260409095500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El maravillosamente extraño mundo de Gumball</title>
-<sub-title lang="es">El diario</sub-title>
-<desc lang="es">Un secreto queda expuesto cuando aparece un diario.</desc>
-</programme>
-
-<programme start="20260409095500 -0500" stop="20260409100500 -0500" channel="CNLA_PAN.co">
+<programme start="20260806100000 -0500" stop="20260806110200 -0500" channel="CNLA_PAN.co">
 <title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Día de carrera</sub-title>
-<desc lang="es">Robin obliga a los Titanes a olvidar sus sueños y conseguir trabajos normales.</desc>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
 </programme>
 
-<programme start="20260409100500 -0500" stop="20260409101900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Manos de bebé</sub-title>
-<desc lang="es">Robin oculta un secreto bajo sus guantes.</desc>
+<programme start="20260806110200 -0500" stop="202608069111800 -0500" channel="CNLA_PAN.co">
+<title lang="es">Un show más: Las cintas perdidas</title>
+<sub-title lang="es">Comedia, aventuras y contenido excéntrico</sub-title>
+<desc lang="es">Mordecai y Rigby son mejores amigos, y trabajan y viven en un parque de la ciudad. Por algún motivo, sus trabajos mundanos siempre terminan en un caos surrealista, lo cual molesta muchísimo a su jefe y a sus compañeros de trabajo.</desc>
 </programme>
 
-<programme start="20260409101900 -0500" stop="20260409102900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Caballero TV 7</sub-title>
-<desc lang="es">Los Titanes viven otra absurda aventura televisiva.</desc>
-</programme>
-
-<programme start="20260409102900 -0500" stop="20260409104300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Abuela del dinero</sub-title>
-<desc lang="es">Robin intenta manipular su liderazgo mientras Raven le da una lección.</desc>
-</programme>
-
-<programme start="20260409104300 -0500" stop="20260409105400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Nuestra casa</sub-title>
-<desc lang="es">Los Titanes enfrentan una situación inesperada en su hogar.</desc>
-</programme>
-
-<programme start="20260409105400 -0500" stop="20260409110500 -0500" channel="CNLA_PAN.co">
+<programme start="20260806111800 -0500" stop="20260806115800 -0500" channel="CNLA_PAN.co">
 <title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">Mejores amigos</sub-title>
-<desc lang="es">Darwin se pone celoso cuando reaparece el mejor amigo de Gumball.</desc>
+<sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
+<desc lang="es">Conoce a los Watterson: Mamá, Papá, Anaís, Darwin y Gumball. Gumball es un gato de doce años con dotes para la 'desgracia' y un grupo de raros amigos.</desc>
 </programme>
 
-<programme start="20260409110500 -0500" stop="20260409112000 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El cheque</sub-title>
-<desc lang="es">La familia discute cómo gastar un dinero inesperado.</desc>
-</programme>
-
-<programme start="20260409112000 -0500" stop="20260409113100 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La subida</sub-title>
-<desc lang="es">Gumball y Darwin quedan atrapados en Internet.</desc>
-</programme>
-
-<programme start="20260409113100 -0500" stop="20260409114500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">Los otros</sub-title>
-<desc lang="es">Descubren que hay más estudiantes en la escuela de lo que creían.</desc>
-</programme>
-
-<programme start="20260409114500 -0500" stop="20260409115700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La disculpa</sub-title>
-<desc lang="es">La señorita Simian le debe una disculpa a Gumball.</desc>
-</programme>
-
-<programme start="20260409115700 -0500" stop="20260409120800 -0500" channel="CNLA_PAN.co">
+<programme start="20260806115800 -0500" stop="20260806123700 -0500" channel="CNLA_PAN.co">
 <title lang="es">El mundo de Craig</title>
-<sub-title lang="es">El regreso del puño de plata</sub-title>
-<desc lang="es">Una nueva aventura comienza en el arroyo.</desc>
+<sub-title lang="es">Aventuras, comedia, drama y rebanadas de vida (slice of life).</sub-title>
+<desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso gobernado por tribus de niños que conforman una verdadera sociedad infantil.</desc>
 </programme>
 
-<programme start="20260409120800 -0500" stop="20260409122300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">Fan o enemigo</sub-title>
-<desc lang="es">Craig enfrenta una situación inesperada con nuevos personajes.</desc>
-</programme>
-
-<programme start="20260409122300 -0500" stop="20260409123400 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">El equipo de ensueño</sub-title>
-<desc lang="es">Los amigos forman un equipo para una misión especial.</desc>
-</programme>
-
-<programme start="20260409123400 -0500" stop="20260409124900 -0500" channel="CNLA_PAN.co">
+<programme start="20260806123700 -0500" stop="20260806130300 -0500" channel="CNLA_PAN.co">
 <title lang="es">Summer Memories</title>
-<sub-title lang="es">Tiempo presente</sub-title>
-<desc lang="es">Recuerdos del verano toman forma en el presente.</desc>
+<sub-title lang="es">Comedia surrealista, aventuras y fragmentos de vida (slice of life)</sub-title>
+<desc lang="es">Seguimos las aventuras en el tiempo y el espacio de los mejores amigos Jason y Ronnie, mientras Jason recuerda el verano más crucial de su vida (que fue hace sólo unas semanas).</desc>
 </programme>
 
-<programme start="20260409124900 -0500" stop="20260409130000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Summer Memories</title>
-<sub-title lang="es">Como en los viejos tiempos</sub-title>
-<desc lang="es">Los recuerdos regresan con fuerza.</desc>
-</programme>
-
-<programme start="20260409130000 -0500" stop="20260409131400 -0500" channel="CNLA_PAN.co">
+<programme start="20260806130300 -0500" stop="20260806132900 -0500" channel="CNLA_PAN.co">
 <title lang="es">Escandalosos</title>
-<sub-title lang="es">Batalla láser</sub-title>
-<desc lang="es">Los osos participan en un intenso juego láser.</desc>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Pardo, Panda y Polar son tres osos en busca de un camino que los lleve a la adaptación.</desc>
 </programme>
 
-<programme start="20260409131400 -0500" stop="20260409132600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Los osos no pueden saltar</sub-title>
-<desc lang="es">Intentan ganar un partido de baloncesto.</desc>
+<programme start="20260806132900 -0500" stop="20260806134500 -0500" channel="CNLA_PAN.co">
+<title lang="es">Big Blue: Aventuras en Submarinos</title>
+<sub-title lang="es">Aventuras, comedia de situación y fantasía marina.</sub-title>
+<desc lang="es">"Nunca hay un momento aburrido en el Big Blue. La capitana Lettie y la tripulación Calypso siempre están listos para afrontar cualquier desafío que se les presente.</desc>
 </programme>
 
-<programme start="20260409132600 -0500" stop="20260409133700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Drama Total: La guardería</title>
-<sub-title lang="es">Los chicos de hielo llegan últimos</sub-title>
-<desc lang="es">Una competencia divertida en la guardería.</desc>
+<programme start="20260806134500 -0500" stop="20260806135700 -0500" channel="CNLA_PAN.co">
+<title lang="es">El submarino de Jim</title>
+<sub-title lang="es">Comedia absurda, aventuras y contenido familiar</sub-title>
+<desc lang="es">Cuando Jim, un joven e ingenuo delfín, recibe la tarea de pilotar el primer submarino sobre ruedas del mundo, emprende un viaje a través de los continentes con sus mejores amigos... en busca de un destino improbable: las legendarias aguas cristalinas de un lugar llamado Las Vegas.</desc>
 </programme>
 
-<programme start="20260409133700 -0500" stop="20260409135000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Drama Total: La guardería</title>
-<sub-title lang="es">Sueño con la malvada</sub-title>
-<desc lang="es">Los niños viven una aventura inesperada.</desc>
+<programme start="20260806135700 -0500" stop="20260806142500 -0500" channel="CNLA_PAN.co">
+<title lang="es">Un jefe en pañales: de vuelta en la cuna</title>
+<sub-title lang="es">Comedia, aventuras y fantasía familiar</sub-title>
+<desc lang="es">Cuando lo acusan de un crimen corporativo, Ted Templeton vuelve a ser bebé y se muda con su hermano Tim, haciéndose pasar por uno de sus hijos.</desc>
 </programme>
 
-<programme start="20260409135000 -0500" stop="20260409140100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Drama Total: La guardería</title>
-<sub-title lang="es">Problemas en el bus</sub-title>
-<desc lang="es">Un viaje se convierte en caos.</desc>
-</programme>
-
-<programme start="20260409140100 -0500" stop="20260409141500 -0500" channel="CNLA_PAN.co">
+<programme start="20260806142500 -0500" stop="20260806143600 -0500" channel="CNLA_PAN.co">
 <title lang="es">Clarence</title>
-<sub-title lang="es">Mamá karateca</sub-title>
-<desc lang="es">Mary empieza clases de artes marciales mientras Clarence solo quiere pelear.</desc>
+<sub-title lang="es">Comedia de situación (sitcom), aventuras cotidianas y rebanadas de vida (slice of life).</sub-title>
+<desc lang="es">Clarence es un niño entusiasta de 9 años, que ve lo bueno en todo y en todos, ¡y quiere probarlo todo porque todo es asombroso!</desc>
 </programme>
 
-<programme start="20260409141500 -0500" stop="20260409142600 -0500" channel="CNLA_PAN.co">
+<programme start="20260806143600 -0500" stop="20260806144100 -0500" channel="CNLA_PAN.co">
+<title lang="es">Looney Tunes - ¡Simplificando los deportes!</title>
+<sub-title lang="es">Hockey sobre hielo</sub-title>
+<desc lang="es">Cuando se presenta una competición de hockey sobre hielo, Bugs Bunny toma las riendas, explicando las reglas, la pista y la temida zona de castigo en el camino.</desc>
+</programme>
+
+<programme start="20260806144100 -0500" stop="20260806145300 -0500" channel="CNLA_PAN.co">
 <title lang="es">Clarence</title>
-<sub-title lang="es">Radio pública</sub-title>
-<desc lang="es">Clarence intenta crear su propio programa de radio con Sumo.</desc>
+<sub-title lang="es">Comedia de situación (sitcom), aventuras cotidianas y rebanadas de vida (slice of life).</sub-title>
+<desc lang="es">Clarence es un niño entusiasta de 9 años, que ve lo bueno en todo y en todos, ¡y quiere probarlo todo porque todo es asombroso!</desc>
 </programme>
 
-<programme start="20260409142600 -0500" stop="20260409144000 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo (sin filtro) de Any Malu</title>
-<sub-title lang="es">Acosador</sub-title>
-<desc lang="es">Any Malu enfrenta una situación incómoda en su vida digital.</desc>
+<programme start="20260806145300 -0500" stop="20260409163600 -0500" channel="CNLA_PAN.co">
+<title lang="es">Shrek tercero</title>
+<sub-title lang="es">Animación</sub-title>
+<desc lang="es">Cuando Shrek se casó con Fiona, lo último que se imaginó es que podría convertirse en el siguiente rey. Pero cuando su suegro, el rey Harold, muere sin previo aviso, es exactamente lo que le espera. Y si Shrek, con la valiosa ayuda de Asno y del Gato con Botas, no encuentra un rey adecuado para el Reino de Muy Muy Lejano, el ogro tendrá que sentarse en el trono. Artie, el primo de Fiona, un vago nato que sigue en el instituto, es el candidato más prometedor, pero acaba siendo un auténtico reto para los tres.</desc>
 </programme>
 
-<programme start="20260409144000 -0500" stop="20260409144700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Maluzinha</title>
-<sub-title lang="es">Hay una cucaracha en mi cuarto</sub-title>
-<desc lang="es">Una simple situación se convierte en caos.</desc>
-</programme>
-
-<programme start="20260409144700 -0500" stop="20260409145400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Maluzinha</title>
-<sub-title lang="es">Pesadilla en el cine</sub-title>
-<desc lang="es">Una visita al cine se vuelve aterradora.</desc>
-</programme>
-
-<programme start="20260409145400 -0500" stop="20260409150500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Retrato arruinado</sub-title>
-<desc lang="es">Mordecai y Rigby dañan un retrato importante.</desc>
-</programme>
-
-<programme start="20260409150500 -0500" stop="20260409151900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Despedida de soltero</sub-title>
-<desc lang="es">Skips organiza una despedida inolvidable.</desc>
-</programme>
-
-<programme start="20260409151900 -0500" stop="20260409153100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Robots geniales</sub-title>
-<desc lang="es">Los chicos enfrentan robots.</desc>
-</programme>
-
-<programme start="20260409153100 -0500" stop="20260409154400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Hermanos cubo</sub-title>
-<desc lang="es">Musculoso intenta demostrar su valor en oficina.</desc>
-</programme>
-
-<programme start="20260409154400 -0500" stop="20260409155600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Plan falso loco</sub-title>
-<desc lang="es">Rigby intenta sorprender a Eileen.</desc>
-</programme>
-
-<programme start="20260409155600 -0500" stop="20260409160700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">Musgo del tiempo</sub-title>
-<desc lang="es">Una extraña aventura ocurre en el arroyo.</desc>
-</programme>
-
-<programme start="20260409160700 -0500" stop="20260409162100 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">La cría</sub-title>
-<desc lang="es">Los amigos quedan atrapados en un tronco.</desc>
-</programme>
-
-<programme start="20260409162100 -0500" stop="20260409163300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">Niño del 3030</sub-title>
-<desc lang="es">Un misterioso visitante del futuro aparece.</desc>
-</programme>
-
-<programme start="20260409163300 -0500" stop="20260409164700 -0500" channel="CNLA_PAN.co">
+<programme start="20260806163600 -0500" stop="202608069170100 -0500" channel="CNLA_PAN.co">
 <title lang="es">El maravillosamente extraño mundo de Gumball</title>
-<sub-title lang="es">El asado</sub-title>
-<desc lang="es">Situaciones incómodas salen a la luz.</desc>
+<sub-title lang="es">Comedia absurda, sátira, fantasía surrealista y aventuras cotidianas</sub-title>
+<desc lang="es">Sigue las desventuras de Gumball Watterson, un gato de 12 años que va a la escuela primaria en la ciudad de Elmore.</desc>
 </programme>
 
-<programme start="20260409164700 -0500" stop="20260409165800 -0500" channel="CNLA_PAN.co">
+<programme start="20260806170100 -0500" stop="20260409172600 -0500" channel="CNLA_PAN.co">
+<title lang="es">El Chapulín y los Colorado</title>
+<sub-title lang="es">Comedia, aventuras y superhéroes</sub-title>
+<desc lang="es">El Chapulín Colorado y su ocurrente familia enfrentan villanos y rutinas, demostrando que la risa y la bondad también salvan el día.</desc>
+</programme>
+
+<programme start="20260806172600 -0500" stop="20260806174200 -0500" channel="CNLA_PAN.co">
+<title lang="es">Big Blue: Aventuras en Submarinos</title>
+<sub-title lang="es">Aventuras, comedia de situación y fantasía marina.</sub-title>
+<desc lang="es">"Nunca hay un momento aburrido en el Big Blue. La capitana Lettie y la tripulación Calypso siempre están listos para afrontar cualquier desafío que se les presente.</desc>
+</programme>
+
+<programme start="20260806174200 -0500" stop="20260806180400 -0500" channel="CNLA_PAN.co">
+<title lang="es">El submarino de Jim</title>
+<sub-title lang="es">Comedia absurda, aventuras y contenido familiar</sub-title>
+<desc lang="es">Cuando Jim, un joven e ingenuo delfín, recibe la tarea de pilotar el primer submarino sobre ruedas del mundo, emprende un viaje a través de los continentes con sus mejores amigos... en busca de un destino improbable: las legendarias aguas cristalinas de un lugar llamado Las Vegas.</desc>
+</programme>
+
+<programme start="20260806180400 -0500" stop="20260806183300 -0500" channel="CNLA_PAN.co">
+<title lang="es">El increíble mundo de Gumball</title>
+<sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
+<desc lang="es">Conoce a los Watterson: Mamá, Papá, Anaís, Darwin y Gumball. Gumball es un gato de doce años con dotes para la 'desgracia' y un grupo de raros amigos.</desc>
+</programme>
+  
+<programme start="20260806183300 -0500" stop="20260806185800 -0500" channel="CNLA_PAN.co">
+<title lang="es">Hora de Aventura</title>
+<sub-title lang="es">Fantasía, aventura épica, comedia absurda y drama de madurez</sub-title>
+<desc lang="es">Hora de Aventura presenta a Finn y Jake, dos héroes que viven grandes aventuras en la mágica Tierra de Ooo.</desc>
+</programme>
+
+<programme start="20260806185800 -0500" stop="20260806190900 -0500" channel="CNLA_PAN.co">
+<title lang="es">Los Jóvenes Titanes en Acción</title>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
+</programme>
+
+<programme start="20260806190900 -0500" stop="20260806191600 -0500" channel="CNLA_PAN.co">
+<title lang="es">Looney Tunes - ¡Simplificando los deportes!</title>
+<sub-title lang="es">Salto de esquí</sub-title>
+<desc lang="es">La V es de victoria, mientras Bugs salta hacia la línea de llegada y nos explica la mecánica del salto de esquí. ¿Será que podrá vencer al gran robot gato de Silvestre?</desc>
+</programme>
+
+<programme start="20260806191600 -0500" stop="20260806192700 -0500" channel="CNLA_PAN.co">
+<title lang="es">Los Jóvenes Titanes en Acción</title>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
+</programme>
+
+<programme start="20260806192700 -0500" stop="202608069194000 -0500" channel="CNLA_PAN.co">
+<title lang="es">Un show más: Las cintas perdidas</title>
+<sub-title lang="es">Comedia, aventuras y contenido excéntrico</sub-title>
+<desc lang="es">Mordecai y Rigby son mejores amigos, y trabajan y viven en un parque de la ciudad. Por algún motivo, sus trabajos mundanos siempre terminan en un caos surrealista, lo cual molesta muchísimo a su jefe y a sus compañeros de trabajo.</desc>
+</programme>
+
+<programme start="20260806194000 -0500" stop="202608069195200 -0500" channel="CNLA_PAN.co">
 <title lang="es">El maravillosamente extraño mundo de Gumball</title>
-<sub-title lang="es">El diario</sub-title>
-<desc lang="es">Un secreto es revelado.</desc>
+<sub-title lang="es">Comedia absurda, sátira, fantasía surrealista y aventuras cotidianas</sub-title>
+<desc lang="es">Sigue las desventuras de Gumball Watterson, un gato de 12 años que va a la escuela primaria en la ciudad de Elmore.</desc>
 </programme>
 
-<programme start="20260409165800 -0500" stop="20260409171000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<sub-title lang="es">Dos osos de hielo</sub-title>
-<desc lang="es">Los osos viven una divertida historia.</desc>
+<programme start="20260806195200 -0500" stop="20260409213400 -0500" channel="CNLA_PAN.co">
+<title lang="es">Shrek tercero</title>
+<sub-title lang="es">Animación</sub-title>
+<desc lang="es">Cuando Shrek se casó con Fiona, lo último que se imaginó es que podría convertirse en el siguiente rey. Pero cuando su suegro, el rey Harold, muere sin previo aviso, es exactamente lo que le espera. Y si Shrek, con la valiosa ayuda de Asno y del Gato con Botas, no encuentra un rey adecuado para el Reino de Muy Muy Lejano, el ogro tendrá que sentarse en el trono. Artie, el primo de Fiona, un vago nato que sigue en el instituto, es el candidato más prometedor, pero acaba siendo un auténtico reto para los tres.</desc>
 </programme>
 
-<programme start="20260409171000 -0500" stop="20260409172400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<sub-title lang="es">La caja mágica</sub-title>
-<desc lang="es">Una caja misteriosa cambia todo.</desc>
-</programme>
-
-<programme start="20260409172400 -0500" stop="20260409173500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<sub-title lang="es">Osos del templo</sub-title>
-<desc lang="es">Exploran un antiguo templo.</desc>
-</programme>
-
-<programme start="20260409173500 -0500" stop="20260409175000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Las heroicas aventuras del valiente príncipe Ivandoe</title>
-<sub-title lang="es">El príncipe y el cumpleaños triste</sub-title>
-<desc lang="es">Ivandoe enfrenta un inesperado desafío.</desc>
-</programme>
-
-<programme start="20260409175000 -0500" stop="20260409180300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Las heroicas aventuras del valiente príncipe Ivandoe</title>
-<sub-title lang="es">El príncipe y los secuestradores</sub-title>
-<desc lang="es">Una misión peligrosa comienza.</desc>
-</programme>
-
-<programme start="20260409180300 -0500" stop="20260409182900 -0500" channel="CNLA_PAN.co">
-<title lang="es">¡Megamente manda!</title>
-<sub-title lang="es">El arte de la destrucción</sub-title>
-<desc lang="es">Megamente enfrenta un nuevo reto.</desc>
-</programme>
-
-<programme start="20260409182900 -0500" stop="20260409184300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<sub-title lang="es">Su héroe</sub-title>
-<desc lang="es">Billy inspira a Finn y Jake a practicar la no violencia.</desc>
-</programme>
-
-<programme start="20260409184300 -0500" stop="20260409185500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<sub-title lang="es">Mago</sub-title>
-<desc lang="es">Finn es tentado por un vendedor de poderes mágicos.</desc>
-</programme>
-
-<programme start="20260409185500 -0500" stop="20260409190600 -0500" channel="CNLA_PAN.co">
+<programme start="20260806213400 -0500" stop="20260806215700 -0500" channel="CNLA_PAN.co">
 <title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Conocimiento</sub-title>
-<desc lang="es">Starfire teme que aprender demasiado la cambie.</desc>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
 </programme>
 
-<programme start="20260409190600 -0500" stop="20260409191900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Manzanas de caramelo</sub-title>
-<desc lang="es">Los Titanes viven una extraña aventura bajo tierra.</desc>
-</programme>
-
-<programme start="20260409191900 -0500" stop="20260409193100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">La fábrica de Pascua</sub-title>
-<desc lang="es">Una aventura caótica relacionada con Pascua.</desc>
-</programme>
-
-<programme start="20260409193100 -0500" stop="20260409194500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Gamers nunca mueren</sub-title>
-<desc lang="es">Buscan un parche secreto de videojuego.</desc>
-</programme>
-
-<programme start="20260409194500 -0500" stop="20260409195600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Árbol espacial</sub-title>
-<desc lang="es">Rigby enfrenta una prueba importante.</desc>
-</programme>
-
-<programme start="20260409195600 -0500" stop="20260409201000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Hora de almuerzo</sub-title>
-<desc lang="es">Intentan comer un enorme sándwich.</desc>
-</programme>
-
-<programme start="20260409201000 -0500" stop="20260409202200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Operación sin spoilers</sub-title>
-<desc lang="es">Evitan spoilers de su programa favorito.</desc>
-</programme>
-
-<programme start="20260409202200 -0500" stop="20260409203300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo (sin filtro) de Any Malu</title>
-<sub-title lang="es">Hazme popular</sub-title>
-<desc lang="es">Any Malu busca volverse viral.</desc>
-</programme>
-
-<programme start="20260409203300 -0500" stop="20260409204700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Grizz en el cine</sub-title>
-<desc lang="es">Pardo participa en una película.</desc>
-</programme>
-
-<programme start="20260409204700 -0500" stop="20260409205800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Gripe de oso</sub-title>
-<desc lang="es">Los osos enferman y todo se complica.</desc>
-</programme>
-
-<programme start="20260409205800 -0500" stop="20260409211300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Ivandoe</title>
-<sub-title lang="es">El patito asqueroso</sub-title>
-<desc lang="es">Ivandoe enfrenta otro reto extraño.</desc>
-</programme>
-
-<programme start="20260409211300 -0500" stop="20260409212600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Ivandoe</title>
-<sub-title lang="es">El señor fraudulento</sub-title>
-<desc lang="es">Un engaño pone a prueba al príncipe.</desc>
-</programme>
-
-<programme start="20260409212600 -0500" stop="20260409213700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Clarence</title>
-<sub-title lang="es">Bocina</sub-title>
-<desc lang="es">Clarence usa un claxon para comunicarse.</desc>
-</programme>
-
-<programme start="20260409213700 -0500" stop="20260409215100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Clarence</title>
-<sub-title lang="es">Mente de Sumo</sub-title>
-<desc lang="es">Sumo cambia tras nuevas experiencias.</desc>
-</programme>
-
-<programme start="20260409215100 -0500" stop="20260409220200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Clarence</title>
-<sub-title lang="es">Motel</sub-title>
-<desc lang="es">La familia pasa tiempo en un hotel inesperadamente.</desc>
-</programme>
-
-<programme start="20260409220200 -0500" stop="20260409221600 -0500" channel="CNLA_PAN.co">
+<programme start="20260806215700 -0500" stop="20260806230300 -0500" channel="CNLA_PAN.co">
 <title lang="es">Hora de Aventura</title>
-<sub-title lang="es">Gumbaldia</sub-title>
-<desc lang="es">Finn y Jake intentan evitar una guerra.</desc>
+<sub-title lang="es">Fantasía, aventura épica, comedia absurda y drama de madurez</sub-title>
+<desc lang="es">Hora de Aventura presenta a Finn y Jake, dos héroes que viven grandes aventuras en la mágica Tierra de Ooo.</desc>
 </programme>
 
-<programme start="20260409221600 -0500" stop="20260409223000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<sub-title lang="es">Cita de juego</sub-title>
-<desc lang="es">El Rey Helado causa problemas nuevamente.</desc>
-</programme>
-
-<programme start="20260409223000 -0500" stop="20260409224100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<sub-title lang="es">El pozo</sub-title>
-<desc lang="es">Finn intenta rescatar a Jake.</desc>
-</programme>
-
-<programme start="20260409224100 -0500" stop="20260409225200 -0500" channel="CNLA_PAN.co">
+<programme start="20260806230300 -0500" stop="20260807000300 -0500" channel="CNLA_PAN.co">
 <title lang="es">Un Show Más</title>
-<sub-title lang="es">Encierro aburrido</sub-title>
-<desc lang="es">Mordecai y Rigby intentan escapar del domo para asistir a un concierto.</desc>
+<sub-title lang="es">Comedia, aventuras, fantasía surrealista y cultura pop de los 80.</sub-title>
+<desc lang="es">Mordecai y Rigby son dos amigos de veintitantos años que trabajan como jardineros en un parque local, pero sus intentos de flojear siempre los llevan a meterse en problemas con su jefe y desatar el caos cósmico.</desc>
 </programme>
 
-<programme start="20260409225200 -0500" stop="20260409230600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">El planeta favorito de Pops</sub-title>
-<desc lang="es">Papaleta quiere observar su planeta favorito durante la noche.</desc>
-</programme>
-
-<programme start="20260409230600 -0500" stop="20260409231700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Venganza y autobús de fiesta</sub-title>
-<desc lang="es">Los chicos cuentan historias de terror en una fiesta de Halloween.</desc>
-</programme>
-
-<programme start="20260409231700 -0500" stop="20260409232800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Rabietas</sub-title>
-<desc lang="es">Deben devolver un regalo complicado.</desc>
-</programme>
-
-<programme start="20260409232800 -0500" stop="20260409234200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Un montón de patitos</sub-title>
-<desc lang="es">Mordecai y Rigby cuidan unos patitos.</desc>
-</programme>
-
-<programme start="20260409234200 -0500" stop="20260409235300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">La clave del universo</sub-title>
-<desc lang="es">Los chicos descubren algo muy importante.</desc>
-</programme>
-
-<programme start="20260409235300 -0500" stop="20260409000400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<sub-title lang="es">Me gustas, hola</sub-title>
-<desc lang="es">Mordecai intenta corregir un mensaje enviado por error.</desc>
-</programme>
-
-<programme start="20260409000400 -0500" stop="20260409001800 -0500" channel="CNLA_PAN.co">
+<programme start="20260807000300 -0500" stop="20260807010400 -0500" channel="CNLA_PAN.co">
 <title lang="es">Escandalosos</title>
-<sub-title lang="es">Cumpleaños de Panda</sub-title>
-<desc lang="es">Los osos ayudan a Panda a cumplir su sueño musical.</desc>
+<sub-title lang="es">Fantasía, comedia y aventura</sub-title>
+<desc lang="es">Pardo, Panda y Polar son tres osos en busca de un camino que los lleve a la adaptación.</desc>
 </programme>
 
-<programme start="20260409001800 -0500" stop="20260409003000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Cupidos</sub-title>
-<desc lang="es">Los osos ayudan a un ave a encontrar pareja.</desc>
-</programme>
-
-<programme start="20260409003000 -0500" stop="20260409004300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Origen de Crowbar Jones</sub-title>
-<desc lang="es">Pardo presenta su película a Nom Nom.</desc>
-</programme>
-
-<programme start="20260409004300 -0500" stop="20260409005500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Guardabosques Norm</sub-title>
-<desc lang="es">Los osos lidian con un nuevo guardabosques.</desc>
-</programme>
-
-<programme start="20260409005500 -0500" stop="20260409010600 -0500" channel="CNLA_PAN.co">
+<programme start="20260807010400 -0500" stop="20260807023000 -0500" channel="CNLA_PAN.co">
 <title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El virus</sub-title>
-<desc lang="es">Un germen persigue a Gumball para vengarse.</desc>
+<sub-title lang="es">Comedia absurda, comedia de situación, sátira y fantasía surrealista</sub-title>
+<desc lang="es">Conoce a los Watterson: Mamá, Papá, Anaís, Darwin y Gumball. Gumball es un gato de doce años con dotes para la 'desgracia' y un grupo de raros amigos.</desc>
 </programme>
-
-<programme start="20260409010600 -0500" stop="20260409011900 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El coloso</sub-title>
-<desc lang="es">Gumball y Darwin enfrentan a un gigante.</desc>
-</programme>
-
-<programme start="20260409011900 -0500" stop="20260409013300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">Las decisiones</sub-title>
-<desc lang="es">Darwin busca un nuevo mentor.</desc>
-</programme>
-
-<programme start="20260409013300 -0500" stop="20260409014500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El más perezoso</sub-title>
-<desc lang="es">Compiten por ver quién es más perezoso.</desc>
-</programme>
-
-<programme start="20260409014500 -0500" stop="20260409015700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El menú</sub-title>
-<desc lang="es">Richard busca una hamburguesa secreta.</desc>
-</programme>
-
-<programme start="20260409015700 -0500" stop="20260409021000 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La furia</sub-title>
-<desc lang="es">Nicole enfrenta a una rival del pasado.</desc>
-</programme>
-
-<programme start="20260409021000 -0500" stop="20260409022200 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La dama</sub-title>
-<desc lang="es">Richard adopta una nueva identidad.</desc>
-</programme>
-
-<programme start="20260409022200 -0500" stop="20260409023400 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">Halloween</sub-title>
-<desc lang="es">Una fiesta embrujada trae sorpresas.</desc>
-</programme>
-
-<programme start="20260409023400 -0500" stop="20260409024500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe: Futuro</title>
-<sub-title lang="es">Guía</sub-title>
-<desc lang="es">Steven recibe visitas inesperadas que cambian su perspectiva.</desc>
-</programme>
-
-<programme start="20260409024500 -0500" stop="20260409025900 -0500" channel="CNLA_PAN.co">
+  
+<programme start="20260807023000 -0500" stop="20260807035500 -0500" channel="CNLA_PAN.co">
 <title lang="es">Steven Universe</title>
 <sub-title lang="es">Grito de ayuda</sub-title>
 <desc lang="es">Un disturbio mágico interrumpe el programa favorito de Steven.</desc>
 </programme>
 
-<programme start="20260409025900 -0500" stop="20260409031000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Taladro gema</sub-title>
-<desc lang="es">Steven se embarca en una misión subterránea.</desc>
-</programme>
-
-<programme start="20260409031000 -0500" stop="20260409032200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Escapismo</sub-title>
-<desc lang="es">Steven usa sus poderes para buscar ayuda.</desc>
-</programme>
-
-<programme start="20260409032200 -0500" stop="20260409033600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Criando el granero</sub-title>
-<desc lang="es">Una desaparición genera preocupación en el grupo.</desc>
-</programme>
-
-<programme start="20260409033600 -0500" stop="20260409034700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">El universo de Garnet</sub-title>
-<desc lang="es">Steven imagina un día en la vida de Garnet.</desc>
-</programme>
-
-<programme start="20260409034700 -0500" stop="20260409035900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Cumpleaños de Steven</sub-title>
-<desc lang="es">Steven reflexiona sobre crecer y madurar.</desc>
-</programme>
-
-<programme start="20260409035900 -0500" stop="20260409041000 -0500" channel="CNLA_PAN.co">
+<programme start="20260807035500 -0500" stop="20260807045900 -0500" channel="CNLA_PAN.co">
 <title lang="es">El mundo de Craig</title>
-<sub-title lang="es">Dulce ácido</sub-title>
-<desc lang="es">Craig intenta superar un reto extremo.</desc>
+<sub-title lang="es">Aventuras, comedia, drama y rebanadas de vida (slice of life).</sub-title>
+<desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso gobernado por tribus de niños que conforman una verdadera sociedad infantil.</desc>
 </programme>
 
-<programme start="20260409041000 -0500" stop="20260409042300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">Objetos perdidos</sub-title>
-<desc lang="es">Una búsqueda importante inicia en el arroyo.</desc>
-</programme>
-
-<programme start="20260409042300 -0500" stop="20260409043400 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">JP Pony</sub-title>
-<desc lang="es">JP sigue su corazón en una nueva aventura.</desc>
-</programme>
-
-<programme start="20260409043400 -0500" stop="20260409044700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">Talento del arroyo</sub-title>
-<desc lang="es">Los niños organizan un espectáculo.</desc>
-</programme>
-
-<programme start="20260409044700 -0500" stop="20260409045800 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">¿Quién es el poncho rojo?</sub-title>
-<desc lang="es">Un misterio recorre el arroyo.</desc>
-</programme>
-
-<programme start="20260409045800 -0500" stop="20260409051100 -0500" channel="CNLA_PAN.co">
+<programme start="20260807045900 -0500" stop="20260807060000 -0500" channel="CNLA_PAN.co">
 <title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Viernes negro</sub-title>
-<desc lang="es">Tres fantasmas visitan a Starfire.</desc>
-</programme>
-
-<programme start="20260409051100 -0500" stop="20260409052400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">El rancho</sub-title>
-<desc lang="es">Los Titanes viven una experiencia fuera de la ciudad.</desc>
-</programme>
-
-<programme start="2026040952400 -0500" stop="20260409053600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Sándwich legendario</sub-title>
-<desc lang="es">Una misión peligrosa por ingredientes.</desc>
-</programme>
-
-<programme start="20260409053600 -0500" stop="20260409054700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Talento de la Liga de la Justicia Parte 1</sub-title>
-<desc lang="es">Comienza una competencia épica.</desc>
-</programme>
-
-<programme start="20260409054700 -0500" stop="20260410060000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Talento de la Liga de la Justicia Parte 2</sub-title>
-<desc lang="es">La competencia llega a su final.</desc>
-</programme>
-
-<programme start="20260410060000 -0500" stop="20260410061100 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de gumball</title>
-<desc lang="es">El nuevo entrenador ve cómo Jamie amedrenta a los demás niños durante el almuerzo, e interviene. Jamie se ve obligado a disculparse.</desc>
-</programme>
-
-<programme start="20260410060000 -0500" stop="20260410061100 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de gumball</title>
-<desc lang="es">El nuevo entrenador ve cómo Jamie amedrenta a los demás niños durante el almuerzo, e interviene. Jamie se ve obligado a disculparse.</desc>
-</programme>
-
-<programme start="20260410061100 -0500" stop="20260410062500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de gumball</title>
-<desc lang="es">Gumball y Darwin se ofenden cuando mamá les dice que son unos ¿desidiosos¿, después de que les explica qué significa, y prometen sacar la basura antes de que ella vuelva a casa. Pero, a medida que el reloj se acerca lentamente a la hora señalada, descubren que están dispuestos a llegar a límites insospechados para no tener que hacerlo. </desc>
-</programme>
-
-<programme start="20260410062500 -0500" stop="20260410063700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de gumball</title>
-<desc lang="es">Gumball empieza a tener una tartamudez extraña que lo lleva a ofender a Darwin por accidente.</desc>
-</programme>
-
-<programme start="20260410063700 -0500" stop="20260410065000 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de gumball</title>
-<desc lang="es">Gumball y Darwin tratan de encontrar aunque sea una sola característica agradable de su vecina, la señora Robinson.</desc>
-</programme>
-
-<programme start="20260410065000 -0500" stop="20260410070300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de gumball</title>
-<desc lang="es">Cuando Gumball rechaza al "Club de los Rechazados", los rechazados se cobran venganza.</desc>
-</programme>
-
-<programme start="20260410070300 -0500" stop="20260410071500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes En Acción</title>
-<desc lang="es">Pardo, Panda y Polar intentan encontrar un nuevo hogar en una isla llena de frutas gigantes.</desc>
-</programme>
-
-<programme start="20260410071500 -0500" stop="20260410072600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes En Acción</title>
-<desc lang="es">Craig y sus amigos se adentran en una zona inexplorada del arroyo en busca de un tesoro perdido.</desc>
-</programme>
-
-<programme start="20260410072600 -0500" stop="20260410074000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260410074000 -0500" stop="20260410080200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260410080200 -0500" stop="20260410081400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410081400 -0500" stop="20260410082800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410082800 -0500" stop="20260410083900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410083900 -0500" stop="20260410085300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410085300 -0500" stop="20260410090400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410090400 -0500" stop="20260410093100 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Chapulín y los Colorados</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410093100 -0500" stop="20260410094500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410094500 -0500" stop="20260410095700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410095700 -0500" stop="20260410100800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410100800 -0500" stop="20260410102200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410102200 -0500" stop="20260410103300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410103300 -0500" stop="20260410104700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410104700 -0500" stop="20260410105700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410105700 -0500" stop="20260410110900 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410110900 -0500" stop="20260410112400 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410112400 -0500" stop="20260410113500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410113500 -0500" stop="20260410115000 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410115000 -0500" stop="20260410120100 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410120100 -0500" stop="20260410122700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410122700 -0500" stop="20260410124300 -0500" channel="CNLA_PAN.co">
-<title lang="es">SUMMER MEMORIES - SEASON 1</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410124300 -0500" stop="20260410125400 -0500" channel="CNLA_PAN.co">
-<title lang="es">SUMMER MEMORIES - SEASON 1</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410125400 -0500" stop="20260410130600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410130600 -0500" stop="20260410132000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410132000 -0500" stop="20260410133100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410133100 -0500" stop="20260410134600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Drama Total: La Guardería</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410134600 -0500" stop="20260410135600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Drama Total: La Guardería</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410135600 -0500" stop="20260410140800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Clarence</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410140800 -0500" stop="20260410142200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Clarence</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410142200 -0500" stop="20260410143400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Clarence</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410143400 -0500" stop="20260410144700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Mundo (Sin Filtro) de Any Malu</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410144700 -0500" stop="20260410145400 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Mundo Surreal de Any Malu</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410145400 -0500" stop="20260410150000 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Mundo Surreal de Any Malu</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410150000 -0500" stop="20260410151100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Mordecai y Rigby deben proteger a Benson de una compañía que organiza fiestas.</desc>
-</programme>
-
-<programme start="20260410151100 -0500" stop="20260410152500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">En la preparatoria, el Musculoso quiere demostrar que tiene más onda que el chico nuevo de la clase.</desc>
-</programme>
-
-<programme start="20260410152500 -0500" stop="20260410153600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">El parque será auditado y todo será confiscado si no se pagan los impuestos. Los empleados del parque llaman al hermano de Rigby, Don, un amistoso contador, para que se encargue de los impuestos. Rigby está celoso de Don porque con su personalidad encantadora le ha robado la atención del resto.</desc>
-</programme>
-
-<programme start="20260410153600 -0500" stop="20260410155000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Mordecai y Rigby deben recapturar algo que se les perdió.</desc>
-</programme>
-
-<programme start="20260410155000 -0500" stop="20260410160200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Mordecai y Rigby deben llevarle algunas tortillas a Benson.</desc>
-</programme>
-
-<programme start="20260410160200 -0500" stop="20260410161500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso de fortines en árboles y rampas para bicicletas gobernados por tribus de niños que conforman una verdadera sociedad infantil. En cada episodio, los niños se lanzan a zonas inexploradas del bosque, conocen a nuevos vecinos o se meten en problemas en su lugar favorito.</desc>
-</programme>
-
-<programme start="20260410161500 -0500" stop="20260410162700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso de fortines en árboles y rampas para bicicletas gobernados por tribus de niños que conforman una verdadera sociedad infantil. En cada episodio, los niños se lanzan a zonas inexploradas del bosque, conocen a nuevos vecinos o se meten en problemas en su lugar favorito.</desc>
-</programme>
-
-<programme start="20260410162700 -0500" stop="20260410163800 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260410163800 -0500" stop="20260410165300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260410165300 -0500" stop="20260410170400 -0500" channel="CNLA_PAN.co">
-<title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260410170400 -0500" stop="20260410172900 -0500" channel="CNLA_PAN.co">
-<title lang="es">TARDES DE BIENESTAR: Escandalositos</title>
-<desc lang="es">Escandalositos sigue a los hermanos bebés osos Pardo, Panda y Polar mientras viajan en una caja mágica a fantásticos mundos diferentes en busca de su hogar perfecto.</desc>
-</programme>
-
-<programme start="20260410172900 -0500" stop="20260410175500 -0500" channel="CNLA_PAN.co">
-<title lang="es">TARDES DE BIENESTAR: Las Heroicas Aventuras del Valiente Príncipe Ivandoe</title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260410175500 -0500" stop="20260410180700 -0500" channel="CNLA_PAN.co">
-<title lang="es">TARDES DE BIENESTAR: Las Heroicas Aventuras del Valiente Príncipe Ivandoe</title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260410180700 -0500" stop="20260410183300 -0500" channel="CNLA_PAN.co">
-<title lang="es">¡Megamente manda!</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410183300 -0500" stop="20260410184700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410184700 -0500" stop="20260410185900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410185900 -0500" stop="20260410191200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410191200 -0500" stop="20260410192300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410192300 -0500" stop="20260410193300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410193300 -0500" stop="20260410195700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">x</desc>
-</programme>
-
-<programme start="20260410195700 -0500" stop="20260410200000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Tanda Comercial / Previo Cine Cartoon</title>
-<desc lang="es">Espacio publicitario previo a Cine Cartoon</desc>
-</programme>
-
-<programme start="20260410200000 -0500" stop="20260410212400 -0500" channel="CNLA_PAN.co">
-<title lang="es">¡Jóvenes Titanes en Acción! La Película</title>
-<desc lang="es">Cartoon Network trae los clásicos del cine a la pantalla de TV. Ahora podrás disfrutar de estas historias inolvidables en la comodidad de tu hogar.</desc>
-</programme>
-
-<programme start="20260410212400 -0500" stop="20260410213600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<desc lang="es">Cartoon Network trae los clásicos del cine a la pantalla de TV. Ahora podrás disfrutar de estas historias inolvidables en la comodidad de tu hogar.</desc>
-</programme>
-
-<programme start="20260410213600 -0500" stop="20260410214700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<desc lang="es">Cartoon Network trae  los clásicos del cine a la pantalla de TV. Ahora podrás disfrutar de estas historias inolvidables en la comodidad de tu hogar.</desc>
-</programme>
-
-<programme start="20260410214700 -0500" stop="20260410215800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalositos</title>
-<desc lang="es">Cartoon Network trae los clásicos del cine a la pantalla de TV. Ahora podrás disfrutar de estas historias inolvidables en la comodidad de tu hogar.</desc>
-</programme>
-
-<programme start="20260410215800 -0500" stop="20260410220200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Espacio publicitario</title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260410220200 -0500" stop="20260410221600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<desc lang="es">Solo y atrapado, Finn debe resolver el acertijo de la extraña cueva sin salida.</desc>
-</programme>
-
-<programme start="20260410221600 -0500" stop="20260410223000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<desc lang="es">Finn y Jake meten los dedos en cualquier parte, Marceline trata de encontrar el camino hasta la tienda de música del Hechicero Bill, el Rey Helado consigue una nueva novia.</desc>
-</programme>
-
-<programme start="20260410223000 -0500" stop="20260410224100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Hora de Aventura</title>
-<desc lang="es">Luego de su horario de almuerzo, Mordecai se dispone a trabajar, pero Rigby quiere seguir haraganeando. Mordecai trata de convencerlo de regresar al trabajo, lo cual hace que Rigby comience a decir que puede haraganear todo lo que quiera sin que Benson lo despida.</desc>
-</programme>
-
-<programme start="20260410224100 -0500" stop="20260410225300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Luego de su horario de almuerzo, Mordecai se dispone a trabajar, pero Rigby quiere seguir haraganeando. Mordecai trata de convencerlo de regresar al trabajo, lo cual hace que Rigby comience a decir que puede haraganear todo lo que quiera sin que Benson lo despida.</desc>
-</programme>
-
-<programme start="20260410225300 -0500" stop="20260410230700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Musculoso, Rigby, Mordecai y Fantasmano quieren conseguir una licencia de doble de riesgo para la fiesta de cumpleaños de Timmy.</desc>
-</programme>
-
-<programme start="20260410230700 -0500" stop="20260410231800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Mientras Skips sigue ayudando a todos con sus problemas relacionados con repuestos defectuosos, Mordecai y Rigby intentan imprimir algo, pero se encuentran con el error # 219. Le preguntan a Skips si puede repararlo, y cuando Skips dice que no y sale de la habitación deprimido (porque llamaron a otra persona para reparar la computadora y Skips no tiene idea de cómo funcionan), se dirige a una biblioteca para aprender cómo reparar computadoras. Luego de esto, regresa al parque y se entera de que el problema ahora se ha convertido en el error # 220.</desc>
-</programme>
-
-<programme start="20260410231800 -0500" stop="20260410233200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Mordecai quiere devolverle el suéter a Margarita.</desc>
-</programme>
-
-<programme start="20260410233200 -0500" stop="20260410234400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Mordecai y Rigby se cansan de las nuevas reglas que Benson impuso en la casa, como la que no les permite jugar videojuegos. Por eso, deciden buscar lugares para pasar la noche, pero no encuentran ninguno, hasta que conocen a un vagabundo que vive en una caja llena de basura, que a su vez es el portal para entrar a un mundo sin reglas.</desc>
-</programme>
-
-<programme start="20260410234400 -0500" stop="20260410235500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Un Show Más</title>
-<desc lang="es">Mordecai y Rigby anuncian que un camión de comida irá al parque a vender las mejores hamburguesas del mundo, llamadas "Ulti-Meatums". Justo cuando los dos se disponen a comprar sus hamburguesas, Benson les dice que no podrán comprar Ulti-Meatums hasta que no terminen todo su trabajo.</desc>
-</programme>
-
-<programme start="20260410235500 -0500" stop="20260411000700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">App de Mamá</sub-title>
-<desc lang="es">Con la esperanza de conocer finalmente la experiencia de tener una madre, los Osos utilizan una aplicación que llevará a una mamá directamente a su puerta.</desc>
-</programme>
-
-<programme start="20260411000700 -0500" stop="20260411002000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Pequeño Calamar</sub-title>
-<desc lang="es">Los Osos bebé construyen un submarino y exploran las profundidades de un acuario para poder reunir a un calamar perdido con su familia.</desc>
-</programme>
-
-<programme start="20260411002000 -0500" stop="20260411003200 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Viaje de Osos</sub-title>
-<desc lang="es">Para ayudar a recaudar dinero para salvar la tienda de Darrell, los Osos se apilan y ofrecen servicio de taxi a través de una aplicación para compartir vehículo.</desc>
-</programme>
-
-<programme start="20260411003200 -0500" stop="20260411004500 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">Lago Privado</sub-title>
-<desc lang="es">Cuando el lago de la zona está repleto de turistas, los Osos se divierten en el lago privado de Charlie.</desc>
-</programme>
-
-<programme start="20260411004500 -0500" stop="20260411005700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Escandalosos</title>
-<sub-title lang="es">El Parque</sub-title>
-<desc lang="es">Los Osos pasan un día en el parque. Pardo hace ejercicio, Panda intenta vender sus obras de arte y Polar entrena a unos niños.</desc>
-</programme>
-
-<programme start="20260411005700 -0500" stop="20260411010800 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La Poción</sub-title>
-<desc lang="es">Gumball y Darwin usan una poción mágica para encoger a Héctor.</desc>
-</programme>
-
-<programme start="20260411010800 -0500" stop="20260411012300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La Conciencia</sub-title>
-<desc lang="es">Gumball y Darwin intentan ser más ecológicos y, como consecuencia, la escuela termina infestada de enredaderas.</desc>
-</programme>
-
-<programme start="20260411012300 -0500" stop="20260411013500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El Hombre</sub-title>
-<desc lang="es">La abuela Jojo invitó a un novio a su cena de cumpleaños, pero a papá no le gusta nada y le prohíbe a la abuela que vuelva a ver a Louis jamás. Cuando descubre a los niños ayudando a la abuela Jojo a salir de casa a escondidas, papá reta a duelo a Louis para demostrar de una vez y para siempre quién es el hombre de la casa.</desc>
-</programme>
-
-<programme start="20260411013500 -0500" stop="20260411014700 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La Mudanza</sub-title>
-<desc lang="es">Gumball enfrenta a Clayton por su supuesta técnica de presión en siete puntos para hacer estallar el corazón, creyendo que es otra de sus fábulas. Darwin y Gumball intervienen para ayudar a Clayton a empezar a aceptar la verdad. Pero, cuando descubren que la técnica es tan efectiva como él aseguraba, lamentan que no fuera mentira.</desc>
-</programme>
-
-<programme start="20260411014700 -0500" stop="20260411020200 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">La Firma</sub-title>
-<desc lang="es">Se desata el caos cuando Papá trata de evitar que Abuela Jojo se case.</desc>
-</programme>
-
-<programme start="20260411020200 -0500" stop="20260411021300 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El Malentendido</sub-title>
-<desc lang="es">Gumball llega tarde para encontrarse con Penny en el centro comercial, pero una serie de malos entendidos en el camino lo retrasan todavía más.</desc>
-</programme>
-
-<programme start="20260411021300 -0500" stop="20260411022500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El increíble mundo de Gumball</title>
-<sub-title lang="es">El Autobús</sub-title>
-<desc lang="es">Secuestran el autobús escolar, pero puede que los secuestradores hayan sido secuestrados también.</desc>
-</programme>
-
-<programme start="20260411022500 -0500" stop="20260411023600 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Sadie Killer</sub-title>
-<desc lang="es">Steven y los Chicos Geniales arman una banda, pero les cuesta encontrar un sonido propio.</desc>
-</programme>
-
-<programme start="20260411023600 -0500" stop="20260411024800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">El Mismo Viejo Mundo</sub-title>
-<desc lang="es">Steven viaja alrededor del mundo.</desc>
-</programme>
-
-<programme start="20260411024800 -0500" stop="20260411030100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Pudo Haber Sido Genial</sub-title>
-<desc lang="es">Las Gemas viajan a la Luna.</desc>
-</programme>
-
-<programme start="20260411030100 -0500" stop="20260411031300 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe: Futuro</title>
-<sub-title lang="es">Juntos para Siempre</sub-title>
-<desc lang="es">Connie tiene una visión muy clara de su futuro, y Steven quiere asegurarse de ser parte de esa visión.</desc>
-</programme>
-
-<programme start="20260411031300 -0500" stop="20260411032400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Visión del Futuro</sub-title>
-<desc lang="es">Steven se entera de que Garnet puede ver el futuro y comienza a sentir curiosidad por los posibles peligros que lo acechan.</desc>
-</programme>
-
-<programme start="20260411032400 -0500" stop="20260411033800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Cartas de Amor</sub-title>
-<desc lang="es">Steven y Connie ayudan a Jamie el cartero con sus temas amorosos.</desc>
-</programme>
-
-<programme start="20260411033800 -0500" stop="20260411034900 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">Juntos Solos</sub-title>
-<desc lang="es">Steven organiza una fiesta para reunir a su familia.</desc>
-</programme>
-
-<programme start="20260411034900 -0500" stop="20260411040100 -0500" channel="CNLA_PAN.co">
-<title lang="es">Steven Universe</title>
-<sub-title lang="es">¿Eres mi papá?</sub-title>
-<desc lang="es">En Beach City está desapareciendo gente, y Steven intenta resolver el misterio.</desc>
-</programme>
-
-<programme start="20260411040100 -0500" stop="20260411041200 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">Guardería del Arroyo</sub-title>
-<desc lang="es">Craig y su hermana Jessica intentan administrar la guardería del Arroyo.</desc>
-</programme>
-
-<programme start="20260411041200 -0500" stop="20260411042500 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">No Necesito un Sombrero</sub-title>
-<desc lang="es">Craig decide deshacerse de su sombrero un día fresco, y se desata una batalla por conseguir calor corporal.</desc>
-</programme>
-
-<programme start="20260411042500 -0500" stop="20260411043600 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">La Leyenda de la Biblioteca</sub-title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260411043600 -0500" stop="20260411045000 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">El Desafío del Chef</sub-title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260411045000 -0500" stop="20260411050200 -0500" channel="CNLA_PAN.co">
-<title lang="es">El mundo de Craig</title>
-<sub-title lang="es">Bomba Fétida</sub-title>
-<desc lang="es">La explosión accidental de una bomba de olor causa que todos los niños evacúen el Arroyo, pero Craig toma la responsabilidad de rescatar a aquellos dejados atrás en el hedor.</desc>
-</programme>
-
-<programme start="20260411050200 -0500" stop="20260411052400 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">El Cerebro de la Familia</sub-title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260411052400 -0500" stop="20260411053700 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">¿Lanzamiento Perfecto?</sub-title>
-<desc lang="es"></desc>
-</programme>
-
-<programme start="20260411053700 -0500" stop="20260411054800 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Especial Episodio 200 Parte 1</sub-title>
-<desc lang="es">Cuando su mundo comienza a desaparecer, los Titanes deben confrontar a sus creadores.</desc>
-</programme>
-
-<programme start="20260411054800 -0500" stop="20260411060000 -0500" channel="CNLA_PAN.co">
-<title lang="es">Los Jóvenes Titanes en Acción</title>
-<sub-title lang="es">Especial Episodio 200 Parte 2</sub-title>
-<desc lang="es">Los Titanes descubren lo difícil que es producir dibujos animados cuando hacen uno sobre Michael y Aaron.</desc>
+<sub-title lang="es">Comedia, animación y superhéroes</sub-title>
+<desc lang="es">Continúa la diversión en TEEN TITANS GO! con cómicas aventuras totalmente nuevas que muestran cómo es realmente la vida de un superhéroes adolescente.</desc>
 </programme>
 
 </tv>
