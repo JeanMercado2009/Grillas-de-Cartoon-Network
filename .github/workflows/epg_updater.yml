@@ -1,0 +1,39 @@
+name: Actualizacion Diaria EPG Cartoon Network Panregional
+
+on:
+  schedule:
+    # 20:00 COT (UTC-5) = 01:00 UTC
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias y navegadores
+        run: |
+          pip install playwright pandas xlrd openpyxl
+          playwright install --with-deps chromium
+
+      - name: Ejecutar Extractor y Actualizador EPG
+        env:
+          TAPKIT_EMAIL: ${{ secrets.TAPKIT_EMAIL }}
+          TAPKIT_PASSWORD: ${{ secrets.TAPKIT_PASSWORD }}
+        run: |
+          python updater.py
+
+      - name: Subir cambios al repositorio
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add CNLA_EPG.xml
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update EPG Panregional: $(date +'%Y-%m-%d')" && git push)
