@@ -1,10 +1,9 @@
 import os
 import re
-import glob
 from datetime import datetime, timedelta, timezone
 import xml.etree.ElementTree as ET
 import pandas as pd
-from playwright.sync_api import sync_playwright
+import requests
 
 # -------------------------------------------------------------
 # CONFIGURACIÓN
@@ -15,58 +14,65 @@ CHANNEL_NAME = "Cartoon Network Panregional"
 RETENTION_DAYS = 15
 COT = timezone(timedelta(hours=-5))
 
+OAUTH_TOKEN_URL = "https://epg.tapkit.warnermedia.com/oauth/token"
+DAILY_SHOWS_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId=CNLA_PAN&format=xls"
+
 def download_panregional_xls():
     email = os.environ.get("TAPKIT_EMAIL")
     password = os.environ.get("TAPKIT_PASSWORD")
-    download_dir = os.path.abspath("downloads")
-    os.makedirs(download_dir, exist_ok=True)
+    
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "es"
+    })
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=True,
-            args=["--disable-blink-features=AutomationControlled", "--no-sandbox"]
+    # 1. Autenticación OAuth2 (Cliente: myclient)
+    auth_payload = {
+        "grant_type": "password",
+        "username": email,
+        "password": password
+    }
+    
+    auth_res = session.post(
+        OAUTH_TOKEN_URL,
+        data=auth_payload,
+        auth=("myclient", "")
+    )
+    
+    token = None
+    if auth_res.status_code == 200:
+        token = auth_res.json().get("access_token")
+    else:
+        # Fallback a login directo si el formato varía
+        login_res = session.post(
+            "https://epg.tapkit.warnermedia.com/api/auth/login",
+            json={"email": email, "password": password}
         )
-        context = browser.new_context(
-            accept_downloads=True,
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-        )
-        page = context.new_page()
+        if login_res.status_code == 200:
+            token = login_res.json().get("accessToken") or login_res.json().get("token")
 
-        # 1. Login
-        page.goto("https://epg.tapkit.warnermedia.com/login", wait_until="domcontentloaded")
-        page.wait_for_selector('input[type="email"], input[formcontrolname="email"], input[placeholder*="correo"]', timeout=45000)
+    if not token:
+        raise Exception(f"Fallo en la autenticacion. Codigo de estado: {auth_res.status_code}. Respuesta: {auth_res.text}")
 
-        email_input = page.locator('input[type="email"], input[formcontrolname="email"], input[placeholder*="correo"]').first
-        pass_input = page.locator('input[type="password"], input[formcontrolname="password"], input[placeholder*="contrase"]').first
+    # 2. Descarga del archivo XLS con el Bearer Token
+    download_headers = {
+        "Authorization": f"Bearer {token}",
+        "Referer": "https://epg.tapkit.warnermedia.com/epg/networks/2"
+    }
 
-        email_input.fill(email)
-        pass_input.fill(password)
+    xls_res = session.get(DAILY_SHOWS_URL, headers=download_headers)
+    xls_res.raise_for_status()
 
-        page.locator('button:has-text("Ingresar"), button[type="submit"]').first.click()
-        page.wait_for_url("**/epg/**", timeout=45000)
+    xls_path = "CNLA_PAN_latest.xls"
+    with open(xls_path, "wb") as f:
+        f.write(xls_res.content)
 
-        # 2. Navegar a Cartoon Network
-        page.goto("https://epg.tapkit.warnermedia.com/epg/networks/2", wait_until="domcontentloaded")
-        page.wait_for_selector("table.dailygridstable, .custom-sidebar", timeout=45000)
-
-        # 3. Localizar el botón exacto de Panregional
-        row = page.locator('tr:has-text("Cartoon Network Panregional")')
-        download_btn = row.locator('button.feed-button, td.cdk-column-download button, button:has(i.fa-file-alt)').first
-
-        with page.expect_download(timeout=60000) as download_info:
-            download_btn.click()
-
-        download = download_info.value
-        xls_path = os.path.join(download_dir, "CNLA_PAN_latest.xls")
-        download.save_as(xls_path)
-        browser.close()
-        return xls_path
+    print("[OK] Grilla diaria XLS descargada exitosamente vía API.")
+    return xls_path
 
 def sanitize_and_parse_xml(file_path):
-    """
-    Limpia texto plano suelto (como 'JUEVES', 'VIERNES') y etiquetas huérfanas
-    para evitar que ElementTree lance ParseError.
-    """
     if not os.path.exists(file_path):
         return ET.Element("tv", {"generator-info-name": "Guia de Programacion Cartoon Network Panregional"})
 
@@ -74,12 +80,10 @@ def sanitize_and_parse_xml(file_path):
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
 
-        # Eliminar texto suelto de días que no esté dentro de etiquetas XML
         cleaned_lines = []
         for line in content.splitlines():
             stripped = line.strip()
-            # Ignorar líneas de texto suelto de días
-            if stripped in ["JUEVES", "VIERNES", "SÁBADO", "SABADO", "DOMINGO", "LUNES", "MARTES", "MIÉRCOLES", "MIERCOLES"] or "PANREGIONAL" in stripped and not stripped.startswith("<"):
+            if stripped in ["JUEVES", "VIERNES", "SÁBADO", "SABADO", "DOMINGO", "LUNES", "MARTES", "MIÉRCOLES", "MIERCOLES"] or ("PANREGIONAL" in stripped and not stripped.startswith("<")):
                 continue
             cleaned_lines.append(line)
 
@@ -91,35 +95,23 @@ def sanitize_and_parse_xml(file_path):
 def parse_xmltv_date(date_str):
     if not date_str:
         return None
-    
-    # Corrige errores tipográficos como '202608069194000' (15 dígitos) recortando el exceso
     clean_str = re.sub(r"[^\d\s\+\-]", "", date_str.strip())
     match = re.match(r"^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})", clean_str)
-    
     if not match:
         return None
 
     year, month, day, hour, minute, second = map(int, match.groups())
-    
-    # Validar rangos de hora y minuto
-    hour = min(hour, 23)
-    minute = min(minute, 59)
-    second = min(second, 59)
-
-    dt = datetime(year, month, day, hour, minute, second)
-    return dt.replace(tzinfo=COT)
+    hour, minute, second = min(hour, 23), min(minute, 59), min(second, 59)
+    return datetime(year, month, day, hour, minute, second, tzinfo=COT)
 
 def format_xmltv_date(dt):
     return dt.strftime("%Y%m%d%H%M%S -0500")
 
 def update_epg_xml(xls_path):
-    # Cargar Excel descargado
     df = pd.read_excel(xls_path)
-
-    # 1. Cargar y sanitizar XML existente
     root = sanitize_and_parse_xml(XML_OUTPUT_FILE)
 
-    # Asegurar únicamente el canal CNLA_PAN.co
+    # Mantener únicamente el canal CNLA_PAN.co
     for ch in list(root.findall("channel")):
         if ch.attrib.get("id") != CHANNEL_ID:
             root.remove(ch)
@@ -129,7 +121,6 @@ def update_epg_xml(xls_path):
         disp = ET.SubElement(ch_node, "display-name")
         disp.text = CHANNEL_NAME
 
-    # 2. Parsear los programas del archivo XLS
     new_programmes = []
     total_rows = len(df)
 
@@ -138,7 +129,6 @@ def update_epg_xml(xls_path):
         date_raw = str(row.get("Schedule Date", "")).strip()
         time_raw = str(row.get("Title Start Time", "")).strip()
 
-        # Extraer fecha DD-MM-YYYY
         date_match = re.search(r"(\d{1,2})[-/](\d{1,2})[-/](\d{4})", date_raw)
         time_match = re.search(r"(\d{1,2}):(\d{2})", time_raw)
 
@@ -147,21 +137,18 @@ def update_epg_xml(xls_path):
 
         d, m, y = map(int, date_match.groups())
         hh, mm = map(int, time_match.groups())
-        start_dt = datetime(y, m, d, hh, mm, 0).replace(tzinfo=COT)
+        start_dt = datetime(y, m, d, hh, mm, 0, tzinfo=COT)
 
-        # Calcular hora de fin
         stop_dt = None
         if i + 1 < total_rows:
             next_row = df.iloc[i + 1]
-            next_date_raw = str(next_row.get("Schedule Date", "")).strip()
-            next_time_raw = str(next_row.get("Title Start Time", "")).strip()
-            next_d_match = re.search(r"(\d{1,2})[-/](\d{1,2})[-/](\d{4})", next_date_raw)
-            next_t_match = re.search(r"(\d{1,2}):(\d{2})", next_time_raw)
+            next_d_match = re.search(r"(\d{1,2})[-/](\d{1,2})[-/](\d{4})", str(next_row.get("Schedule Date", "")))
+            next_t_match = re.search(r"(\d{1,2}):(\d{2})", str(next_row.get("Title Start Time", "")))
 
             if next_d_match and next_t_match:
                 nd, nm, ny = map(int, next_d_match.groups())
                 nhh, nmm = map(int, next_t_match.groups())
-                next_dt = datetime(ny, nm, nd, nhh, nmm, 0).replace(tzinfo=COT)
+                next_dt = datetime(ny, nm, nd, nhh, nmm, 0, tzinfo=COT)
                 if next_dt > start_dt:
                     stop_dt = next_dt
 
@@ -187,13 +174,13 @@ def update_epg_xml(xls_path):
 
         new_programmes.append(prog)
 
-    # 3. Unir programas y evitar duplicados por hora de inicio
+    # Fusionar sin duplicados
     existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
             root.append(np)
 
-    # 4. Eliminar canales que no sean Panregional y purgar > 15 días
+    # Purgar eventos de más de 15 días y canales viejos
     cutoff_date = datetime.now(COT) - timedelta(days=RETENTION_DAYS)
     for p in list(root.findall("programme")):
         if p.attrib.get("channel") != CHANNEL_ID:
@@ -203,7 +190,7 @@ def update_epg_xml(xls_path):
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
-    # 5. Ordenar cronológicamente
+    # Ordenar cronológicamente
     sorted_progs = sorted(
         root.findall("programme"),
         key=lambda x: parse_xmltv_date(x.attrib.get("start", "")) or datetime.min.replace(tzinfo=COT)
@@ -214,11 +201,9 @@ def update_epg_xml(xls_path):
     for p in sorted_progs:
         root.append(p)
 
-    # 6. Guardar archivo XML formateado
     ET.indent(root, space="  ", level=0)
-    tree = ET.ElementTree(root)
-    tree.write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"[OK] {XML_OUTPUT_FILE} procesado correctamente sin errores.")
+    ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
+    print(f"[OK] {XML_OUTPUT_FILE} actualizado y guardado correctamente.")
 
 if __name__ == "__main__":
     xls = download_panregional_xls()
