@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 env:
-  ACTIONS_NODE20_RUNNER_ALLOW_FORCED: "true"
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
   update-epg:
