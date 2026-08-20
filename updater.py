@@ -1,5 +1,6 @@
 import os
 import re
+import json
 from datetime import datetime, timedelta, timezone
 import xml.etree.ElementTree as ET
 import pandas as pd
@@ -18,24 +19,38 @@ DAILY_SHOWS_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId=CNL
 def download_panregional_xls():
     token = os.environ.get("TAPKIT_TOKEN")
     if not token:
-        raise Exception("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJjZW9AYnNtYWdlbmN5LmNvbS5jbyIsInNjb3BlIjpbImFueSJdLCJsYXN0X25hbWUiOiJNZXJjYWRvIiwic3RhdGUiOjMsImlkIjoyMjIxNSwiZXhwIjoxNzg3MjY3NzI2LCJmaXJzdF9uYW1lIjoiSmVhbiBQaGlsaXBwIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTl9DT05URU5UIiwiUk9MRV9BTkNJTkUiLCJST0xFX0xPQ0FMQlJFQUtTIiwiUk9MRV9BRE1JTl9VU0VSUyIsIlJPTEVfVVNFUiIsIlJPTEVfQURNSU5fUFJFU1MiLCJST0xFX01JQ1JPU0VSVklDRVMiXSwianRpIjoiYjMyYmQ2NGQtNDRmYy00ZWZjLWIzODgtOGUyMWU5MzEzYWY3IiwiY2xpZW50X2lkIjoibXljbGllbnQifQ.ZCqK0sV6NTE0en5bP1BcoxZNyeg2Fsd1q9ZqcubpKhM")
+        raise Exception("Falta el secret TAPKIT_TOKEN en GitHub Actions.")
 
-    headers = {
+    token = token.strip()
+
+    # Construir objeto de sesión con token y cookies necesarias
+    session_data = {
+        "accessToken": token,
+        "firstName": "Jean Philipp",
+        "lastName": "Mercado",
+        "username": "ceo@bsmagency.com.co"
+    }
+
+    session = requests.Session()
+    session.headers.update({
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
         "Accept-Language": "es",
-        "Authorization": f"Bearer {token.strip()}",
+        "Authorization": f"Bearer {token}",
         "Referer": "https://epg.tapkit.warnermedia.com/epg/networks/2"
-    }
+    })
 
-    res = requests.get(DAILY_SHOWS_URL, headers=headers, timeout=60)
+    # Establecer la cookie de sesión que exige el backend
+    session.cookies.set("session_user", json.dumps(session_data))
+
+    res = session.get(DAILY_SHOWS_URL, timeout=60)
     res.raise_for_status()
 
     xls_path = "CNLA_PAN_latest.xls"
     with open(xls_path, "wb") as f:
         f.write(res.content)
 
-    print("[OK] XLS descargado exitosamente.")
+    print("[OK] XLS descargado exitosamente con autenticación completa.")
     return xls_path
 
 def sanitize_and_parse_xml(file_path):
@@ -84,7 +99,7 @@ def update_epg_xml(xls_path):
     df = load_excel_schedule(xls_path)
     root = sanitize_and_parse_xml(XML_OUTPUT_FILE)
 
-    # 1. Mantener canal CNLA_PAN.co
+    # Mantener únicamente canal CNLA_PAN.co
     for ch in list(root.findall("channel")):
         if ch.attrib.get("id") != CHANNEL_ID:
             root.remove(ch)
@@ -94,7 +109,6 @@ def update_epg_xml(xls_path):
         disp = ET.SubElement(ch_node, "display-name")
         disp.text = CHANNEL_NAME
 
-    # 2. Identificar columnas
     cols = {str(c).strip(): c for c in df.columns}
     col_date = cols.get("Schedule Date", df.columns[0])
     col_time = cols.get("Title Start Time", df.columns[1])
@@ -103,7 +117,6 @@ def update_epg_xml(xls_path):
     col_desc = cols.get("Title Synopsis", df.columns[4] if len(df.columns) > 4 else None)
     col_ep_desc = cols.get("Episode Synopsis", None)
 
-    # 3. Detectar fecha base del archivo
     first_date_raw = str(df.iloc[0].get(col_date, "")).strip()
     match_init = re.search(r"(\d{1,2})[-/](\d{1,2})[-/](\d{4})", first_date_raw)
     if not match_init:
@@ -111,7 +124,7 @@ def update_epg_xml(xls_path):
 
     d0, m0, y0 = map(int, match_init.groups())
     cycle_start = datetime(y0, m0, d0, 6, 0, 0, tzinfo=COT)
-    cycle_end = cycle_start + timedelta(days=1)  # 06:00 AM del día siguiente
+    cycle_end = cycle_start + timedelta(days=1)
 
     raw_events = []
     total_rows = len(df)
@@ -130,13 +143,10 @@ def update_epg_xml(xls_path):
         d, m, y = map(int, date_match.groups())
         hh, mm = map(int, time_match.groups())
 
-        # Si la hora es de madrugada (00:00 a 05:59) pero la fecha dice el mismo día base,
-        # en la grilla televisiva corresponde a la madrugada del día siguiente
         event_dt = datetime(y, m, d, hh, mm, 0, tzinfo=COT)
         if (d == d0 and m == m0 and y == y0) and hh < 6:
             event_dt += timedelta(days=1)
 
-        # Si excede el ciclo de 24h (a partir de las 06:00 AM siguientes), finaliza el día
         if event_dt >= cycle_end:
             break
 
@@ -156,10 +166,8 @@ def update_epg_xml(xls_path):
             "desc": desc_val
         })
 
-    # Ordenar eventos cronológicamente (06:00 AM -> 05:59 AM del día posterior)
     raw_events = sorted(raw_events, key=lambda x: x["start"])
 
-    # 4. Construir bloques <programme> con inicio y fin continuos
     new_programmes = []
     total_events = len(raw_events)
 
@@ -191,13 +199,11 @@ def update_epg_xml(xls_path):
 
         new_programmes.append(prog)
 
-    # 5. Fusionar programas nuevos evitando duplicados
     existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
             root.append(np)
 
-    # 6. Purgar eventos de más de 15 días
     cutoff_date = datetime.now(COT) - timedelta(days=RETENTION_DAYS)
     for p in list(root.findall("programme")):
         if p.attrib.get("channel") != CHANNEL_ID:
@@ -207,7 +213,6 @@ def update_epg_xml(xls_path):
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
-    # 7. Ordenar todo el XML cronológicamente
     sorted_progs = sorted(
         root.findall("programme"),
         key=lambda x: parse_xmltv_date(x.attrib.get("start", "")) or datetime.min.replace(tzinfo=COT)
@@ -218,10 +223,9 @@ def update_epg_xml(xls_path):
     for p in sorted_progs:
         root.append(p)
 
-    # 8. Guardar XML
     ET.indent(root, space="  ", level=0)
     ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"[OK] Ciclo de 24h ordenado correctamente ({len(new_programmes)} eventos del día). Total acumulado: {len(sorted_progs)}")
+    print(f"[OK] Proceso terminado. Total eventos en XML: {len(sorted_progs)}")
 
 if __name__ == "__main__":
     xls = download_panregional_xls()
