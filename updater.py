@@ -15,64 +15,59 @@ CHANNEL_NAME = "Cartoon Network Panregional"
 RETENTION_DAYS = 15
 COT = timezone(timedelta(hours=-5))
 
-OAUTH_URL = "https://epg.tapkit.warnermedia.com/oauth/token"
 DAILY_SHOWS_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId=CNLA_PAN&format=xls"
+REFRESH_URL = "https://epg.tapkit.warnermedia.com/oauth/token"
 
-def get_fresh_token_and_session(email, password):
+def obtain_valid_token():
+    access_token = os.environ.get("TAPKIT_TOKEN", "").strip()
+    refresh_token = os.environ.get("TAPKIT_REFRESH_TOKEN", "").strip()
+
+    if refresh_token:
+        try:
+            res = requests.post(
+                REFRESH_URL,
+                params={"grant_type": "refresh_token", "refresh_token": refresh_token},
+                auth=("myclient", ""),
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    "Accept": "application/json, text/plain, */*"
+                },
+                timeout=30
+            )
+            if res.status_code == 200:
+                new_token = res.json().get("access_token")
+                if new_token:
+                    print("[OK] Token renovado exitosamente vía OAuth2 Refresh.")
+                    return new_token
+        except Exception as e:
+            print(f"[INFO] No se pudo refrescar token, usando TAPKIT_TOKEN existente: {e}")
+
+    if access_token:
+        return access_token
+
+    raise Exception("No se encontró ningún token válido en los Secrets.")
+
+def download_panregional_xls():
+    token = obtain_valid_token()
+
     session = requests.Session()
     session.headers.update({
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "es"
-    })
-
-    # 1. Petición OAuth2 oficial con cliente 'myclient'
-    payload = {
-        "grant_type": "password",
-        "username": email,
-        "password": password
-    }
-    
-    res = session.post(OAUTH_URL, data=payload, auth=("myclient", ""))
-    
-    token = None
-    if res.status_code == 200:
-        token = res.json().get("access_token")
-    else:
-        # Intento vía endpoint JSON de autenticación
-        login_res = session.post(
-            "https://epg.tapkit.warnermedia.com/api/auth/login",
-            json={"email": email, "password": password}
-        )
-        if login_res.status_code == 200:
-            data = login_res.json()
-            token = data.get("accessToken") or data.get("token") or data.get("access_token")
-
-    if not token:
-        raise Exception(f"Fallo en la autenticación. Código HTTP: {res.status_code} | Respuesta: {res.text}")
-
-    # Configurar el Bearer Token y la cookie de sesión para las descargas
-    session.headers.update({
+        "Accept-Language": "es",
         "Authorization": f"Bearer {token}",
         "Referer": "https://epg.tapkit.warnermedia.com/epg/networks/2"
     })
-    
-    session_data = {
+
+    session_user_data = {
         "accessToken": token,
-        "username": email
+        "username": "ceo@bsmagency.com.co",
+        "firstName": "Jean Philipp",
+        "lastName": "Mercado",
+        "id": 22215
     }
-    session.cookies.set("session_user", json.dumps(session_data))
-    return session
+    session.cookies.set("session_user", json.dumps(session_user_data))
 
-def download_panregional_xls():
-    email = os.environ.get("TAPKIT_EMAIL")
-    password = os.environ.get("TAPKIT_PASSWORD")
-
-    if not email or not password:
-        raise Exception("Faltan las variables TAPKIT_EMAIL o TAPKIT_PASSWORD en GitHub Secrets.")
-
-    session = get_fresh_token_and_session(email, password)
-    
     res = session.get(DAILY_SHOWS_URL, timeout=60)
     res.raise_for_status()
 
@@ -80,7 +75,7 @@ def download_panregional_xls():
     with open(xls_path, "wb") as f:
         f.write(res.content)
 
-    print("[OK] Grilla diaria descargada con nuevo token de sesión.")
+    print("[OK] XLS descargado exitosamente.")
     return xls_path
 
 def sanitize_and_parse_xml(file_path):
@@ -228,7 +223,7 @@ def update_epg_xml(xls_path):
 
         new_programmes.append(prog)
 
-# Fusionar programas evitando duplicados
+    # Fusionar programas nuevos evitando duplicados
     existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
@@ -244,7 +239,7 @@ def update_epg_xml(xls_path):
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
-    # Ordenar todo cronológicamente
+    # Ordenar todo el XML cronológicamente
     sorted_progs = sorted(
         root.findall("programme"),
         key=lambda x: parse_xmltv_date(x.attrib.get("start", "")) or datetime.min.replace(tzinfo=COT)
@@ -255,10 +250,9 @@ def update_epg_xml(xls_path):
     for p in sorted_progs:
         root.append(p)
 
-    # Guardar archivo formateado al final
     ET.indent(root, space="  ", level=0)
     ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"[OK] Proceso terminado. Total eventos en XML: {len(sorted_progs)}")
+    print(f"[OK] Ciclo de 24h procesado. Eventos agregados hoy: {len(new_programmes)}. Total acumulado: {len(sorted_progs)}")
 
 if __name__ == "__main__":
     xls = download_panregional_xls()
