@@ -21,25 +21,38 @@ def download_panregional_xls():
     os.makedirs(download_dir, exist_ok=True)
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        context = browser.new_context(accept_downloads=True)
+        browser = p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"]
+        )
+        context = browser.new_context(
+            accept_downloads=True,
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        )
         page = context.new_page()
 
         # 1. Login
-        page.goto("https://epg.tapkit.warnermedia.com/login", wait_until="networkidle")
-        page.fill('input[type="email"], input[formcontrolname="email"]', email)
-        page.fill('input[type="password"], input[formcontrolname="password"]', password)
-        page.click('button:has-text("Ingresar")')
-        page.wait_for_url("**/epg/**", timeout=30000)
+        page.goto("https://epg.tapkit.warnermedia.com/login", wait_until="domcontentloaded")
+        page.wait_for_selector('input[placeholder*="correo"], input[formcontrolname="email"], input[type="email"]', timeout=45000)
 
-        # 2. Navegar a Cartoon Network (ID Red 2)
-        page.goto("https://epg.tapkit.warnermedia.com/epg/networks/2", wait_until="networkidle")
+        email_input = page.locator('input[placeholder*="correo"], input[formcontrolname="email"], input[type="email"]').first
+        pass_input = page.locator('input[placeholder*="contrase"], input[formcontrolname="password"], input[type="password"]').first
 
-        # 3. Descargar fila Cartoon Network Panregional HD
+        email_input.fill(email)
+        pass_input.fill(password)
+
+        page.locator('button:has-text("Ingresar"), button[type="submit"]').first.click()
+        page.wait_for_url("**/epg/**", timeout=45000)
+
+        # 2. Ir a Cartoon Network
+        page.goto("https://epg.tapkit.warnermedia.com/epg/networks/2", wait_until="domcontentloaded")
+        page.wait_for_selector("table.dailygridstable, app-network-resources", timeout=45000)
+
+        # 3. Descargar fila Panregional HD
         row = page.locator('tr:has-text("Cartoon Network Panregional")')
-        with page.expect_download() as download_info:
-            row.locator('button.feed-button, button:has(i.fa-file-alt)').click()
-        
+        with page.expect_download(timeout=60000) as download_info:
+            row.locator("button").first.click()
+
         download = download_info.value
         xls_path = os.path.join(download_dir, "CNLA_PAN_latest.xls")
         download.save_as(xls_path)
@@ -62,7 +75,8 @@ def format_xmltv_date(dt):
 
 def update_epg_xml(xls_path):
     df = pd.read_excel(xls_path)
-    
+
+    # 1. Cargar el archivo CNLA_EPG.xml existente
     if os.path.exists(XML_OUTPUT_FILE):
         try:
             tree = ET.parse(XML_OUTPUT_FILE)
@@ -72,17 +86,23 @@ def update_epg_xml(xls_path):
     else:
         root = ET.Element("tv", {"generator-info-name": "EPG Auto Updater"})
 
+    # Asegurar el nodo del canal Panregional y limpiar el nodo de México si existe
+    for ch in list(root.findall("channel")):
+        if ch.attrib.get("id") != CHANNEL_ID:
+            root.remove(ch)
+
     if not any(ch.attrib.get("id") == CHANNEL_ID for ch in root.findall("channel")):
         ch_node = ET.SubElement(root, "channel", {"id": CHANNEL_ID})
         disp = ET.SubElement(ch_node, "display-name")
         disp.text = CHANNEL_NAME
 
+    # 2. Procesar programas desde el Excel descargado
     new_programmes = []
     for i in range(len(df)):
         row = df.iloc[i]
-        date_str = str(row['Schedule Date']).strip()
-        time_str = str(row['Title Start Time']).strip()
-        
+        date_str = str(row["Schedule Date"]).strip()
+        time_str = str(row["Title Start Time"]).strip()
+
         try:
             start_dt = datetime.strptime(f"{date_str} {time_str}", "%d-%m-%Y %H:%M").replace(tzinfo=COT)
         except Exception:
@@ -104,23 +124,25 @@ def update_epg_xml(xls_path):
         })
 
         title = ET.SubElement(prog, "title", {"lang": "es"})
-        title.text = str(row.get('Title Name', ''))
+        title.text = str(row.get("Title Name", ""))
 
-        if pd.notna(row.get('Episode Name')):
+        if pd.notna(row.get("Episode Name")):
             sub_title = ET.SubElement(prog, "sub-title", {"lang": "es"})
-            sub_title.text = str(row['Episode Name'])
+            sub_title.text = str(row["Episode Name"])
 
-        if pd.notna(row.get('Title Synopsis')):
+        if pd.notna(row.get("Title Synopsis")):
             desc = ET.SubElement(prog, "desc", {"lang": "es"})
-            desc.text = str(row['Title Synopsis'])
+            desc.text = str(row["Title Synopsis"])
 
         new_programmes.append(prog)
 
+    # 3. Unir evitando duplicados
     existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
             root.append(np)
 
+    # 4. Purgar eventos antiguos (> 15 días) y descartar programas no panregionales
     cutoff_date = datetime.now(COT) - timedelta(days=RETENTION_DAYS)
     for p in list(root.findall("programme")):
         if p.attrib.get("channel") != CHANNEL_ID:
@@ -130,15 +152,17 @@ def update_epg_xml(xls_path):
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
+    # Ordenar eventos cronológicamente
     programmes = sorted(root.findall("programme"), key=lambda x: x.attrib.get("start", ""))
     for p in list(root.findall("programme")):
         root.remove(p)
     for p in programmes:
         root.append(p)
 
+    # 5. Guardar en CNLA_EPG.xml
     ET.indent(root, space="  ", level=0)
     ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"[OK] XML actualizado con éxito.")
+    print(f"[OK] {XML_OUTPUT_FILE} actualizado exitosamente.")
 
 if __name__ == "__main__":
     xls = download_panregional_xls()
