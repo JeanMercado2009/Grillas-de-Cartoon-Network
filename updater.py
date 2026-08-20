@@ -13,63 +13,29 @@ CHANNEL_ID = "CNLA_PAN.co"
 CHANNEL_NAME = "Cartoon Network Panregional"
 RETENTION_DAYS = 15
 COT = timezone(timedelta(hours=-5))
-
-OAUTH_TOKEN_URL = "https://epg.tapkit.warnermedia.com/oauth/token"
 DAILY_SHOWS_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId=CNLA_PAN&format=xls"
 
 def download_panregional_xls():
-    email = os.environ.get("TAPKIT_EMAIL")
-    password = os.environ.get("TAPKIT_PASSWORD")
-    
-    session = requests.Session()
-    session.headers.update({
+    token = os.environ.get("TAPKIT_TOKEN")
+    if not token:
+        raise Exception("Falta el secret TAPKIT_TOKEN en GitHub Actions.")
+
+    headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "es"
-    })
-
-    # 1. Autenticación OAuth2 (Cliente: myclient)
-    auth_payload = {
-        "grant_type": "password",
-        "username": email,
-        "password": password
-    }
-    
-    auth_res = session.post(
-        OAUTH_TOKEN_URL,
-        data=auth_payload,
-        auth=("myclient", "")
-    )
-    
-    token = None
-    if auth_res.status_code == 200:
-        token = auth_res.json().get("access_token")
-    else:
-        # Fallback a login directo si el formato varía
-        login_res = session.post(
-            "https://epg.tapkit.warnermedia.com/api/auth/login",
-            json={"email": email, "password": password}
-        )
-        if login_res.status_code == 200:
-            token = login_res.json().get("accessToken") or login_res.json().get("token")
-
-    if not token:
-        raise Exception(f"Fallo en la autenticacion. Codigo de estado: {auth_res.status_code}. Respuesta: {auth_res.text}")
-
-    # 2. Descarga del archivo XLS con el Bearer Token
-    download_headers = {
-        "Authorization": f"Bearer {token}",
+        "Accept-Language": "es",
+        "Authorization": f"Bearer {token.strip()}",
         "Referer": "https://epg.tapkit.warnermedia.com/epg/networks/2"
     }
 
-    xls_res = session.get(DAILY_SHOWS_URL, headers=download_headers)
-    xls_res.raise_for_status()
+    res = requests.get(DAILY_SHOWS_URL, headers=headers, timeout=60)
+    res.raise_for_status()
 
     xls_path = "CNLA_PAN_latest.xls"
     with open(xls_path, "wb") as f:
-        f.write(xls_res.content)
+        f.write(res.content)
 
-    print("[OK] Grilla diaria XLS descargada exitosamente vía API.")
+    print("[OK] XLS descargado directamente con éxito.")
     return xls_path
 
 def sanitize_and_parse_xml(file_path):
@@ -111,7 +77,6 @@ def update_epg_xml(xls_path):
     df = pd.read_excel(xls_path)
     root = sanitize_and_parse_xml(XML_OUTPUT_FILE)
 
-    # Mantener únicamente el canal CNLA_PAN.co
     for ch in list(root.findall("channel")):
         if ch.attrib.get("id") != CHANNEL_ID:
             root.remove(ch)
@@ -174,13 +139,11 @@ def update_epg_xml(xls_path):
 
         new_programmes.append(prog)
 
-    # Fusionar sin duplicados
     existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
             root.append(np)
 
-    # Purgar eventos de más de 15 días y canales viejos
     cutoff_date = datetime.now(COT) - timedelta(days=RETENTION_DAYS)
     for p in list(root.findall("programme")):
         if p.attrib.get("channel") != CHANNEL_ID:
@@ -190,7 +153,6 @@ def update_epg_xml(xls_path):
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
-    # Ordenar cronológicamente
     sorted_progs = sorted(
         root.findall("programme"),
         key=lambda x: parse_xmltv_date(x.attrib.get("start", "")) or datetime.min.replace(tzinfo=COT)
@@ -203,7 +165,7 @@ def update_epg_xml(xls_path):
 
     ET.indent(root, space="  ", level=0)
     ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"[OK] {XML_OUTPUT_FILE} actualizado y guardado correctamente.")
+    print(f"[OK] {XML_OUTPUT_FILE} actualizado correctamente.")
 
 if __name__ == "__main__":
     xls = download_panregional_xls()
