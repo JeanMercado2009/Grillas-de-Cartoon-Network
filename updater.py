@@ -74,7 +74,6 @@ def format_xmltv_date(dt):
     return dt.strftime("%Y%m%d%H%M%S -0500")
 
 def load_excel_schedule(file_path):
-    # Cargar saltando la fila 0 (Timezone: -05:00) para usar la fila 1 como encabezados reales
     try:
         df = pd.read_excel(file_path, header=1, sheet_name=0)
     except Exception:
@@ -85,7 +84,7 @@ def update_epg_xml(xls_path):
     df = load_excel_schedule(xls_path)
     root = sanitize_and_parse_xml(XML_OUTPUT_FILE)
 
-    # 1. Asegurar nodo del canal CNLA_PAN.co
+    # 1. Mantener únicamente el canal CNLA_PAN.co
     for ch in list(root.findall("channel")):
         if ch.attrib.get("id") != CHANNEL_ID:
             root.remove(ch)
@@ -95,7 +94,7 @@ def update_epg_xml(xls_path):
         disp = ET.SubElement(ch_node, "display-name")
         disp.text = CHANNEL_NAME
 
-    # 2. Identificar columnas clave del archivo de Tapkit
+    # 2. Identificar columnas
     cols = {str(c).strip(): c for c in df.columns}
     col_date = cols.get("Schedule Date", df.columns[0])
     col_time = cols.get("Title Start Time", df.columns[1])
@@ -103,6 +102,17 @@ def update_epg_xml(xls_path):
     col_ep = cols.get("Episode Name", df.columns[3] if len(df.columns) > 3 else None)
     col_desc = cols.get("Title Synopsis", df.columns[4] if len(df.columns) > 4 else None)
     col_ep_desc = cols.get("Episode Synopsis", None)
+
+    # 3. Detectar la fecha inicial del ciclo televisivo (06:00 AM)
+    first_date_raw = str(df.iloc[0].get(col_date, "")).strip()
+    match_init = re.search(r"(\d{1,2})[-/](\d{1,2})[-/](\d{4})", first_date_raw)
+    
+    if not match_init:
+        raise Exception("No se pudo detectar la fecha inicial del archivo.")
+
+    d0, m0, y0 = map(int, match_init.groups())
+    cycle_start = datetime(y0, m0, d0, 6, 0, 0, tzinfo=COT)
+    cycle_end = cycle_start + timedelta(days=1)  # 06:00:00 del día siguiente
 
     new_programmes = []
     total_rows = len(df)
@@ -122,7 +132,11 @@ def update_epg_xml(xls_path):
         hh, mm = map(int, time_match.groups())
         start_dt = datetime(y, m, d, hh, mm, 0, tzinfo=COT)
 
-        # Calcular hora de finalización con el siguiente bloque
+        # CORTE ESTRICTO: Si el programa empieza a las 06:00 AM del día siguiente o después, se corta el bucle
+        if start_dt >= cycle_end:
+            break
+
+        # Calcular hora de fin
         stop_dt = None
         if i + 1 < total_rows:
             next_row = df.iloc[i + 1]
@@ -136,8 +150,9 @@ def update_epg_xml(xls_path):
                 if next_dt > start_dt:
                     stop_dt = next_dt
 
-        if not stop_dt:
-            stop_dt = start_dt + timedelta(minutes=15)
+        # Si es el último show del día (ej. 05:47), termina a las 06:00 AM exactas
+        if not stop_dt or stop_dt > cycle_end:
+            stop_dt = cycle_end
 
         prog = ET.Element("programme", {
             "start": format_xmltv_date(start_dt),
@@ -149,13 +164,13 @@ def update_epg_xml(xls_path):
         title = ET.SubElement(prog, "title", {"lang": "es"})
         title.text = title_val
 
-        # Subtítulo (Nombre de episodio)
+        # Subtítulo (Episodio)
         ep_val = str(row.get(col_ep, "")).strip() if col_ep and pd.notna(row.get(col_ep)) else ""
         if ep_val and ep_val.lower() != title_val.lower():
             sub_title = ET.SubElement(prog, "sub-title", {"lang": "es"})
             sub_title.text = ep_val
 
-        # Descripción / Sinopsis
+        # Sinopsis
         desc_val = ""
         if col_ep_desc and pd.notna(row.get(col_ep_desc)) and str(row.get(col_ep_desc)).strip():
             desc_val = str(row.get(col_ep_desc)).strip()
@@ -168,13 +183,13 @@ def update_epg_xml(xls_path):
 
         new_programmes.append(prog)
 
-    # 3. Fusionar programas sin duplicar hora de inicio
+    # 4. Fusionar evitando duplicados
     existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
             root.append(np)
 
-    # 4. Purgar eventos con más de 15 días de antigüedad
+    # 5. Purgar eventos de más de 15 días
     cutoff_date = datetime.now(COT) - timedelta(days=RETENTION_DAYS)
     for p in list(root.findall("programme")):
         if p.attrib.get("channel") != CHANNEL_ID:
@@ -184,7 +199,7 @@ def update_epg_xml(xls_path):
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
-    # 5. Ordenar cronológicamente
+    # 6. Ordenar cronológicamente
     sorted_progs = sorted(
         root.findall("programme"),
         key=lambda x: parse_xmltv_date(x.attrib.get("start", "")) or datetime.min.replace(tzinfo=COT)
@@ -195,10 +210,9 @@ def update_epg_xml(xls_path):
     for p in sorted_progs:
         root.append(p)
 
-    # 6. Guardar XML
     ET.indent(root, space="  ", level=0)
     ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"[OK] {len(new_programmes)} filas procesadas. {XML_OUTPUT_FILE} generado con {len(sorted_progs)} eventos totales.")
+    print(f"[OK] Generado el ciclo de 24h ({len(new_programmes)} programas agregados). Total en XML: {len(sorted_progs)}")
 
 if __name__ == "__main__":
     xls = download_panregional_xls()
