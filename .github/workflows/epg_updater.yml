@@ -9,6 +9,9 @@ on:
 permissions:
   contents: write
 
+env:
+  ACTIONS_NODE20_RUNNER_ALLOW_FORCED: "true"
+
 jobs:
   update-epg:
     runs-on: ubuntu-latest
@@ -24,9 +27,9 @@ jobs:
 
       - name: Instalar dependencias
         run: |
-          pip install requests pandas xlrd openpyxl
+          pip install requests pandas xlrd openpyxl beautifulsoup4 html5lib
 
-      - name: Ejecutar Descarga y Actualización
+      - name: Descargar y Procesar Grilla
         env:
           TAPKIT_TOKEN: ${{ secrets.TAPKIT_TOKEN }}
         run: |
@@ -38,7 +41,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add CNLA_EPG.xml
           if git diff --staged --quiet; then
-            echo "No hay cambios nuevos."
+            echo "No hay cambios nuevos en la grilla."
           else
             git commit -m "Auto-update EPG Panregional: $(date +'%Y-%m-%d %H:%M')"
             git push
