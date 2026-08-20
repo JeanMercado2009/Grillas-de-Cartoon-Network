@@ -14,35 +14,65 @@ CHANNEL_ID = "CNLA_PAN.co"
 CHANNEL_NAME = "Cartoon Network Panregional"
 RETENTION_DAYS = 15
 COT = timezone(timedelta(hours=-5))
+
+OAUTH_URL = "https://epg.tapkit.warnermedia.com/oauth/token"
 DAILY_SHOWS_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId=CNLA_PAN&format=xls"
 
-def download_panregional_xls():
-    token = os.environ.get("TAPKIT_TOKEN")
-    if not token:
-        raise Exception("Falta el secret TAPKIT_TOKEN en GitHub Actions.")
-
-    token = token.strip()
-
-    # Construir objeto de sesión con token y cookies necesarias
-    session_data = {
-        "accessToken": token,
-        "firstName": "Jean Philipp",
-        "lastName": "Mercado",
-        "username": "ceo@bsmagency.com.co"
-    }
-
+def get_fresh_token_and_session(email, password):
     session = requests.Session()
     session.headers.update({
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
-        "Accept-Language": "es",
+        "Accept-Language": "es"
+    })
+
+    # 1. Petición OAuth2 oficial con cliente 'myclient'
+    payload = {
+        "grant_type": "password",
+        "username": email,
+        "password": password
+    }
+    
+    res = session.post(OAUTH_URL, data=payload, auth=("myclient", ""))
+    
+    token = None
+    if res.status_code == 200:
+        token = res.json().get("access_token")
+    else:
+        # Intento vía endpoint JSON de autenticación
+        login_res = session.post(
+            "https://epg.tapkit.warnermedia.com/api/auth/login",
+            json={"email": email, "password": password}
+        )
+        if login_res.status_code == 200:
+            data = login_res.json()
+            token = data.get("accessToken") or data.get("token") or data.get("access_token")
+
+    if not token:
+        raise Exception(f"Fallo en la autenticación. Código HTTP: {res.status_code} | Respuesta: {res.text}")
+
+    # Configurar el Bearer Token y la cookie de sesión para las descargas
+    session.headers.update({
         "Authorization": f"Bearer {token}",
         "Referer": "https://epg.tapkit.warnermedia.com/epg/networks/2"
     })
-
-    # Establecer la cookie de sesión que exige el backend
+    
+    session_data = {
+        "accessToken": token,
+        "username": email
+    }
     session.cookies.set("session_user", json.dumps(session_data))
+    return session
 
+def download_panregional_xls():
+    email = os.environ.get("TAPKIT_EMAIL")
+    password = os.environ.get("TAPKIT_PASSWORD")
+
+    if not email or not password:
+        raise Exception("Faltan las variables TAPKIT_EMAIL o TAPKIT_PASSWORD en GitHub Secrets.")
+
+    session = get_fresh_token_and_session(email, password)
+    
     res = session.get(DAILY_SHOWS_URL, timeout=60)
     res.raise_for_status()
 
@@ -50,7 +80,7 @@ def download_panregional_xls():
     with open(xls_path, "wb") as f:
         f.write(res.content)
 
-    print("[OK] XLS descargado exitosamente con autenticación completa.")
+    print("[OK] Grilla diaria descargada con nuevo token de sesión.")
     return xls_path
 
 def sanitize_and_parse_xml(file_path):
@@ -99,7 +129,6 @@ def update_epg_xml(xls_path):
     df = load_excel_schedule(xls_path)
     root = sanitize_and_parse_xml(XML_OUTPUT_FILE)
 
-    # Mantener únicamente canal CNLA_PAN.co
     for ch in list(root.findall("channel")):
         if ch.attrib.get("id") != CHANNEL_ID:
             root.remove(ch)
@@ -199,11 +228,13 @@ def update_epg_xml(xls_path):
 
         new_programmes.append(prog)
 
+# Fusionar programas evitando duplicados
     existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
             root.append(np)
 
+    # Purgar eventos de más de 15 días
     cutoff_date = datetime.now(COT) - timedelta(days=RETENTION_DAYS)
     for p in list(root.findall("programme")):
         if p.attrib.get("channel") != CHANNEL_ID:
@@ -213,6 +244,7 @@ def update_epg_xml(xls_path):
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
+    # Ordenar todo cronológicamente
     sorted_progs = sorted(
         root.findall("programme"),
         key=lambda x: parse_xmltv_date(x.attrib.get("start", "")) or datetime.min.replace(tzinfo=COT)
@@ -223,6 +255,7 @@ def update_epg_xml(xls_path):
     for p in sorted_progs:
         root.append(p)
 
+    # Guardar archivo formateado al final
     ET.indent(root, space="  ", level=0)
     ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
     print(f"[OK] Proceso terminado. Total eventos en XML: {len(sorted_progs)}")
