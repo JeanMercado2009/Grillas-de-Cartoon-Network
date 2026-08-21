@@ -1,7 +1,6 @@
 import os
 import re
 import json
-import base64
 from datetime import datetime, timedelta, timezone
 import xml.etree.ElementTree as ET
 import pandas as pd
@@ -16,54 +15,46 @@ CHANNEL_NAME = "Cartoon Network Panregional"
 RETENTION_DAYS = 15
 COT = timezone(timedelta(hours=-5))
 
+AUTH_URL = "https://epg.tapkit.warnermedia.com/api/security/oauth/token"
 DAILY_SHOWS_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId=CNLA_PAN&format=xls"
-REFRESH_URL = "https://epg.tapkit.warnermedia.com/oauth/token"
 
-def obtain_valid_token():
-    access_token = os.environ.get("TAPKIT_TOKEN", "").strip()
-    refresh_token = os.environ.get("TAPKIT_REFRESH_TOKEN", "").strip()
+COMMON_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "es",
+    "Origin": "https://epg.tapkit.warnermedia.com",
+    "Referer": "https://epg.tapkit.warnermedia.com/login"
+}
 
-    # Intentar renovación automática con el refresh_token
-    if refresh_token:
-        try:
-            # Autenticación HTTP Basic estándar para cliente 'myclient' sin password
-            auth_header = "Basic " + base64.b64encode(b"myclient:").decode("utf-8")
-            
-            headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Accept": "application/json, text/plain, */*",
-                "Content-Type": "application/x-www-form-urlencoded",
-                "Authorization": auth_header,
-                "Origin": "https://epg.tapkit.warnermedia.com",
-                "Referer": "https://epg.tapkit.warnermedia.com/"
-            }
-            
-            body = {
-                "grant_type": "refresh_token",
-                "refresh_token": refresh_token
-            }
+def login_and_get_token():
+    email = os.environ.get("TAPKIT_EMAIL", "").strip()
+    password = os.environ.get("TAPKIT_PASSWORD", "").strip()
 
-            res = requests.post(REFRESH_URL, data=body, headers=headers, timeout=30)
-            
-            if res.status_code == 200:
-                data = res.json()
-                new_token = data.get("access_token")
-                if new_token:
-                    print("[OK] Token renovado automáticamente con éxito.")
-                    return new_token
-            else:
-                print(f"[AVISO] Endpoint OAuth devolvió estado {res.status_code}: {res.text}")
-        except Exception as e:
-            print(f"[AVISO] Excepción al renovar token: {e}")
+    if not email or not password:
+        raise Exception("Faltan TAPKIT_EMAIL o TAPKIT_PASSWORD en los Secrets de GitHub.")
 
-    # Si no se pudo renovar, probar con el access_token configurado
-    if access_token:
-        return access_token
+    payload = {
+        "grant_type": "password",
+        "scope": "any",
+        "username": email,
+        "password": password
+    }
 
-    raise Exception("No se encontró ningún token utilizable en los Secrets.")
+    res = requests.post(AUTH_URL, data=payload, headers=COMMON_HEADERS, timeout=30)
+    
+    if res.status_code != 200:
+        raise Exception(f"Error en login. Código HTTP: {res.status_code} | Respuesta: {res.text}")
+
+    data = res.json()
+    token = data.get("access_token")
+    if not token:
+        raise Exception(f"No se encontró 'access_token' en la respuesta: {data}")
+
+    print("[OK] Sesión iniciada y token obtenido exitosamente.")
+    return token
 
 def download_panregional_xls():
-    token = obtain_valid_token()
+    token = login_and_get_token()
 
     session = requests.Session()
     session.headers.update({
