@@ -31,8 +31,8 @@ jobs:
 
       - name: Descargar y Procesar Grilla
         env:
-          TAPKIT_TOKEN: ${{ secrets.TAPKIT_TOKEN }}
-          TAPKIT_REFRESH_TOKEN: ${{ secrets.TAPKIT_REFRESH_TOKEN }}
+          TAPKIT_EMAIL: ${{ secrets.TAPKIT_EMAIL }}
+          TAPKIT_PASSWORD: ${{ secrets.TAPKIT_PASSWORD }}
         run: |
           python updater.py
 
