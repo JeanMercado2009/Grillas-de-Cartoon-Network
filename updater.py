@@ -7,16 +7,32 @@ import pandas as pd
 import requests
 
 # -------------------------------------------------------------
-# CONFIGURACIÓN
+# CONFIGURACIÓN GENERAL Y CANALES
 # -------------------------------------------------------------
 XML_OUTPUT_FILE = "CNLA_EPG.xml"
-CHANNEL_ID = "CNLA_PAN.co"
-CHANNEL_NAME = "Cartoon Network Panregional"
 RETENTION_DAYS = 15
-COT = timezone(timedelta(hours=-5))
 
 AUTH_URL = "https://epg.tapkit.warnermedia.com/api/security/oauth/token"
-DAILY_SHOWS_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId=CNLA_PAN&format=xls"
+BASE_DAILY_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId={feed_id}&format=xls"
+
+FEEDS_CONFIG = [
+    {
+        "feed_id": "CNLA_PAN",
+        "channel_id": "CNLA_PAN.co",
+        "channel_name": "Cartoon Network Panregional",
+        "lang": "es",
+        "tz": timezone(timedelta(hours=-5)),
+        "tz_str": "-0500"
+    },
+    {
+        "feed_id": "CNLA_BR",
+        "channel_id": "CNLA_BR.br",
+        "channel_name": "Cartoon Network Brasil",
+        "lang": "pt",
+        "tz": timezone(timedelta(hours=-3)),
+        "tz_str": "-0300"
+    }
+]
 
 COMMON_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -41,7 +57,6 @@ def login_and_get_token():
     }
 
     res = requests.post(AUTH_URL, data=payload, headers=COMMON_HEADERS, timeout=30)
-    
     if res.status_code != 200:
         raise Exception(f"Error en login. Código HTTP: {res.status_code} | Respuesta: {res.text}")
 
@@ -53,9 +68,7 @@ def login_and_get_token():
     print("[OK] Sesión iniciada y token obtenido exitosamente.")
     return token
 
-def download_panregional_xls():
-    token = login_and_get_token()
-
+def download_feed_xls(token, feed_id):
     session = requests.Session()
     session.headers.update({
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -74,19 +87,20 @@ def download_panregional_xls():
     }
     session.cookies.set("session_user", json.dumps(session_user_data))
 
-    res = session.get(DAILY_SHOWS_URL, timeout=60)
+    url = BASE_DAILY_URL.format(feed_id=feed_id)
+    res = session.get(url, timeout=60)
     res.raise_for_status()
 
-    xls_path = "CNLA_PAN_latest.xls"
+    xls_path = f"{feed_id}_latest.xls"
     with open(xls_path, "wb") as f:
         f.write(res.content)
 
-    print("[OK] XLS descargado exitosamente.")
+    print(f"[OK] XLS descargado exitosamente para {feed_id}.")
     return xls_path
 
 def sanitize_and_parse_xml(file_path):
     if not os.path.exists(file_path):
-        return ET.Element("tv", {"generator-info-name": "Guia de Programacion Cartoon Network Panregional"})
+        return ET.Element("tv", {"generator-info-name": "Guia de Programacion Cartoon Network MultiFeed"})
 
     try:
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -102,9 +116,9 @@ def sanitize_and_parse_xml(file_path):
         cleaned_content = "\n".join(cleaned_lines)
         return ET.fromstring(cleaned_content)
     except Exception:
-        return ET.Element("tv", {"generator-info-name": "Guia de Programacion Cartoon Network Panregional"})
+        return ET.Element("tv", {"generator-info-name": "Guia de Programacion Cartoon Network MultiFeed"})
 
-def parse_xmltv_date(date_str):
+def parse_xmltv_date(date_str, tz_info):
     if not date_str:
         return None
     clean_str = re.sub(r"[^\d\s\+\-]", "", str(date_str).strip())
@@ -114,10 +128,10 @@ def parse_xmltv_date(date_str):
 
     year, month, day, hour, minute, second = map(int, match.groups())
     hour, minute, second = min(hour, 23), min(minute, 59), min(second, 59)
-    return datetime(year, month, day, hour, minute, second, tzinfo=COT)
+    return datetime(year, month, day, hour, minute, second, tzinfo=tz_info)
 
-def format_xmltv_date(dt):
-    return dt.strftime("%Y%m%d%H%M%S -0500")
+def format_xmltv_date(dt, tz_str):
+    return dt.strftime(f"%Y%m%d%H%M%S {tz_str}")
 
 def load_excel_schedule(file_path):
     try:
@@ -126,19 +140,21 @@ def load_excel_schedule(file_path):
         df = pd.read_html(file_path, header=1)[0]
     return df
 
-def update_epg_xml(xls_path):
-    df = load_excel_schedule(xls_path)
-    root = sanitize_and_parse_xml(XML_OUTPUT_FILE)
+def process_feed(root, feed_cfg, xls_path):
+    channel_id = feed_cfg["channel_id"]
+    channel_name = feed_cfg["channel_name"]
+    lang = feed_cfg["lang"]
+    tz = feed_cfg["tz"]
+    tz_str = feed_cfg["tz_str"]
 
-    for ch in list(root.findall("channel")):
-        if ch.attrib.get("id") != CHANNEL_ID:
-            root.remove(ch)
-
-    if not any(ch.attrib.get("id") == CHANNEL_ID for ch in root.findall("channel")):
-        ch_node = ET.SubElement(root, "channel", {"id": CHANNEL_ID})
+    # Registrar el canal si aún no existe
+    existing_channels = [ch for ch in root.findall("channel") if ch.attrib.get("id") == channel_id]
+    if not existing_channels:
+        ch_node = ET.SubElement(root, "channel", {"id": channel_id})
         disp = ET.SubElement(ch_node, "display-name")
-        disp.text = CHANNEL_NAME
+        disp.text = channel_name
 
+    df = load_excel_schedule(xls_path)
     cols = {str(c).strip(): c for c in df.columns}
     col_date = cols.get("Schedule Date", df.columns[0])
     col_time = cols.get("Title Start Time", df.columns[1])
@@ -150,10 +166,10 @@ def update_epg_xml(xls_path):
     first_date_raw = str(df.iloc[0].get(col_date, "")).strip()
     match_init = re.search(r"(\d{1,2})[-/](\d{1,2})[-/](\d{4})", first_date_raw)
     if not match_init:
-        raise Exception("No se pudo detectar la fecha inicial del archivo.")
+        raise Exception(f"No se pudo detectar la fecha inicial de {channel_id}.")
 
     d0, m0, y0 = map(int, match_init.groups())
-    cycle_start = datetime(y0, m0, d0, 6, 0, 0, tzinfo=COT)
+    cycle_start = datetime(y0, m0, d0, 6, 0, 0, tzinfo=tz)
     cycle_end = cycle_start + timedelta(days=1)
 
     raw_events = []
@@ -173,7 +189,7 @@ def update_epg_xml(xls_path):
         d, m, y = map(int, date_match.groups())
         hh, mm = map(int, time_match.groups())
 
-        event_dt = datetime(y, m, d, hh, mm, 0, tzinfo=COT)
+        event_dt = datetime(y, m, d, hh, mm, 0, tzinfo=tz)
         if (d == d0 and m == m0 and y == y0) and hh < 6:
             event_dt += timedelta(days=1)
 
@@ -197,57 +213,71 @@ def update_epg_xml(xls_path):
         })
 
     raw_events = sorted(raw_events, key=lambda x: x["start"])
-
     new_programmes = []
     total_events = len(raw_events)
 
     for i in range(total_events):
         ev = raw_events[i]
         start_dt = ev["start"]
-
-        if i + 1 < total_events:
-            stop_dt = raw_events[i + 1]["start"]
-        else:
-            stop_dt = cycle_end
+        stop_dt = raw_events[i + 1]["start"] if i + 1 < total_events else cycle_end
 
         prog = ET.Element("programme", {
-            "start": format_xmltv_date(start_dt),
-            "stop": format_xmltv_date(stop_dt),
-            "channel": CHANNEL_ID
+            "start": format_xmltv_date(start_dt, tz_str),
+            "stop": format_xmltv_date(stop_dt, tz_str),
+            "channel": channel_id
         })
 
-        title = ET.SubElement(prog, "title", {"lang": "es"})
+        title = ET.SubElement(prog, "title", {"lang": lang})
         title.text = ev["title"]
 
         if ev["sub_title"]:
-            sub_title = ET.SubElement(prog, "sub-title", {"lang": "es"})
+            sub_title = ET.SubElement(prog, "sub-title", {"lang": lang})
             sub_title.text = ev["sub_title"]
 
         if ev["desc"]:
-            desc = ET.SubElement(prog, "desc", {"lang": "es"})
+            desc = ET.SubElement(prog, "desc", {"lang": lang})
             desc.text = ev["desc"]
 
         new_programmes.append(prog)
 
-    existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
+    existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == channel_id}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
             root.append(np)
 
-    cutoff_date = datetime.now(COT) - timedelta(days=RETENTION_DAYS)
+    print(f"[{channel_id}] Eventos procesados hoy: {len(new_programmes)}")
+
+def main():
+    token = login_and_get_token()
+    root = sanitize_and_parse_xml(XML_OUTPUT_FILE)
+
+    active_channel_ids = {cfg["channel_id"] for cfg in FEEDS_CONFIG}
+    for ch in list(root.findall("channel")):
+        if ch.attrib.get("id") not in active_channel_ids:
+            root.remove(ch)
+
+    # Descarga y procesa cada feed
+    for feed_cfg in FEEDS_CONFIG:
+        xls_path = download_feed_xls(token, feed_cfg["feed_id"])
+        process_feed(root, feed_cfg, xls_path)
+
+    # Limpieza por retención histórica (15 días)
+    cutoff_date = datetime.now(timezone.utc) - timedelta(days=RETENTION_DAYS)
     for p in list(root.findall("programme")):
-        if p.attrib.get("channel") != CHANNEL_ID:
+        ch_id = p.attrib.get("channel")
+        if ch_id not in active_channel_ids:
             root.remove(p)
             continue
-        stop_dt = parse_xmltv_date(p.attrib.get("stop", ""))
+        cfg = next((c for c in FEEDS_CONFIG if c["channel_id"] == ch_id), FEEDS_CONFIG[0])
+        stop_dt = parse_xmltv_date(p.attrib.get("stop", ""), cfg["tz"])
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
+    # Reordenar elementos XMLTV
     sorted_progs = sorted(
         root.findall("programme"),
-        key=lambda x: parse_xmltv_date(x.attrib.get("start", "")) or datetime.min.replace(tzinfo=COT)
+        key=lambda x: x.attrib.get("start", "")
     )
-
     for p in list(root.findall("programme")):
         root.remove(p)
     for p in sorted_progs:
@@ -255,8 +285,7 @@ def update_epg_xml(xls_path):
 
     ET.indent(root, space="  ", level=0)
     ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"[OK] Ciclo de 24h procesado. Eventos agregados hoy: {len(new_programmes)}. Total acumulado: {len(sorted_progs)}")
+    print(f"[OK] XML multi-feed actualizado con éxito. Total acumulado: {len(sorted_progs)} eventos.")
 
 if __name__ == "__main__":
-    xls = download_panregional_xls()
-    update_epg_xml(xls)
+    main()
