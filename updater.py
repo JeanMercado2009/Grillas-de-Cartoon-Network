@@ -78,15 +78,6 @@ def download_feed_xls(token, feed_id):
         "Referer": "https://epg.tapkit.warnermedia.com/epg/networks/2"
     })
 
-    session_user_data = {
-        "accessToken": token,
-        "username": "ceo@bsmagency.com.co",
-        "firstName": "Jean Philipp",
-        "lastName": "Mercado",
-        "id": 22215
-    }
-    session.cookies.set("session_user", json.dumps(session_user_data))
-
     url = BASE_DAILY_URL.format(feed_id=feed_id)
     res = session.get(url, timeout=60)
     res.raise_for_status()
