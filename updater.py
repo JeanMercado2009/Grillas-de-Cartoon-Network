@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import base64
 from datetime import datetime, timedelta, timezone
 import xml.etree.ElementTree as ET
 import pandas as pd
@@ -22,30 +23,44 @@ def obtain_valid_token():
     access_token = os.environ.get("TAPKIT_TOKEN", "").strip()
     refresh_token = os.environ.get("TAPKIT_REFRESH_TOKEN", "").strip()
 
+    # Intentar renovación automática con el refresh_token
     if refresh_token:
         try:
-            res = requests.post(
-                REFRESH_URL,
-                params={"grant_type": "refresh_token", "refresh_token": refresh_token},
-                auth=("myclient", ""),
-                headers={
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                    "Accept": "application/json, text/plain, */*"
-                },
-                timeout=30
-            )
-            if res.status_code == 200:
-                new_token = res.json().get("access_token")
-                if new_token:
-                    print("[OK] Token renovado exitosamente vía OAuth2 Refresh.")
-                    return new_token
-        except Exception as e:
-            print(f"[INFO] No se pudo refrescar token, usando TAPKIT_TOKEN existente: {e}")
+            # Autenticación HTTP Basic estándar para cliente 'myclient' sin password
+            auth_header = "Basic " + base64.b64encode(b"myclient:").decode("utf-8")
+            
+            headers = {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "application/json, text/plain, */*",
+                "Content-Type": "application/x-www-form-urlencoded",
+                "Authorization": auth_header,
+                "Origin": "https://epg.tapkit.warnermedia.com",
+                "Referer": "https://epg.tapkit.warnermedia.com/"
+            }
+            
+            body = {
+                "grant_type": "refresh_token",
+                "refresh_token": refresh_token
+            }
 
+            res = requests.post(REFRESH_URL, data=body, headers=headers, timeout=30)
+            
+            if res.status_code == 200:
+                data = res.json()
+                new_token = data.get("access_token")
+                if new_token:
+                    print("[OK] Token renovado automáticamente con éxito.")
+                    return new_token
+            else:
+                print(f"[AVISO] Endpoint OAuth devolvió estado {res.status_code}: {res.text}")
+        except Exception as e:
+            print(f"[AVISO] Excepción al renovar token: {e}")
+
+    # Si no se pudo renovar, probar con el access_token configurado
     if access_token:
         return access_token
 
-    raise Exception("No se encontró ningún token válido en los Secrets.")
+    raise Exception("No se encontró ningún token utilizable en los Secrets.")
 
 def download_panregional_xls():
     token = obtain_valid_token()
@@ -223,13 +238,11 @@ def update_epg_xml(xls_path):
 
         new_programmes.append(prog)
 
-    # Fusionar programas nuevos evitando duplicados
     existing_starts = {p.attrib.get("start") for p in root.findall("programme") if p.attrib.get("channel") == CHANNEL_ID}
     for np in new_programmes:
         if np.attrib.get("start") not in existing_starts:
             root.append(np)
 
-    # Purgar eventos de más de 15 días
     cutoff_date = datetime.now(COT) - timedelta(days=RETENTION_DAYS)
     for p in list(root.findall("programme")):
         if p.attrib.get("channel") != CHANNEL_ID:
@@ -239,7 +252,6 @@ def update_epg_xml(xls_path):
         if stop_dt and stop_dt < cutoff_date:
             root.remove(p)
 
-    # Ordenar todo el XML cronológicamente
     sorted_progs = sorted(
         root.findall("programme"),
         key=lambda x: parse_xmltv_date(x.attrib.get("start", "")) or datetime.min.replace(tzinfo=COT)
