@@ -5643,4 +5643,821 @@
     <title lang="pt">DRAMA TOTAL KIDS</title>
     <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
   </programme>
+  <programme start="20260828060000 -0300" stop="20260828061100 -0300" channel="CNLA_BR.br">
+    <title lang="pt">URSOS SEM CURSO</title>
+    <sub-title lang="pt">INCÊNDIO!</sub-title>
+    <desc lang="pt">A sagacidade de Pardo impede que um incêndio se alastre na floresta. Mas os elogios que ele recebe por conta disso logo lhe sobem à cabeça.</desc>
+  </programme>
+  <programme start="20260828060000 -0500" stop="20260828061100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Los Watterson se van de vacaciones en familia y están contando historias cuando se les descompone el auto en medio del desierto. No tienen más alternativa que confiar en un desconocido, cuya aparición es igual a la del cuento de mamá. Cuando el desconocido los lleva a una estación de servicio abandonada, igual que en la historia de terror que había inventado mamá, los Watterson no pueden seguir haciendo de cuenta que la ficción no se está volviendo realidad¿</desc>
+  </programme>
+  <programme start="20260828061100 -0300" stop="20260828062300 -0300" channel="CNLA_BR.br">
+    <title lang="pt">URSOS SEM CURSO</title>
+    <sub-title lang="pt">EL OSO</sub-title>
+    <desc lang="pt">Num flashback antigo, Charlie participa de uma aventura no deserto mexicano.</desc>
+  </programme>
+  <programme start="20260828061100 -0500" stop="20260828062500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Únete a los ciudadanos de Elmore para un gran espectáculo de música y danza que te hará taparte los oídos de la alegría.</desc>
+  </programme>
+  <programme start="20260828062300 -0300" stop="20260828063400 -0300" channel="CNLA_BR.br">
+    <title lang="pt">URSOS SEM CURSO</title>
+    <sub-title lang="pt">O PÉ GRANDE DO CHARLIE</sub-title>
+    <desc lang="pt">Quando Charlie machuca o pé, os ursos deverão levá-lo a um hospital para receber cuidados médicos.</desc>
+  </programme>
+  <programme start="20260828062500 -0500" stop="20260828063600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Una figura misteriosa del pasado de Nicole aparece y la desafía a pelear, pero los niños se sorprenden cuando ella se rehúsa.</desc>
+  </programme>
+  <programme start="20260828063400 -0300" stop="20260828064700 -0300" channel="CNLA_BR.br">
+    <title lang="pt">URSOS SEM CURSO</title>
+    <sub-title lang="pt">URSOS BEBÊS ÓRFÃOS NINJA</sub-title>
+    <desc lang="pt">Os Bebês Ursos se aventuram no esgoto e conhecem um ninja mestre em artes marciais.</desc>
+  </programme>
+  <programme start="20260828063600 -0500" stop="20260828065000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Los Watterson están dispuestos a hacer cualquier cosa para llegar primero a la proyección de la última secuela de la Odisea Estelar.</desc>
+  </programme>
+  <programme start="20260828064700 -0300" stop="20260828065800 -0300" channel="CNLA_BR.br">
+    <title lang="pt">URSOS SEM CURSO</title>
+    <sub-title lang="pt">YURI E O URSO</sub-title>
+    <desc lang="pt">Bebê urso vive sozinho no Ártico e conhece um homem misterioso chamado Yuri. Juntos, eles tentam sobreviver ao frio.</desc>
+  </programme>
+  <programme start="20260828065000 -0500" stop="20260828070100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Los niños intentan ayudar a Papá a hacerse amigo de Frankie.</desc>
+  </programme>
+  <programme start="20260828065800 -0300" stop="20260828070900 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <sub-title lang="pt">ATERRORIZANTE VIDA ADULTA</sub-title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828070100 -0500" stop="20260828071600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Conoce a Robin, Cyborg, Starfire, Raven y Chico Bestia. Sin duda siguen siendo superhéroes que salvan el mundo, ¿pero qué sucede cuando ya terminaron de luchar contra el crimen?</desc>
+  </programme>
+  <programme start="20260828070900 -0300" stop="20260828072100 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <sub-title lang="pt">NATUREZA TOTALMENTE SELVAGEM</sub-title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828071600 -0500" stop="20260828072700 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Los Titanes rompen la adorada vara de Robin, por lo que se embarca en una peligrosa misión hacia el antiguo Árbol del Universo para encontrar una nueva vara mágica que la reemplace.</desc>
+  </programme>
+  <programme start="20260828072100 -0300" stop="20260828073200 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <sub-title lang="pt">PROFISSÃO PALHAÇO</sub-title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828072700 -0500" stop="20260828075400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Escandalositos</title>
+  </programme>
+  <programme start="20260828073200 -0300" stop="20260828074500 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <sub-title lang="pt">EMBARQUE NESSA ONDA</sub-title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828074500 -0300" stop="20260828075600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <sub-title lang="pt">GINCANA MORTAL</sub-title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828075400 -0500" stop="20260828080500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Escandalositos</title>
+  </programme>
+  <programme start="20260828075600 -0300" stop="20260828080600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">MURO DE MANTEIGA</sub-title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828080500 -0500" stop="20260828082000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Los Osos pasan un día de relax en el spa. Pardo prueba todo lo que el spa tiene para ofrecer. Panda  queda atrapado en el sauna con un anciano. Y Polar juega al ping-pong.</desc>
+  </programme>
+  <programme start="20260828080600 -0300" stop="20260828081800 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828081800 -0300" stop="20260828082900 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">LICATIVO</sub-title>
+    <desc lang="pt">Robin apresenta aos outros Titãs um aplicativo para ganhar dinheiro, mas eles logo descobrem os perigos de uma economia compartilhada.</desc>
+  </programme>
+  <programme start="20260828082000 -0500" stop="20260828083200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Los Osos van al centro comercial y se encuentran con sus equivalentes humanos.</desc>
+  </programme>
+  <programme start="20260828082900 -0300" stop="20260828084000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828083200 -0500" stop="20260828084700 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Las cosas se complican cuando Nom Nom filma su primer programa de televisión. Los Osos se ofrecen a ayudar y aparecen en el programa.</desc>
+  </programme>
+  <programme start="20260828084000 -0300" stop="20260828085100 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">A SÉRIE: PARTE 1</sub-title>
+    <desc lang="pt">A Temporada de Crimes chegou e Robin está disposto a continuar sua missão de evitar 52 crimes por ano.</desc>
+  </programme>
+  <programme start="20260828084700 -0500" stop="20260828085800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">A través de otra sesión de navegación por Internet, vemos más videos subidos por los Osos y sus amigos.</desc>
+  </programme>
+  <programme start="20260828085100 -0300" stop="20260828090200 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">A SÉRIE: PARTE 2</sub-title>
+    <desc lang="pt">A missão de Robin de evitar 52 crimes por ano é ameaçada quando membros de sua equipe são capturados por Kid Flash.</desc>
+  </programme>
+  <programme start="20260828085800 -0500" stop="20260828092500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Chapulín Y Los Colorado</title>
+  </programme>
+  <programme start="20260828090200 -0300" stop="20260828091500 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828091500 -0300" stop="20260828092600 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828092500 -0500" stop="20260828093600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
+  </programme>
+  <programme start="20260828092600 -0300" stop="20260828093800 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828093600 -0500" stop="20260828095200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
+  </programme>
+  <programme start="20260828093800 -0300" stop="20260828095000 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828095000 -0300" stop="20260828100200 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828095200 -0500" stop="20260828100400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
+  </programme>
+  <programme start="20260828100200 -0300" stop="20260828101300 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">EU SOU MOLHO</sub-title>
+    <desc lang="pt">Presos em casa por conta do mau tempo, os Titãs se divertem com jogos depois de serem convencidos por Robin de que atividades internas alegram as nuvens e fazem a chuva parar.</desc>
+  </programme>
+  <programme start="20260828100400 -0500" stop="20260828101400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Robin se resiste a darles más órdenes a los Titanes, que tendrán que aprender a pensar por sí mismos. En lugar de eso, los Titanes comienzan a seguir los consejos de galletas de la fortuna.</desc>
+  </programme>
+  <programme start="20260828101300 -0300" stop="20260828102400 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828101400 -0500" stop="20260828103000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Conoce a Robin, Cyborg, Starfire, Raven y Chico Bestia. Sin duda siguen siendo superhéroes que salvan el mundo, ¿pero qué sucede cuando ya terminaron de luchar contra el crimen?</desc>
+  </programme>
+  <programme start="20260828102400 -0300" stop="20260828103500 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828103000 -0500" stop="20260828104100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Conoce a Robin, Cyborg, Starfire, Raven y Chico Bestia. Sin duda siguen siendo superhéroes que salvan el mundo, ¿pero qué sucede cuando ya terminaron de luchar contra el crimen?</desc>
+  </programme>
+  <programme start="20260828103500 -0300" stop="20260828104500 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">REGISTRO PERMANENTE</sub-title>
+    <desc lang="pt">Na volta às aulas, os Titãs ensinam uns aos outros um pouco de ciência e gramática.</desc>
+  </programme>
+  <programme start="20260828104100 -0500" stop="20260828105500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Conoce a Robin, Cyborg, Starfire, Raven y Chico Bestia. Sin duda siguen siendo superhéroes que salvan el mundo, ¿pero qué sucede cuando ya terminaron de luchar contra el crimen?</desc>
+  </programme>
+  <programme start="20260828104500 -0300" stop="20260828105700 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828105500 -0500" stop="20260828110500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Para salvar la Torre de los Titanes de unos adinerados empresarios de desarrollo inmobiliario, los Titanes buscan un tesoro pirata.</desc>
+  </programme>
+  <programme start="20260828105700 -0300" stop="20260828110700 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">OVOS DE COCÔ</sub-title>
+    <desc lang="pt">Tentando evitar surpresas na páscoa, os Titãs despacham o coelhinho e assumem a dianteira.</desc>
+  </programme>
+  <programme start="20260828110500 -0500" stop="20260828112100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Un Show Más: Las Cintas Perdidas</title>
+  </programme>
+  <programme start="20260828110700 -0300" stop="20260828113100 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828112100 -0500" stop="20260828113400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Gumball y Darwin quedan cara a cara con su archinémesis, o al menos con alguien que intenta serlo.</desc>
+  </programme>
+  <programme start="20260828113100 -0300" stop="20260828114200 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828113400 -0500" stop="20260828114800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Gumball y Darwin tratan de encontrar aunque sea una sola característica agradable de su vecina, la señora Robinson.</desc>
+  </programme>
+  <programme start="20260828114200 -0300" stop="20260828115400 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828114800 -0500" stop="20260828120000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Gumball y Darwin se convierten en gurús de la moda.</desc>
+  </programme>
+  <programme start="20260828115400 -0300" stop="20260828120600 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828120000 -0500" stop="20260828121400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El mundo de craig</title>
+    <desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso de fortines en árboles y rampas para bicicletas gobernados por tribus de niños que conforman una verdadera sociedad infantil. En cada episodio, los niños se lanzan a zonas inexploradas del bosque, conocen a nuevos vecinos o se meten en problemas en su lugar favorito.</desc>
+  </programme>
+  <programme start="20260828120600 -0300" stop="20260828121600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828121400 -0500" stop="20260828122500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El mundo de craig</title>
+    <desc lang="es">Los Infusionistas organizan un baile e invitan a todos los habitantes del bosque. Craig cree que el único propósito del baile es hacerle una broma a él, mientras que Kelsey debe lidiar con un admirador indeseado.</desc>
+  </programme>
+  <programme start="20260828121600 -0300" stop="20260828122700 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828122500 -0500" stop="20260828124200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">SUMMER MEMORIES - SEASON 1</title>
+  </programme>
+  <programme start="20260828122700 -0300" stop="20260828123900 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828123900 -0300" stop="20260828125000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828124200 -0500" stop="20260828125400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">SUMMER MEMORIES - SEASON 1</title>
+  </programme>
+  <programme start="20260828125000 -0300" stop="20260828130000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">AMASSA E ESTICA</sub-title>
+    <desc lang="pt">Os Titãs aprendem sobre violência ao estilo desenho animado para se vingar de um esquilo ladrão de petiscos.</desc>
+  </programme>
+  <programme start="20260828125400 -0500" stop="20260828130500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Los Osos hacen una audición para convertirse en las próximas mascotas de su cereal favorito. Quedan tan inmersos en el proceso que su competitividad termina derrotándolos.</desc>
+  </programme>
+  <programme start="20260828130000 -0300" stop="20260828131200 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <sub-title lang="pt">O RAPTO DAS CORES</sub-title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828130500 -0500" stop="20260828132100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Charlie adopta a unas serpientes bebé a pesar de que los Osos creen que no está listo para la paternidad.</desc>
+  </programme>
+  <programme start="20260828131200 -0300" stop="20260828132400 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828132100 -0500" stop="20260828133300 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">A través de otra sesión de navegación por Internet, vemos más videos subidos por los Osos y sus amigos.</desc>
+  </programme>
+  <programme start="20260828132400 -0300" stop="20260828133600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <sub-title lang="pt">GESONEL DETETIVE DO TEMPO</sub-title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828133300 -0500" stop="20260828134800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Big Blue: Aventuras En Submarinos</title>
+  </programme>
+  <programme start="20260828133600 -0300" stop="20260828150600 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828134800 -0500" stop="20260828135900 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Submarino de Jim</title>
+  </programme>
+  <programme start="20260828135900 -0500" stop="20260828141400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">CLARENCE</title>
+    <desc lang="es">Llegó la hora del primer empleo de verano de Clarence: como ayudante de su mamá en el SALÓN ESCUELA HIP CLIPZ. Pero cuando una clienta maleducada les da órdenes a Mary y a su personal, Clarence le hace un corte de cabello que nunca olvidará.</desc>
+  </programme>
+  <programme start="20260828141400 -0500" stop="20260828142600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">CLARENCE</title>
+    <desc lang="es">Cuando Clarence conoce a JT, el niño que corta el césped de su casa, descubre a un amigo inmediato, que le muestra música nueva y de onda, una nueva perspectiva de la vida y, lo mejor de todo... ¡una coleta tipo cola de rata con mucho estilo! Clarence se inclina hacia el estilo de vida con coleta y descubre un costado de Aberdale completamente nuevo, cuya existencia desconocía por completo.</desc>
+  </programme>
+  <programme start="20260828142600 -0500" stop="20260828144100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">CLARENCE</title>
+    <desc lang="es">Clarence está súper entusiasmado por visitar a su abuela y se entera de que Chad nunca voló en avión. Clarence decide que su misión será ayudar a Chad a superar ese vuelvo caótico.</desc>
+  </programme>
+  <programme start="20260828144100 -0500" stop="20260828145200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">CLARENCE</title>
+    <desc lang="es">Mel se entera de que Chad nunca llevó a Clarence a pescar -una tradición que Mel considera como un rito de iniciación- ¡y decide remediarlo con un viaje para generar un vínculo entre todos los chicos! Divididos en dos grupos, Mel y Clarence aprenden un poco el uno del otro mientras Chad lucha contra los pormenores de la pesca.</desc>
+  </programme>
+  <programme start="20260828145200 -0500" stop="20260828163000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Inicio Del Mundo De Craig</title>
+  </programme>
+  <programme start="20260828150600 -0300" stop="20260828151800 -0300" channel="CNLA_BR.br">
+    <title lang="pt">CLARÊNCIO, O OTIMISTA</title>
+    <sub-title lang="pt">SHOW DE ROCK</sub-title>
+    <desc lang="pt">A banda de Chadão, a Dogmon, vai fazer um show pela primeira vez em anos, dando a Clarêncio e Mari uma chance de se divertir a valer.</desc>
+  </programme>
+  <programme start="20260828151800 -0300" stop="20260828152900 -0300" channel="CNLA_BR.br">
+    <title lang="pt">CLARÊNCIO, O OTIMISTA</title>
+    <sub-title lang="pt">BUCKY E O UIVO</sub-title>
+    <desc lang="pt">Quando Clarêncio descobre que Sumo está no musical da escola, ele resolve entrar também e promove a apresentação com entusiasmo. Na noite de estreia, com a casa cheia, Sumo trava e foge, deixando Clarêncio na mão.</desc>
+  </programme>
+  <programme start="20260828152900 -0300" stop="20260828154100 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">MURO DE MANTEIGA</sub-title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828154100 -0300" stop="20260828155200 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">A SÉRIE: PARTE 1</sub-title>
+    <desc lang="pt">A Temporada de Crimes chegou e Robin está disposto a continuar sua missão de evitar 52 crimes por ano.</desc>
+  </programme>
+  <programme start="20260828155200 -0300" stop="20260828160300 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">A SÉRIE: PARTE 2</sub-title>
+    <desc lang="pt">A missão de Robin de evitar 52 crimes por ano é ameaçada quando membros de sua equipe são capturados por Kid Flash.</desc>
+  </programme>
+  <programme start="20260828160300 -0300" stop="20260828161500 -0300" channel="CNLA_BR.br">
+    <title lang="pt">O INCRÍVEL MUNDO DE GUMBALL</title>
+    <sub-title lang="pt">O CONJUNTO</sub-title>
+    <desc lang="pt">Uma compilação de alguns dos vídeos mais engraçados e bizarros postados na internet pelos habitantes de Elmore. Os vídeos incluem as acrobacias de João Banana, a última invenção culinária de Ricardo e o concurso de Gumball e Darwin para saber quem faz a careta mais esquisita.</desc>
+  </programme>
+  <programme start="20260828161500 -0300" stop="20260828162700 -0300" channel="CNLA_BR.br">
+    <title lang="pt">O INCRÍVEL MUNDO DE GUMBALL</title>
+    <sub-title lang="pt">O PÔNEI</sub-title>
+    <desc lang="pt">Gumball e Darwin correm para casa com a intenção de brincar com Anaís. Mas não faltarão os velhos obstáculos pelo caminho... e alguns novos também!</desc>
+  </programme>
+  <programme start="20260828162700 -0300" stop="20260828163900 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828163000 -0500" stop="20260828164500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
+  </programme>
+  <programme start="20260828163900 -0300" stop="20260828165100 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828164500 -0500" stop="20260828165600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
+  </programme>
+  <programme start="20260828165100 -0300" stop="20260828170300 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828165600 -0500" stop="20260828172200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Chapulín Y Los Colorado</title>
+  </programme>
+  <programme start="20260828170300 -0300" stop="20260828171500 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828171500 -0300" stop="20260828172200 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828172200 -0300" stop="20260828172800 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828172200 -0500" stop="20260828173800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Big Blue: Aventuras En Submarinos</title>
+  </programme>
+  <programme start="20260828172800 -0300" stop="20260828174000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828173800 -0500" stop="20260828174900 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Submarino de Jim</title>
+  </programme>
+  <programme start="20260828174000 -0300" stop="20260828175200 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828174900 -0500" stop="20260828180100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Submarino de Jim</title>
+  </programme>
+  <programme start="20260828175200 -0300" stop="20260828180300 -0300" channel="CNLA_BR.br">
+    <title lang="pt">IRMÃO DO JOREL</title>
+    <sub-title lang="pt">VOTE EM MIM!</sub-title>
+    <desc lang="pt">O Irmão do Jorel mergulha com tudo na pré-adolescência! Depois de enfrentar os primeiros obstáculos da vida, nosso querido Irmão do Jorel agora é um peixinho fora d'água sedento por novas amizades e aventuras.</desc>
+  </programme>
+  <programme start="20260828180100 -0500" stop="20260828181600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Gumball se convierte en aprendiz de hechicero.</desc>
+  </programme>
+  <programme start="20260828180300 -0300" stop="20260828181700 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828181600 -0500" stop="20260828182800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Cuando mamá le revela a Gumball que su verdadero nombre es Zach, Gumball adopta una personalidad cursi y molesta acorde al nombre. Su familia intenta hacerle recordar al Gumball de siempre, porque esta nueva faceta Zach poco a poco va conquistando toda la vida de Gumball y borrando sus recuerdos. Si no llegan a tiempo, el antiguo Gumball desaparecerá para siempre y sus parientes... ¡tendrán que vivir con Zach!</desc>
+  </programme>
+  <programme start="20260828181700 -0300" stop="20260828182800 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828182800 -0300" stop="20260828183900 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">EU SOU MOLHO</sub-title>
+    <desc lang="pt">Presos em casa por conta do mau tempo, os Titãs se divertem com jogos depois de serem convencidos por Robin de que atividades internas alegram as nuvens e fazem a chuva parar.</desc>
+  </programme>
+  <programme start="20260828182800 -0500" stop="20260828184400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">HORA DE AVENTURA</title>
+    <desc lang="es">Finn y Jake son trasportados a la mente de Marceline para despertarla de un hechizo mágicamente inducido.</desc>
+  </programme>
+  <programme start="20260828183900 -0300" stop="20260828185000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828184400 -0500" stop="20260828185500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">HORA DE AVENTURA</title>
+    <desc lang="es">El Rey Helado y una banda de hechiceros inadaptados se embarcan en un viaje místico.</desc>
+  </programme>
+  <programme start="20260828185000 -0300" stop="20260828190100 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260828185500 -0500" stop="20260828191100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Conoce a Robin, Cyborg, Starfire, Raven y Chico Bestia. Sin duda siguen siendo superhéroes que salvan el mundo, ¿pero qué sucede cuando ya terminaron de luchar contra el crimen?</desc>
+  </programme>
+  <programme start="20260828190100 -0300" stop="20260828191400 -0300" channel="CNLA_BR.br">
+    <title lang="pt">CLARÊNCIO, O OTIMISTA</title>
+    <sub-title lang="pt">LOCADORA</sub-title>
+    <desc lang="pt">Clarêncio, Jeff e Sumo vão à locadora alugar um filme. Mas descobrem que todos já foram alugados! Eles não conseguem concordar entre si sobre qual tipo de filme assistir, e deverão encontrar uma forma de chegar a um acordo!</desc>
+  </programme>
+  <programme start="20260828191100 -0500" stop="20260828192200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Los Titanes rompen la adorada vara de Robin, por lo que se embarca en una peligrosa misión hacia el antiguo Árbol del Universo para encontrar una nueva vara mágica que la reemplace.</desc>
+  </programme>
+  <programme start="20260828191400 -0300" stop="20260828192600 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828192200 -0500" stop="20260828193300 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Un Show Más: Las Cintas Perdidas</title>
+  </programme>
+  <programme start="20260828192600 -0300" stop="20260828205000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HOTEL TRANSILVÂNIA 2</title>
+    <desc lang="pt">Depois de se casarem, a vampira Mavis e o humano Jonathan continuam vivendo no Hotel Transilvânia. O Conde Drácula ofereceu um emprego ao genro, pois quer que a filha permaneça ao seu lado. Drácula fica eufórico ao descobrir que Mavis está grávida e torce para que o neto seja um vampiro de verdade. Portanto, ele começa a ir atrás de todos os indícios de que seu desejo aconteça. Prestes a completar cinco anos de idade, o pequeno Dennis demonstra que ainda é um ser humano normal. Drácula fica preocupado e submete o menino a um treinamento especial com vários testes, enquanto Mavis e Johnny aproveitam as férias. E para piorar a situação, o pai do vampiro aparece de surpresa em uma visita.</desc>
+  </programme>
+  <programme start="20260828193300 -0500" stop="20260828194900 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Un Show Más: Las Cintas Perdidas</title>
+  </programme>
+  <programme start="20260828194900 -0500" stop="20260828200300 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El Maravillosamente Extraño Mundo de Gumball</title>
+  </programme>
+  <programme start="20260828200300 -0500" stop="20260828212600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Hotel Transylvania 2</title>
+    <desc lang="es">Finalmente, el Hotel Transilvania ya no es más un hotel exclusivo para monstruos, pero a Drac le preocupa que se note que su nieto Dennis es mitad humano, mitad vampiro y, junto a sus amigos Frank, Wayne y Griffin, lo envía a un campamento de "entrenamiento para monstruos". Mientras tanto, Mavis está visitando a su familia política humana junto a su marido Johnny y Vlad, el padre tradicionalista de Drac, decide visitar a su hijo sin saber que su bisnieto no es de sangre pura.</desc>
+  </programme>
+  <programme start="20260828205000 -0300" stop="20260828210300 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828210300 -0300" stop="20260828223200 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260828212600 -0500" stop="20260828213800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Escandalositos</title>
+  </programme>
+  <programme start="20260828213800 -0500" stop="20260828214900 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Escandalositos</title>
+  </programme>
+  <programme start="20260828214900 -0500" stop="20260828220600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Escandalositos</title>
+  </programme>
+  <programme start="20260828220600 -0500" stop="20260828222200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">HORA DE AVENTURA</title>
+    <desc lang="es">BMO y Marceline intercambian historias sobre sus aventuras más recientes.</desc>
+  </programme>
+  <programme start="20260828222200 -0500" stop="20260828223300 -0500" channel="CNLA_PAN.co">
+    <title lang="es">HORA DE AVENTURA</title>
+    <desc lang="es">Dulce Princesa se alía a Marceline para enfrentar una amenaza contra los ciudadanos de su reino.</desc>
+  </programme>
+  <programme start="20260828223200 -0300" stop="20260828224400 -0300" channel="CNLA_BR.br">
+    <title lang="pt">URSOS SEM CURSO</title>
+    <sub-title lang="pt">ANIVERSÁRIO DO PANDA</sub-title>
+    <desc lang="pt">No aniversário de Panda, os Ursos tentam ajudá-lo a conhecer sua banda favorita de K-Pop, a Monsta X.</desc>
+  </programme>
+  <programme start="20260828223300 -0500" stop="20260828224800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">HORA DE AVENTURA</title>
+    <desc lang="es">Cuando una vieja llama llega para hablar de unos asuntos urgentes, Tronquitos reconsidera tanto su pasado salvaje como su presente apacible.</desc>
+  </programme>
+  <programme start="20260828224400 -0300" stop="20260828225600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">URSOS SEM CURSO</title>
+    <sub-title lang="pt">EU, MORDOMO</sub-title>
+    <desc lang="pt">Os ursos usam um urso robô para ajudá-los a limpar a casa. Mas as coisas se complicam quando o robô sai do controle.</desc>
+  </programme>
+  <programme start="20260828224800 -0500" stop="20260828230000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">HORA DE AVENTURA</title>
+    <desc lang="es">Graves problemas financieros envían a Finn y a Jake al Reino Mora.</desc>
+  </programme>
+  <programme start="20260828225600 -0300" stop="20260828230700 -0300" channel="CNLA_BR.br">
+    <title lang="pt">STEVEN UNIVERSO</title>
+    <sub-title lang="pt">O HÓSPEDE</sub-title>
+    <desc lang="pt">Após ter machucado a perna, Greg vai morar com Steven e, sem querer, interfere em seus poderes.</desc>
+  </programme>
+  <programme start="20260828230000 -0500" stop="20260828231100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">UN SHOW MÁS</title>
+    <desc lang="es">Mordecai y Rigby deben encontrar un antídoto para el Sándwich de la Muerte antes de que Benson muera.</desc>
+  </programme>
+  <programme start="20260828230700 -0300" stop="20260828232000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">STEVEN UNIVERSO</title>
+    <sub-title lang="pt">O MUNDO ESTRANHO DE BEACH CITY</sub-title>
+    <desc lang="pt">Steven fica entretido com as teorias paranormais de Ronaldo sobre estranhos acontecimentos em Beach City.</desc>
+  </programme>
+  <programme start="20260828231100 -0500" stop="20260828232500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">UN SHOW MÁS</title>
+    <desc lang="es">Rigby quiere que Eileen se deslice por la nieve en un trineo inflable.</desc>
+  </programme>
+  <programme start="20260828232000 -0300" stop="20260828233100 -0300" channel="CNLA_BR.br">
+    <title lang="pt">STEVEN UNIVERSO</title>
+    <sub-title lang="pt">EDUCAÇÃO DE CONSCIÊNCIA</sub-title>
+    <desc lang="pt">Steven volta ao ringue para continuar sua odisseia como lutador profissional.</desc>
+  </programme>
+  <programme start="20260828232500 -0500" stop="20260828233600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">UN SHOW MÁS</title>
+    <desc lang="es">Cuando muere el padre de Musculoso, Benson le pide a Mordecai y a Rigby que acompañen a Musculoso a desparramar las cenizas del sombrero de su padre (que lleva la inscripción "Mejor camionero del mundo") en el punto más alto del Trucker Hall of Fame. En un área de descanso para camiones, tres camioneros les dicen a Mordecai y a Rigby que el padre de Musculoso en realidad no era un camionero como le había dicho a Musculoso cuando era niño, sino que era conductor de carretillas elevadoras.</desc>
+  </programme>
+  <programme start="20260828233100 -0300" stop="20260828234300 -0300" channel="CNLA_BR.br">
+    <title lang="pt">CLARÊNCIO, O OTIMISTA</title>
+    <sub-title lang="pt">SHOW DE ROCK</sub-title>
+    <desc lang="pt">A banda de Chadão, a Dogmon, vai fazer um show pela primeira vez em anos, dando a Clarêncio e Mari uma chance de se divertir a valer.</desc>
+  </programme>
+  <programme start="20260828233600 -0500" stop="20260828235000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">UN SHOW MÁS</title>
+    <desc lang="es">Los chicos quieren alegrar a Papaleta.</desc>
+  </programme>
+  <programme start="20260828234300 -0300" stop="20260828235500 -0300" channel="CNLA_BR.br">
+    <title lang="pt">CLARÊNCIO, O OTIMISTA</title>
+    <sub-title lang="pt">BUCKY E O UIVO</sub-title>
+    <desc lang="pt">Quando Clarêncio descobre que Sumo está no musical da escola, ele resolve entrar também e promove a apresentação com entusiasmo. Na noite de estreia, com a casa cheia, Sumo trava e foge, deixando Clarêncio na mão.</desc>
+  </programme>
+  <programme start="20260828235000 -0500" stop="20260829000200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">UN SHOW MÁS</title>
+    <desc lang="es">Mordecai y Rigby tienen que esperar en la mansión de Maellard para recibir un envío muy importante.</desc>
+  </programme>
+  <programme start="20260828235500 -0300" stop="20260829000500 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">BUMBUM ATÔMICO</sub-title>
+    <desc lang="pt">Apesar dos alertas de Robin, os Titãs brincam com gases atômicos e provocam uma praga mundial.</desc>
+  </programme>
+  <programme start="20260829000200 -0500" stop="20260829001300 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Todos los amigos de los Osos los invitaron a sus fiestas de Navidad. En un intento por tener tiempo para ir al festejo de primer nivel de Nom Nom, los Osos primero tratan de hacer paradas cortas en las fiestas de sus amigos a lo largo de la noche.</desc>
+  </programme>
+  <programme start="20260829000500 -0300" stop="20260829001600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">CHUVA NO DIA DE CASAMENTO</sub-title>
+    <desc lang="pt">Enquanto enfrenta The Brain, Robin tenta ensinar aos outros Titãs a definição certa de ironia.</desc>
+  </programme>
+  <programme start="20260829001300 -0500" stop="20260829002700 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Los Osos bebé inventan un nuevo amigo imaginario, pero los problemas que genera son demasiado reales.</desc>
+  </programme>
+  <programme start="20260829001600 -0300" stop="20260829002600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">A MÃO ZUMBI</sub-title>
+    <desc lang="pt">Quando Estelar beija sua mão, Robin jura que nunca mais irá lavá-la.</desc>
+  </programme>
+  <programme start="20260829002600 -0300" stop="20260829003800 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">PERNAS</sub-title>
+    <desc lang="pt">Quando Robin rouba seu manto, a figura esguia de Ravena é revelada e ela se transforma em Lady Legasus. Enquanto isso, Ciborgue fica preso no manto e revela o lado negro de sua personalidade.</desc>
+  </programme>
+  <programme start="20260829002700 -0500" stop="20260829003800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Durante un viaje de pesca, un pez gigante y legendario ataca a los Osos.</desc>
+  </programme>
+  <programme start="20260829003800 -0300" stop="20260829004900 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">O GESSO</sub-title>
+    <desc lang="pt">Conheça Robin, Ciborgue, Estelar, Ravena e Mutano. Claro, eles ainda são super-heróis que salvam o dia, mas o que acontece quando terminam suas missões?</desc>
+  </programme>
+  <programme start="20260829003800 -0500" stop="20260829005100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Polar va a la ciudad montado en su aspiradora hecha a medida. Pero cuando una pandilla de amantes de la tecnología le roban la aspiradora, Polar emprende una misión de rescate que lo lleva por el mundo subterráneo de la ciudad.</desc>
+  </programme>
+  <programme start="20260829004900 -0300" stop="20260829010000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">Os Jovens Titãs em Ação</title>
+    <sub-title lang="pt">LIVROS</sub-title>
+    <desc lang="pt">Quando Robin precisa de um arqui-inimigo, Estelar se oferece para assumir o papel e excede as expectativas.</desc>
+  </programme>
+  <programme start="20260829005100 -0500" stop="20260829010300 -0500" channel="CNLA_PAN.co">
+    <title lang="es">ESCANDALOSOS</title>
+    <desc lang="es">Cada uno de los Osos compra artículos poco convencionales en una venta de garaje de la zona. Sus nuevas adquisiciones los conducen a diferentes aventuras por separados.</desc>
+  </programme>
+  <programme start="20260829010000 -0300" stop="20260829011200 -0300" channel="CNLA_BR.br">
+    <title lang="pt">O INCRÍVEL MUNDO DE GUMBALL</title>
+    <sub-title lang="pt">A LIÇÃO</sub-title>
+    <desc lang="pt">Gumball e Darwin vão parar na sala do castigo e logo descobrem que ela parece mais uma prisão do que uma sala do colégio. E, na prisão, só há uma coisa a se fazer... FUGIR!</desc>
+  </programme>
+  <programme start="20260829010300 -0500" stop="20260829011400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Gumball y Darwin tratan de alejarse de Internet, pero terminan cayéndose por el agujero de transmisión por Internet de Elmore.</desc>
+  </programme>
+  <programme start="20260829011200 -0300" stop="20260829012400 -0300" channel="CNLA_BR.br">
+    <title lang="pt">O INCRÍVEL MUNDO DE GUMBALL</title>
+    <sub-title lang="pt">O ORÁCULO</sub-title>
+    <desc lang="pt">Gumball, Darwin e Anaís descobrem que a mãe de João Banana pinta quadros que preveem o futuro. Quando encontram um em que Gumball aparece correndo pelado pelo shopping, Gumball decide não deixar isso acontecer. Mas tudo parece conspirar contra ele e Gumball descobre que, às vezes, é impossível lutar contra o destino.</desc>
+  </programme>
+  <programme start="20260829011400 -0500" stop="20260829012900 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Gumball y Darwin solo quieren holgazanear todo el día, pero terminan teniendo que salvar al resto de la familia.</desc>
+  </programme>
+  <programme start="20260829012400 -0300" stop="20260829013600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">O INCRÍVEL MUNDO DE GUMBALL</title>
+    <sub-title lang="pt">OS MANOS</sub-title>
+    <desc lang="pt">Quando Darwin e Gumball revelam como gostariam de passar um dia perfeito, Gumball confessa que adoraria estar ao lado de Penny. Com ciúme, Darwin começa a falar mal dela, na esperança de separá-los. Enquanto isso, Gumball planeja dar o próximo passo na sua relação com Penny¿ pedindo-a em casamento!</desc>
+  </programme>
+  <programme start="20260829012900 -0500" stop="20260829014100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Gumball está desesperado por evitar pagar un recargo por demorarse en la devolución de un DVD rentado que destruyó por accidente.</desc>
+  </programme>
+  <programme start="20260829013600 -0300" stop="20260829014800 -0300" channel="CNLA_BR.br">
+    <title lang="pt">O INCRÍVEL MUNDO DE GUMBALL</title>
+    <sub-title lang="pt">A CANTORIA</sub-title>
+    <desc lang="pt">Junte-se aos cidadãos de Elmore num espetáculo de música e dança que vai fazê-lo tapar os ouvidos de tanta alegria.</desc>
+  </programme>
+  <programme start="20260829014100 -0500" stop="20260829015300 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Darwin es demasiado amable como para decir lo que piensa, entonces Gumball le enseña cómo ser directo en una épica batalla de insultos.</desc>
+  </programme>
+  <programme start="20260829014800 -0300" stop="20260829015900 -0300" channel="CNLA_BR.br">
+    <title lang="pt">O INCRÍVEL MUNDO DE GUMBALL</title>
+    <sub-title lang="pt">OS ZUMBIS</sub-title>
+    <desc lang="pt">O Halloween não é mais como era antes. Serão Gumball e Darwin capazes de ajudar os monstros a recuperar seu lado assustador?</desc>
+  </programme>
+  <programme start="20260829015300 -0500" stop="20260829020600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">¿Acaso Gumball y Darwin se quedaron sin cosas que decirse el uno al otro?</desc>
+  </programme>
+  <programme start="20260829015900 -0300" stop="20260829020600 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260829020600 -0300" stop="20260829022000 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260829020600 -0500" stop="20260829021800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Tobías intenta ser el mejor amigo de Gumball.</desc>
+  </programme>
+  <programme start="20260829021800 -0500" stop="20260829023000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El increíble mundo de gumball</title>
+    <desc lang="es">Gumball y Darwin quedan cara a cara con su archinémesis, o al menos con alguien que intenta serlo.</desc>
+  </programme>
+  <programme start="20260829022000 -0300" stop="20260829023100 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260829023000 -0500" stop="20260829024100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">STEVEN UNIVERSE</title>
+    <desc lang="es">Greg le cuenta a Steven la historia de su primer invierno con él.</desc>
+  </programme>
+  <programme start="20260829023100 -0300" stop="20260829024300 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260829024100 -0500" stop="20260829025500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">STEVEN UNIVERSE</title>
+    <desc lang="es">Steven tiene una gran sorpresa para las Gemas de Cristal.</desc>
+  </programme>
+  <programme start="20260829024300 -0300" stop="20260829025900 -0300" channel="CNLA_BR.br">
+    <title lang="pt" />
+  </programme>
+  <programme start="20260829025500 -0500" stop="20260829030600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">STEVEN UNIVERSE</title>
+    <desc lang="es">Un pariente de Steven al que hace mucho tiempo no ve, llega a la ciudad para ayudarlo a desbloquear el poder de su gema madre.</desc>
+  </programme>
+  <programme start="20260829025900 -0300" stop="20260829031100 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HORA DE AVENTURA</title>
+    <sub-title lang="pt">HORA DE NEGÓCIOS</sub-title>
+    <desc lang="pt">Quando um grupo de executivos pinta na área, Jake convence Finn a ficar de olho neles.</desc>
+  </programme>
+  <programme start="20260829030600 -0500" stop="20260829031700 -0500" channel="CNLA_PAN.co">
+    <title lang="es">STEVEN UNIVERSE: FUTURO</title>
+    <desc lang="es">Connie tiene una visión muy clara de su futuro, y Steven quiere asegurarse de ser parte de esa visión.</desc>
+  </programme>
+  <programme start="20260829031100 -0300" stop="20260829032200 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HORA DE AVENTURA</title>
+    <sub-title lang="pt">OCARINA</sub-title>
+    <desc lang="pt">Cansado das bizarrices de Jake, seu filho, Kim Kil Whan, resolve entrar em ação.</desc>
+  </programme>
+  <programme start="20260829031700 -0500" stop="20260829033200 -0500" channel="CNLA_PAN.co">
+    <title lang="es">STEVEN UNIVERSE</title>
+    <desc lang="es">Lars demuestra estar a la altura.</desc>
+  </programme>
+  <programme start="20260829032200 -0300" stop="20260829033400 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HORA DE AVENTURA</title>
+    <sub-title lang="pt">A TORRE</sub-title>
+    <desc lang="pt">Finn não gosta de nenhum dos novos braços que as princesas deram para ele e constrói uma torre no espaço para encontrar seu pai e recuperar seu velho braço.</desc>
+  </programme>
+  <programme start="20260829033200 -0500" stop="20260829034300 -0500" channel="CNLA_PAN.co">
+    <title lang="es">STEVEN UNIVERSE</title>
+    <desc lang="es">Lars por fin deja pasar a Steven.</desc>
+  </programme>
+  <programme start="20260829033400 -0300" stop="20260829034600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HORA DE AVENTURA</title>
+    <sub-title lang="pt">TUDO É JAKE</sub-title>
+    <desc lang="pt">Jake é transportado a um mundo alienígena e familiar.</desc>
+  </programme>
+  <programme start="20260829034300 -0500" stop="20260829035500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">STEVEN UNIVERSE</title>
+    <desc lang="es">Steven regresa al cuadrilátero para continuar con su odisea de luchador profesional.</desc>
+  </programme>
+  <programme start="20260829034600 -0300" stop="20260829035700 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HORA DE AVENTURA</title>
+    <sub-title lang="pt">RECUO MORTAL</sub-title>
+    <desc lang="pt">O espírito de Lich possuiu Princesa Jujuba e caberá a Finn e Jake detê-lo.</desc>
+  </programme>
+  <programme start="20260829035500 -0500" stop="20260829040600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El mundo de craig</title>
+    <desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso de fortines en árboles y rampas para bicicletas gobernados por tribus de niños que conforman una verdadera sociedad infantil. En cada episodio, los niños se lanzan a zonas inexploradas del bosque, conocen a nuevos vecinos o se meten en problemas en su lugar favorito.</desc>
+  </programme>
+  <programme start="20260829035700 -0300" stop="20260829040800 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HORA DE AVENTURA</title>
+    <sub-title lang="pt">BRIZINHA</sub-title>
+    <desc lang="pt">Com a ajuda de uma abelha chamada Breezy, Finn decide sair em busca de um novo amor.</desc>
+  </programme>
+  <programme start="20260829040600 -0500" stop="20260829041900 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El mundo de craig</title>
+    <desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso de fortines en árboles y rampas para bicicletas gobernados por tribus de niños que conforman una verdadera sociedad infantil. En cada episodio, los niños se lanzan a zonas inexploradas del bosque, conocen a nuevos vecinos o se meten en problemas en su lugar favorito.</desc>
+  </programme>
+  <programme start="20260829040800 -0300" stop="20260829042000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HORA DE AVENTURA</title>
+    <sub-title lang="pt">A CÂMARA DAS LÂMINAS CONGELADAS</sub-title>
+    <desc lang="pt">Enquanto o Rei Gelado leva Gunter ao hospital, Finn e Jake decidem se infiltrar no esconderijo dele para testar suas habilidades de ninja.</desc>
+  </programme>
+  <programme start="20260829041900 -0500" stop="20260829043100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El mundo de craig</title>
+    <desc lang="es">Craig almuerza en el restaurante donde trabaja su hermano mayor y pide un plato de VENGANZA... y muchos palitos de pan.</desc>
+  </programme>
+  <programme start="20260829042000 -0300" stop="20260829043200 -0300" channel="CNLA_BR.br">
+    <title lang="pt">HORA DE AVENTURA</title>
+    <sub-title lang="pt">O QUE FALTAVA</sub-title>
+    <desc lang="pt">Finn (percussão vocal), Jake (viola de arco), Princesa Jujuba (tocando Beemo como um instrumento de 8-bits) e Marcelina (tocando baixo) formam uma banda para derrotar o Door Lord e recuperar o que foi roubado deles.</desc>
+  </programme>
+  <programme start="20260829043100 -0500" stop="20260829044400 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El mundo de craig</title>
+    <desc lang="es">Craig y sus dos mejores amigos, Kelsey y JP, viven una aventura tras otra en los agrestes suburbios del bosque, un paraíso de fortines en árboles y rampas para bicicletas gobernados por tribus de niños que conforman una verdadera sociedad infantil. En cada episodio, los niños se lanzan a zonas inexploradas del bosque, conocen a nuevos vecinos o se meten en problemas en su lugar favorito.</desc>
+  </programme>
+  <programme start="20260829043200 -0300" stop="20260829044300 -0300" channel="CNLA_BR.br">
+    <title lang="pt">DRAMA TOTAL KIDS</title>
+    <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
+  </programme>
+  <programme start="20260829044300 -0300" stop="20260829045300 -0300" channel="CNLA_BR.br">
+    <title lang="pt">DRAMA TOTAL KIDS</title>
+    <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
+  </programme>
+  <programme start="20260829044400 -0500" stop="20260829045500 -0500" channel="CNLA_PAN.co">
+    <title lang="es">El mundo de craig</title>
+    <desc lang="es">El juego del circulo siembra el caos en el Arroyo, así que Craig forma un consejo para restaurar el orden.</desc>
+  </programme>
+  <programme start="20260829045300 -0300" stop="20260829050400 -0300" channel="CNLA_BR.br">
+    <title lang="pt">DRAMA TOTAL KIDS</title>
+    <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
+  </programme>
+  <programme start="20260829045500 -0500" stop="20260829050600 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Los Titanes deben encontrar la forma de evitar que todos los residentes de Jump City se muden a Stockton.</desc>
+  </programme>
+  <programme start="20260829050400 -0300" stop="20260829051500 -0300" channel="CNLA_BR.br">
+    <title lang="pt">DRAMA TOTAL KIDS</title>
+    <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
+  </programme>
+  <programme start="20260829050600 -0500" stop="20260829051800 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Conoce a Robin, Cyborg, Starfire, Raven y Chico Bestia. Sin duda siguen siendo superhéroes que salvan el mundo, ¿pero qué sucede cuando ya terminaron de luchar contra el crimen?</desc>
+  </programme>
+  <programme start="20260829051500 -0300" stop="20260829052600 -0300" channel="CNLA_BR.br">
+    <title lang="pt">DRAMA TOTAL KIDS</title>
+    <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
+  </programme>
+  <programme start="20260829051800 -0500" stop="20260829053000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Raven envía a los demás Titanes a una peligrosa misión en la que deben conseguir los ingredientes necesarios para crear el emparedado más grandioso de todos los tiempos.</desc>
+  </programme>
+  <programme start="20260829052600 -0300" stop="20260829053700 -0300" channel="CNLA_BR.br">
+    <title lang="pt">DRAMA TOTAL KIDS</title>
+    <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
+  </programme>
+  <programme start="20260829053000 -0500" stop="20260829054100 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Cuando los titanes reemplazan el sofá por una cinta para correr, Cyborg y Chico Bestia deben buscar orientación del espíritu del sofá.</desc>
+  </programme>
+  <programme start="20260829053700 -0300" stop="20260829054800 -0300" channel="CNLA_BR.br">
+    <title lang="pt">DRAMA TOTAL KIDS</title>
+    <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
+  </programme>
+  <programme start="20260829054100 -0500" stop="20260829054700 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Krypto Salva el Día</title>
+  </programme>
+  <programme start="20260829054700 -0500" stop="20260829060000 -0500" channel="CNLA_PAN.co">
+    <title lang="es">Los Jóvenes Titanes En Acción</title>
+    <desc lang="es">Mientras juegan un juego de aventura de fantasía, los Titanes son transportados a su interior y deben encontrar la llave para regresar a casa.</desc>
+  </programme>
+  <programme start="20260829054800 -0300" stop="20260829060000 -0300" channel="CNLA_BR.br">
+    <title lang="pt">DRAMA TOTAL KIDS</title>
+    <desc lang="pt">Seus participantes favoritos de Ilha dos Desafios estão de volta de uma forma que você nunca viu antes... como crianças de quatro anos de idade numa escolinha! Eles podem até ser pequeninos, mas pensam como adolescentes e, onde houver problema, eles irão atrás!</desc>
+  </programme>
 </tv>
