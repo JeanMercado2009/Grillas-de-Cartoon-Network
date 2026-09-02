@@ -9,30 +9,98 @@ import requests
 # -------------------------------------------------------------
 # CONFIGURACIÓN GENERAL Y CANALES
 # -------------------------------------------------------------
-XML_OUTPUT_FILE = "CNLA_EPG.xml"
 RETENTION_DAYS = 15
 
 AUTH_URL = "https://epg.tapkit.warnermedia.com/api/security/oauth/token"
 BASE_DAILY_URL = "https://epg.tapkit.warnermedia.com/api/daily/shows?feedId={feed_id}&format=xls"
 
-FEEDS_CONFIG = [
-    {
-        "feed_id": "CNLA_PAN",
-        "channel_id": "CNLA_PAN.co",
-        "channel_name": "Cartoon Network Panregional",
-        "lang": "es",
-        "tz": timezone(timedelta(hours=-5)),
-        "tz_str": "-0500"
+# Estructura principal: Cada archivo XML tiene sus propios feeds y configuración
+NETWORKS_CONFIG = {
+    "CNLA_EPG.xml": {
+        "generator_name": "Guia de Programacion Cartoon Network MultiFeed",
+        "referer": "https://epg.tapkit.warnermedia.com/epg/networks/2",
+        "feeds": [
+            {
+                "feed_id": "CNLA_PAN",
+                "channel_id": "CNLA_PAN.co",
+                "channel_name": "Cartoon Network Panregional",
+                "lang": "es",
+                "tz": timezone(timedelta(hours=-5)),
+                "tz_str": "-0500"
+            },
+            {
+                "feed_id": "CNLA_BR",
+                "channel_id": "CNLA_BR.br",
+                "channel_name": "Cartoon Network Brasil",
+                "lang": "pt",
+                "tz": timezone(timedelta(hours=-3)),
+                "tz_str": "-0300"
+            }
+        ]
     },
-    {
-        "feed_id": "CNLA_BR",
-        "channel_id": "CNLA_BR.br",
-        "channel_name": "Cartoon Network Brasil",
-        "lang": "pt",
-        "tz": timezone(timedelta(hours=-3)),
-        "tz_str": "-0300"
+    "WARNERLA_EPG.xml": {
+        "generator_name": "Guia de Programacion Warner Channel MultiFeed",
+        "referer": "https://epg.tapkit.warnermedia.com/epg/networks/warner",
+        "feeds": [
+            {
+                "feed_id": "WARNERLA_CO",
+                "channel_id": "WARNER_CO.co",
+                "channel_name": "Warner Channel Colombia",
+                "lang": "es",
+                "tz": timezone(timedelta(hours=-5)),
+                "tz_str": "-0500"
+            },
+            {
+                "feed_id": "WARNERLA_MX",
+                "channel_id": "WARNER_MX.mx",
+                "channel_name": "Warner Channel México",
+                "lang": "es",
+                "tz": timezone(timedelta(hours=-6)),
+                "tz_str": "-0600"
+            },
+            {
+                "feed_id": "WARNERLA_AR",
+                "channel_id": "WARNER_AR.ar",
+                "channel_name": "Warner Channel Argentina",
+                "lang": "es",
+                "tz": timezone(timedelta(hours=-3)),
+                "tz_str": "-0300"
+            },
+            {
+                "feed_id": "WARNERLA_CH",
+                "channel_id": "WARNER_CL.cl",
+                "channel_name": "Warner Channel Chile",
+                "lang": "es",
+                "tz": timezone(timedelta(hours=-4)),
+                "tz_str": "-0400"
+            },
+            {
+                "feed_id": "WARNERLA_VE",
+                "channel_id": "WARNER_VE.ve",
+                "channel_name": "Warner Channel Venezuela",
+                "lang": "es",
+                "tz": timezone(timedelta(hours=-4)),
+                "tz_str": "-0400"
+            },
+            {
+                "feed_id": "WARNERLA_AN",
+                "channel_id": "WARNER_AN.co",
+                "channel_name": "Warner Channel Andes",
+                "lang": "es",
+                "tz": timezone(timedelta(hours=-5)),
+                "tz_str": "-0500"
+            },
+            {
+                "feed_id": "WARNERLA_BH",
+                "channel_id": "WARNER_BR.br",
+                "channel_name": "Warner Channel Brasil",
+                "lang": "pt",
+                "tz": timezone(timedelta(hours=-3)),
+                "tz_str": "-0300"
+            }
+        ]
     }
-]
+}
 
 COMMON_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
@@ -68,14 +136,14 @@ def login_and_get_token():
     print("[OK] Sesión iniciada y token obtenido exitosamente.")
     return token
 
-def download_feed_xls(token, feed_id):
+def download_feed_xls(token, feed_id, referer_url):
     session = requests.Session()
     session.headers.update({
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
         "Accept-Language": "es",
         "Authorization": f"Bearer {token}",
-        "Referer": "https://epg.tapkit.warnermedia.com/epg/networks/2"
+        "Referer": referer_url
     })
 
     url = BASE_DAILY_URL.format(feed_id=feed_id)
@@ -89,9 +157,9 @@ def download_feed_xls(token, feed_id):
     print(f"[OK] XLS descargado exitosamente para {feed_id}.")
     return xls_path
 
-def sanitize_and_parse_xml(file_path):
+def sanitize_and_parse_xml(file_path, generator_name):
     if not os.path.exists(file_path):
-        return ET.Element("tv", {"generator-info-name": "Guia de Programacion Cartoon Network MultiFeed"})
+        return ET.Element("tv", {"generator-info-name": generator_name})
 
     try:
         with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
@@ -100,14 +168,15 @@ def sanitize_and_parse_xml(file_path):
         cleaned_lines = []
         for line in content.splitlines():
             stripped = line.strip()
-            if stripped in ["JUEVES", "VIERNES", "SÁBADO", "SABADO", "DOMINGO", "LUNES", "MARTES", "MIÉRCOLES", "MIERCOLES"] or ("PANREGIONAL" in stripped and not stripped.startswith("<")):
+            # Filtro de cabeceras basura
+            if stripped in ["JUEVES", "VIERNES", "SÁBADO", "SABADO", "DOMINGO", "LUNES", "MARTES", "MIÉRCOLES", "MIERCOLES"] or (("PANREGIONAL" in stripped or "WARNER" in stripped) and not stripped.startswith("<")):
                 continue
             cleaned_lines.append(line)
 
         cleaned_content = "\n".join(cleaned_lines)
         return ET.fromstring(cleaned_content)
     except Exception:
-        return ET.Element("tv", {"generator-info-name": "Guia de Programacion Cartoon Network MultiFeed"})
+        return ET.Element("tv", {"generator-info-name": generator_name})
 
 def parse_xmltv_date(date_str, tz_info):
     if not date_str:
@@ -138,7 +207,7 @@ def process_feed(root, feed_cfg, xls_path):
     tz = feed_cfg["tz"]
     tz_str = feed_cfg["tz_str"]
 
-    # Registrar el canal si aún no existe
+    # Crear el nodo del canal si no existe en la XMLTV
     existing_channels = [ch for ch in root.findall("channel") if ch.attrib.get("id") == channel_id]
     if not existing_channels:
         ch_node = ET.SubElement(root, "channel", {"id": channel_id})
@@ -157,7 +226,8 @@ def process_feed(root, feed_cfg, xls_path):
     first_date_raw = str(df.iloc[0].get(col_date, "")).strip()
     match_init = re.search(r"(\d{1,2})[-/](\d{1,2})[-/](\d{4})", first_date_raw)
     if not match_init:
-        raise Exception(f"No se pudo detectar la fecha inicial de {channel_id}.")
+        print(f"[WARN] No se pudo detectar la fecha inicial para {channel_id}.")
+        return
 
     d0, m0, y0 = map(int, match_init.groups())
     cycle_start = datetime(y0, m0, d0, 6, 0, 0, tzinfo=tz)
@@ -187,7 +257,7 @@ def process_feed(root, feed_cfg, xls_path):
         if event_dt >= cycle_end:
             break
 
-        title_val = str(row.get(col_title, "")).strip()
+        title_val = str(row.get(col_title, "")).strip() if pd.notna(row.get(col_title)) else ""
         ep_val = str(row.get(col_ep, "")).strip() if col_ep and pd.notna(row.get(col_ep)) else ""
         
         desc_val = ""
@@ -198,9 +268,9 @@ def process_feed(root, feed_cfg, xls_path):
 
         raw_events.append({
             "start": event_dt,
-            "title": title_val,
-            "sub_title": ep_val if ep_val.lower() != title_val.lower() else "",
-            "desc": desc_val
+            "title": title_val if title_val.lower() != "nan" else "",
+            "sub_title": ep_val if ep_val.lower() != title_val.lower() and ep_val.lower() != "nan" else "",
+            "desc": desc_val if desc_val.lower() != "nan" else ""
         })
 
     raw_events = sorted(raw_events, key=lambda x: x["start"])
@@ -219,7 +289,8 @@ def process_feed(root, feed_cfg, xls_path):
         })
 
         title = ET.SubElement(prog, "title", {"lang": lang})
-        title.text = ev["title"]
+        if ev["title"]:
+            title.text = ev["title"]
 
         if ev["sub_title"]:
             sub_title = ET.SubElement(prog, "sub-title", {"lang": lang})
@@ -240,43 +311,53 @@ def process_feed(root, feed_cfg, xls_path):
 
 def main():
     token = login_and_get_token()
-    root = sanitize_and_parse_xml(XML_OUTPUT_FILE)
 
-    active_channel_ids = {cfg["channel_id"] for cfg in FEEDS_CONFIG}
-    for ch in list(root.findall("channel")):
-        if ch.attrib.get("id") not in active_channel_ids:
-            root.remove(ch)
+    # Recorrer cada red y su archivo XML correspondiente
+    for xml_filename, net_config in NETWORKS_CONFIG.items():
+        print(f"\n==========================================")
+        print(f"Procesando: {xml_filename}")
+        print(f"==========================================")
+        
+        root = sanitize_and_parse_xml(xml_filename, net_config["generator_name"])
 
-    # Descarga y procesa cada feed
-    for feed_cfg in FEEDS_CONFIG:
-        xls_path = download_feed_xls(token, feed_cfg["feed_id"])
-        process_feed(root, feed_cfg, xls_path)
+        active_channel_ids = {cfg["channel_id"] for cfg in net_config["feeds"]}
+        for ch in list(root.findall("channel")):
+            if ch.attrib.get("id") not in active_channel_ids:
+                root.remove(ch)
 
-    # Limpieza por retención histórica (15 días)
-    cutoff_date = datetime.now(timezone.utc) - timedelta(days=RETENTION_DAYS)
-    for p in list(root.findall("programme")):
-        ch_id = p.attrib.get("channel")
-        if ch_id not in active_channel_ids:
+        # Descargar y procesar feeds
+        for feed_cfg in net_config["feeds"]:
+            try:
+                xls_path = download_feed_xls(token, feed_cfg["feed_id"], net_config["referer"])
+                process_feed(root, feed_cfg, xls_path)
+            except Exception as e:
+                print(f"[ERROR] Error al procesar feed {feed_cfg['feed_id']}: {e}")
+
+        # Retención histórica (15 días)
+        cutoff_date = datetime.now(timezone.utc) - timedelta(days=RETENTION_DAYS)
+        for p in list(root.findall("programme")):
+            ch_id = p.attrib.get("channel")
+            if ch_id not in active_channel_ids:
+                root.remove(p)
+                continue
+            cfg = next((c for c in net_config["feeds"] if c["channel_id"] == ch_id), net_config["feeds"][0])
+            stop_dt = parse_xmltv_date(p.attrib.get("stop", ""), cfg["tz"])
+            if stop_dt and stop_dt < cutoff_date:
+                root.remove(p)
+
+        # Reordenamiento por hora de inicio
+        sorted_progs = sorted(
+            root.findall("programme"),
+            key=lambda x: x.attrib.get("start", "")
+        )
+        for p in list(root.findall("programme")):
             root.remove(p)
-            continue
-        cfg = next((c for c in FEEDS_CONFIG if c["channel_id"] == ch_id), FEEDS_CONFIG[0])
-        stop_dt = parse_xmltv_date(p.attrib.get("stop", ""), cfg["tz"])
-        if stop_dt and stop_dt < cutoff_date:
-            root.remove(p)
+        for p in sorted_progs:
+            root.append(p)
 
-    # Reordenar elementos XMLTV
-    sorted_progs = sorted(
-        root.findall("programme"),
-        key=lambda x: x.attrib.get("start", "")
-    )
-    for p in list(root.findall("programme")):
-        root.remove(p)
-    for p in sorted_progs:
-        root.append(p)
-
-    ET.indent(root, space="  ", level=0)
-    ET.ElementTree(root).write(XML_OUTPUT_FILE, encoding="utf-8", xml_declaration=True)
-    print(f"[OK] XML multi-feed actualizado con éxito. Total acumulado: {len(sorted_progs)} eventos.")
+        ET.indent(root, space="  ", level=0)
+        ET.ElementTree(root).write(xml_filename, encoding="utf-8", xml_declaration=True)
+        print(f"[OK] Archivo {xml_filename} guardado con éxito. Total programas: {len(sorted_progs)}")
 
 if __name__ == "__main__":
     main()
