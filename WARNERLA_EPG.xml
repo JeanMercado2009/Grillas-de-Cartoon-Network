@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tv generator-info-name="Guia de Programacion Warner Channel Latinoamerica">
+  <channel id="WARNER_CL.cl">
+    <display-name>Warner Channel Chile</display-name>
+  </channel>
+  <channel id="WARNER_AR.ar">
+    <display-name>Warner Channel Argentina</display-name>
+  </channel>
+  <channel id="WARNER_CO.co">
+    <display-name>Warner Channel Colombia</display-name>
+  </channel>
+  <channel id="WARNER_BR.br">
+    <display-name>Warner Channel Brasil</display-name>
+  </channel>
+  <channel id="WARNER_VE.ve">
+    <display-name>Warner Channel Venezuela</display-name>
+  </channel>
+  <channel id="WARNER_AN.co">
+    <display-name>Warner Channel Andes</display-name>
+  </channel>
+  <channel id="WARNER_MX.mx">
+    <display-name>Warner Channel México</display-name>
+  </channel>
+
+</tv>
