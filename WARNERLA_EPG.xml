@@ -2705,4 +2705,680 @@
   <programme start="20260905055600 -0500" stop="20260905060000 -0500" channel="WARNER_CO.co">
     <title lang="es">TNT BUZZ</title>
   </programme>
+  <programme start="20260905060000 -0300" stop="20260905063200 -0300" channel="WARNER_AR.ar">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905060000 -0300" stop="20260905060700 -0300" channel="WARNER_BR.br">
+    <title lang="pt">HOLLYWOOD ONE ON ONE 2026</title>
+    <sub-title lang="pt">HOLLYWOOD ONE ON ONE</sub-title>
+  </programme>
+  <programme start="20260905060000 -0400" stop="20260905063100 -0400" channel="WARNER_CL.cl">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905060000 -0400" stop="20260905060700 -0400" channel="WARNER_VE.ve">
+    <title lang="es">HOLLYWOOD ONE ON ONE 2026</title>
+  </programme>
+  <programme start="20260905060000 -0500" stop="20260905060600 -0500" channel="WARNER_CO.co">
+    <title lang="es">TNT BUZZ</title>
+  </programme>
+  <programme start="20260905060000 -0500" stop="20260905062100 -0500" channel="WARNER_AN.co">
+    <title lang="es">Corte Nocturna</title>
+    <desc lang="es">La jueza Abby Stone, hija del difunto Harry Stone, sigue los pasos de su padre, presidir el turno de noche de un juzgado de instrucción de Manhattan.</desc>
+  </programme>
+  <programme start="20260905060000 -0600" stop="20260905062400 -0600" channel="WARNER_MX.mx">
+    <title lang="es">Corte Nocturna</title>
+    <desc lang="es">La jueza Abby Stone, hija del difunto Harry Stone, sigue los pasos de su padre, presidir el turno de noche de un juzgado de instrucción de Manhattan.</desc>
+  </programme>
+  <programme start="20260905060600 -0500" stop="20260905060800 -0500" channel="WARNER_CO.co">
+    <title lang="es">TNT BUZZ</title>
+  </programme>
+  <programme start="20260905060700 -0300" stop="20260905063600 -0300" channel="WARNER_BR.br">
+    <title lang="pt">COBRA KAI: SEASON 2</title>
+    <sub-title lang="pt">Trégua</sub-title>
+    <desc lang="pt">Para preparar seus alunos, Daniel experimenta novos métodos de treinamento. Miguel coloca uma nova lição em prática. Johnny toma uma decisão difícil, mas crucial que afeta o Cobra Kai.</desc>
+  </programme>
+  <programme start="20260905060700 -0400" stop="20260905063900 -0400" channel="WARNER_VE.ve">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905060800 -0500" stop="20260905063400 -0500" channel="WARNER_CO.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260905062100 -0500" stop="20260905065200 -0500" channel="WARNER_AN.co">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905062400 -0600" stop="20260905065600 -0600" channel="WARNER_MX.mx">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905063100 -0400" stop="20260905070300 -0400" channel="WARNER_CL.cl">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905063200 -0300" stop="20260905070500 -0300" channel="WARNER_AR.ar">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905063400 -0500" stop="20260905065600 -0500" channel="WARNER_CO.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260905063600 -0300" stop="20260905065900 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">CORNHUSKER VORTEX, THE</sub-title>
+    <desc lang="pt">Sheldon ensina Leonard a jogar futebol e uma briga boba coloca em risco a amizade entre Howard e Raj.</desc>
+  </programme>
+  <programme start="20260905063900 -0400" stop="20260905070900 -0400" channel="WARNER_VE.ve">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905065200 -0500" stop="20260905072300 -0500" channel="WARNER_AN.co">
+    <title lang="es">COBRA KAI: SEASON 1</title>
+  </programme>
+  <programme start="20260905065600 -0500" stop="20260905072000 -0500" channel="WARNER_CO.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905065600 -0600" stop="20260905065900 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TNT BUZZ</title>
+  </programme>
+  <programme start="20260905065900 -0300" stop="20260905072000 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">GUITARIST AMPLIFICATION, THE</sub-title>
+    <desc lang="pt">Um pequeno atrito entre Leonard e Penny fará com que Sheldon sirva de mediador entre eles, só para livrar sua pele da chateação e não por altruísmo.</desc>
+  </programme>
+  <programme start="20260905065900 -0600" stop="20260905070000 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TNT BUZZ</title>
+  </programme>
+  <programme start="20260905070000 -0600" stop="20260905072400 -0600" channel="WARNER_MX.mx">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260905070300 -0400" stop="20260905072800 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905070500 -0300" stop="20260905071200 -0300" channel="WARNER_AR.ar">
+    <title lang="es">HOLLYWOOD ONE ON ONE 2026</title>
+  </programme>
+  <programme start="20260905070900 -0400" stop="20260905073000 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260905071200 -0300" stop="20260905072200 -0300" channel="WARNER_AR.ar">
+    <title lang="es">HOLLYWOOD ONE ON ONE 2026</title>
+  </programme>
+  <programme start="20260905072000 -0300" stop="20260905074300 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">ADHESIVE DUCK DEFICIENCY, THE</sub-title>
+    <desc lang="pt">Quando a maioria do grupo tira umas férias no campo, Sheldon terá que fazer as vezes de heroi para salvar Penny, que está ferida.</desc>
+  </programme>
+  <programme start="20260905072000 -0500" stop="20260905074500 -0500" channel="WARNER_CO.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905072200 -0300" stop="20260905074500 -0300" channel="WARNER_AR.ar">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905072300 -0500" stop="20260905074400 -0500" channel="WARNER_AN.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260905072400 -0600" stop="20260905074600 -0600" channel="WARNER_MX.mx">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260905072800 -0400" stop="20260905075300 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905073000 -0400" stop="20260905075400 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260905074300 -0300" stop="20260905080600 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TWO AND A HALF MEN</title>
+    <sub-title lang="pt">WALNUTS AND DEMEROL</sub-title>
+    <desc lang="pt">Quando Charlie se prepara para uma apaixonada Véspera de Natal sozinho com seu par, seus amigos e familiares continuam aparecendo e ficando até que Charlie se descobre sendo o anfitrião de uma festa natalina não planejada e não desejada. Ao descobrir quem é a nova namorada de Charlie, Evelyn se põe inexplicavelmente desesperada para separá-los antes que seu relacionamento vá longe demais.</desc>
+  </programme>
+  <programme start="20260905074400 -0500" stop="20260905080600 -0500" channel="WARNER_AN.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905074500 -0300" stop="20260905080800 -0300" channel="WARNER_AR.ar">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905074500 -0500" stop="20260905081000 -0500" channel="WARNER_CO.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905074600 -0600" stop="20260905080900 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905075300 -0400" stop="20260905081800 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905075400 -0400" stop="20260905081600 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260905080600 -0300" stop="20260905083100 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TWO AND A HALF MEN</title>
+    <sub-title lang="pt">CASTRATING SHEEP IN MONTANA</sub-title>
+    <desc lang="pt">Quando Berta descobre que Alan ha estado saindo às escondidas com sua filha, Naomi, Alan espera problemas. Porém a reação de Berta é surpreendente, e muito pior, de qualquer uma que Alan pudesse imaginar.</desc>
+  </programme>
+  <programme start="20260905080600 -0500" stop="20260905082900 -0500" channel="WARNER_AN.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905080800 -0300" stop="20260905083400 -0300" channel="WARNER_AR.ar">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905080900 -0600" stop="20260905083300 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905081000 -0500" stop="20260905083600 -0500" channel="WARNER_CO.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905081600 -0400" stop="20260905083800 -0400" channel="WARNER_VE.ve">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905081800 -0400" stop="20260905084400 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905082900 -0500" stop="20260905085300 -0500" channel="WARNER_AN.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905083100 -0300" stop="20260905085400 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TWO AND A HALF MEN</title>
+    <sub-title lang="pt">DON'T WORRY SPEED RACER</sub-title>
+    <desc lang="pt">Jake conta para Charlie e Alan que freqüentemente ouve Judith e seu namorado Herb, mantendo relações, e formula uma teoria sobre o porque sua mãe estar sempre dando instruções à Herb na cama. Rose ajuda Charlie a lidar pouco a pouco com uma perturbadora lembrança reprimida, trazida à tona por uma revelação de Jake.</desc>
+  </programme>
+  <programme start="20260905083300 -0600" stop="20260905085700 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905083400 -0300" stop="20260905085900 -0300" channel="WARNER_AR.ar">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905083600 -0500" stop="20260905090400 -0500" channel="WARNER_CO.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905083800 -0400" stop="20260905090200 -0400" channel="WARNER_VE.ve">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905084400 -0400" stop="20260905091000 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905085300 -0500" stop="20260905091700 -0500" channel="WARNER_AN.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905085400 -0300" stop="20260905091900 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TWO AND A HALF MEN</title>
+    <sub-title lang="pt">THAT'S SUMMER SAUSAGE, NOT SALAMI</sub-title>
+    <desc lang="pt">Quando conhece a nova vizinha bonitona, Danielle (BROOKE SHIELDS - "Nip/Tuck," "Suddenly Susan"), Charlie descobre que ela tem interesses em comum com Alan, e começa a tentar aproximar os dois - claro que por razões ocultas. Mas as coisas esquentam entre Alan e a vizinha, provocando o ciúme de Charlie.</desc>
+  </programme>
+  <programme start="20260905085700 -0600" stop="20260905092100 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905085900 -0300" stop="20260905092300 -0300" channel="WARNER_AR.ar">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905090200 -0400" stop="20260905092500 -0400" channel="WARNER_VE.ve">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905090400 -0500" stop="20260905093100 -0500" channel="WARNER_CO.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905091000 -0400" stop="20260905093600 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905091700 -0500" stop="20260905094000 -0500" channel="WARNER_AN.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905091900 -0300" stop="20260905094500 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TWO AND A HALF MEN</title>
+    <sub-title lang="pt">MY DAMN STALKER</sub-title>
+    <desc lang="pt">Quando Rose anuncia que se mudará para Londres permanentemente, Charlie não lhe dá atenção. Mas logo percebe que terá de encarar seus verdadeiros sentimentos por ela. Enquanto isso, Alan tenta engatar um namoro online - com resultados inesperados. Depois de exagerar em seu perfil, ele acaba atraindo alguém que fez o mesmo, Beverly (ALLISON JANNEY - "The West Wing").</desc>
+  </programme>
+  <programme start="20260905092100 -0600" stop="20260905094600 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905092300 -0300" stop="20260905111300 -0300" channel="WARNER_AR.ar">
+    <title lang="es">Peter Rabbit Conejo En Fuga</title>
+  </programme>
+  <programme start="20260905092500 -0400" stop="20260905094900 -0400" channel="WARNER_VE.ve">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905093100 -0500" stop="20260905112600 -0500" channel="WARNER_CO.co">
+    <title lang="es">Peter Rabbit Conejo En Fuga</title>
+  </programme>
+  <programme start="20260905093600 -0400" stop="20260905112800 -0400" channel="WARNER_CL.cl">
+    <title lang="es">Peter Rabbit Conejo En Fuga</title>
+  </programme>
+  <programme start="20260905094000 -0500" stop="20260905100400 -0500" channel="WARNER_AN.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905094500 -0300" stop="20260905101000 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TWO AND A HALF MEN</title>
+    <sub-title lang="pt">YOUNG PEOPLE HAVE PHLEGM TOO</sub-title>
+    <desc lang="pt">Charlie tem uma nova namorada. Ela é muito jovem e o leva para a boate da moda. Ela também convida Alan para que acompanhe sua amiga. Os irmãos ficam um pouco desconcertados quando notam que as pessoas que freqüentam o local os fazem se sentir muito velhos. Charlie tenta convencer Alan de que ninguém é velho demais para não aproveitar uma festa juvenil e selvagem.</desc>
+  </programme>
+  <programme start="20260905094600 -0600" stop="20260905101000 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905094900 -0400" stop="20260905101200 -0400" channel="WARNER_VE.ve">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905100400 -0500" stop="20260905114700 -0500" channel="WARNER_AN.co">
+    <title lang="es">Peter Rabbit Conejo En Fuga</title>
+  </programme>
+  <programme start="20260905101000 -0300" stop="20260905103300 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">CORNHUSKER VORTEX, THE</sub-title>
+    <desc lang="pt">Sheldon ensina Leonard a jogar futebol e uma briga boba coloca em risco a amizade entre Howard e Raj.</desc>
+  </programme>
+  <programme start="20260905101000 -0600" stop="20260905114400 -0600" channel="WARNER_MX.mx">
+    <title lang="es">Hancock</title>
+    <desc lang="es">Hancock es un superhéroe sarcástico, insatisfecho e incomprendido que ha perdido popularidad. Cuando acepta de mala gana un cambio de imagen radical propuesto por el publicista Ray Embrey, su vida y reputación renacen de las cenizas y todo parece estar bien nuevamente, hasta que conoce a una mujer con poderes similares a los suyos que tiene la llave a su pasado secreto.</desc>
+  </programme>
+  <programme start="20260905101200 -0400" stop="20260905103600 -0400" channel="WARNER_VE.ve">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260905103300 -0300" stop="20260905105400 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">GUITARIST AMPLIFICATION, THE</sub-title>
+    <desc lang="pt">Um pequeno atrito entre Leonard e Penny fará com que Sheldon sirva de mediador entre eles, só para livrar sua pele da chateação e não por altruísmo.</desc>
+  </programme>
+  <programme start="20260905103600 -0400" stop="20260905121700 -0400" channel="WARNER_VE.ve">
+    <title lang="es">Peter Rabbit Conejo En Fuga</title>
+  </programme>
+  <programme start="20260905105400 -0300" stop="20260905111900 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">ADHESIVE DUCK DEFICIENCY, THE</sub-title>
+    <desc lang="pt">Quando a maioria do grupo tira umas férias no campo, Sheldon terá que fazer as vezes de heroi para salvar Penny, que está ferida.</desc>
+  </programme>
+  <programme start="20260905111300 -0300" stop="20260905125500 -0300" channel="WARNER_AR.ar">
+    <title lang="es">Hancock</title>
+    <desc lang="es">Hancock es un superhéroe sarcástico, insatisfecho e incomprendido que ha perdido popularidad. Cuando acepta de mala gana un cambio de imagen radical propuesto por el publicista Ray Embrey, su vida y reputación renacen de las cenizas y todo parece estar bien nuevamente, hasta que conoce a una mujer con poderes similares a los suyos que tiene la llave a su pasado secreto.</desc>
+  </programme>
+  <programme start="20260905111900 -0300" stop="20260905114100 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">VENGEANCE FORMULATION, THE</sub-title>
+    <desc lang="pt">Barry Kripke faz uma brincadeira de mau gosto com Sheldon, deixando nosso neurótico mais querido com sede de vingança. Wolowitz não agüenta a pressão de Bernadette e decide pedir conselhos a uma Katee Sackhoff de mentira.</desc>
+  </programme>
+  <programme start="20260905112600 -0500" stop="20260905130500 -0500" channel="WARNER_CO.co">
+    <title lang="es">Hancock</title>
+    <desc lang="es">Hancock es un superhéroe sarcástico, insatisfecho e incomprendido que ha perdido popularidad. Cuando acepta de mala gana un cambio de imagen radical propuesto por el publicista Ray Embrey, su vida y reputación renacen de las cenizas y todo parece estar bien nuevamente, hasta que conoce a una mujer con poderes similares a los suyos que tiene la llave a su pasado secreto.</desc>
+  </programme>
+  <programme start="20260905112800 -0400" stop="20260905130800 -0400" channel="WARNER_CL.cl">
+    <title lang="es">Hancock</title>
+    <desc lang="es">Hancock es un superhéroe sarcástico, insatisfecho e incomprendido que ha perdido popularidad. Cuando acepta de mala gana un cambio de imagen radical propuesto por el publicista Ray Embrey, su vida y reputación renacen de las cenizas y todo parece estar bien nuevamente, hasta que conoce a una mujer con poderes similares a los suyos que tiene la llave a su pasado secreto.</desc>
+  </programme>
+  <programme start="20260905114100 -0300" stop="20260905120500 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">GORILLA EXPERIMENT, THE</sub-title>
+    <desc lang="pt">Sheldon ajudará Penny a entender melhor a profissão de Leonard. Por outro lado, Wolowitz começa a sentir ciúmes da aproximação de Leonard com a namorada de Howard.</desc>
+  </programme>
+  <programme start="20260905114400 -0600" stop="20260905133100 -0600" channel="WARNER_MX.mx">
+    <title lang="es">El Tesoro del Amazonas</title>
+    <desc lang="es">Beck, un exitoso cazador de recompensas debe viajar hasta el Amazonas para capturar a un convicto y pagar así una deuda. Pero cuando llega a la jungla, Beck descubre que Travis, su presa, es un simpático muchacho obsesionado con encontrar una valiosa y legendaria estatuilla. Beck se une entonces a los planes del joven. Pero antes de llevarse el tesoro, el dúo deberá pasar por el cadáver del poderoso Hatcher, el supuesto dueño de la estatuilla.</desc>
+  </programme>
+  <programme start="20260905114700 -0500" stop="20260905132200 -0500" channel="WARNER_AN.co">
+    <title lang="es">Hancock</title>
+    <desc lang="es">Hancock es un superhéroe sarcástico, insatisfecho e incomprendido que ha perdido popularidad. Cuando acepta de mala gana un cambio de imagen radical propuesto por el publicista Ray Embrey, su vida y reputación renacen de las cenizas y todo parece estar bien nuevamente, hasta que conoce a una mujer con poderes similares a los suyos que tiene la llave a su pasado secreto.</desc>
+  </programme>
+  <programme start="20260905120500 -0300" stop="20260905122700 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">MATERNAL CONGRUENCE, THE</sub-title>
+    <desc lang="pt">Leonard se sentirá pressionado pelo fato de não saber se sua mãe aprovará seu relacionamento com Penny. Logo depois, Leonard descobrirá que ela também lhe escondeu alguns segredinhos.</desc>
+  </programme>
+  <programme start="20260905121700 -0400" stop="20260905135100 -0400" channel="WARNER_VE.ve">
+    <title lang="es">Hancock</title>
+    <desc lang="es">Hancock es un superhéroe sarcástico, insatisfecho e incomprendido que ha perdido popularidad. Cuando acepta de mala gana un cambio de imagen radical propuesto por el publicista Ray Embrey, su vida y reputación renacen de las cenizas y todo parece estar bien nuevamente, hasta que conoce a una mujer con poderes similares a los suyos que tiene la llave a su pasado secreto.</desc>
+  </programme>
+  <programme start="20260905122700 -0300" stop="20260905140400 -0300" channel="WARNER_BR.br">
+    <title lang="pt">UM LUGAR SILENCIOSO</title>
+    <desc lang="pt">Em um mundo pós-apocalíptico, uma família é forçada a viver em silêncio enquanto se esconde de monstros com audição ultra-sensível.</desc>
+  </programme>
+  <programme start="20260905125500 -0300" stop="20260905145300 -0300" channel="WARNER_AR.ar">
+    <title lang="es">El Tesoro del Amazonas</title>
+    <desc lang="es">Beck, un exitoso cazador de recompensas debe viajar hasta el Amazonas para capturar a un convicto y pagar así una deuda. Pero cuando llega a la jungla, Beck descubre que Travis, su presa, es un simpático muchacho obsesionado con encontrar una valiosa y legendaria estatuilla. Beck se une entonces a los planes del joven. Pero antes de llevarse el tesoro, el dúo deberá pasar por el cadáver del poderoso Hatcher, el supuesto dueño de la estatuilla.</desc>
+  </programme>
+  <programme start="20260905130500 -0500" stop="20260905150400 -0500" channel="WARNER_CO.co">
+    <title lang="es">El Tesoro del Amazonas</title>
+    <desc lang="es">Beck, un exitoso cazador de recompensas debe viajar hasta el Amazonas para capturar a un convicto y pagar así una deuda. Pero cuando llega a la jungla, Beck descubre que Travis, su presa, es un simpático muchacho obsesionado con encontrar una valiosa y legendaria estatuilla. Beck se une entonces a los planes del joven. Pero antes de llevarse el tesoro, el dúo deberá pasar por el cadáver del poderoso Hatcher, el supuesto dueño de la estatuilla.</desc>
+  </programme>
+  <programme start="20260905130800 -0400" stop="20260905150600 -0400" channel="WARNER_CL.cl">
+    <title lang="es">El Tesoro del Amazonas</title>
+    <desc lang="es">Beck, un exitoso cazador de recompensas debe viajar hasta el Amazonas para capturar a un convicto y pagar así una deuda. Pero cuando llega a la jungla, Beck descubre que Travis, su presa, es un simpático muchacho obsesionado con encontrar una valiosa y legendaria estatuilla. Beck se une entonces a los planes del joven. Pero antes de llevarse el tesoro, el dúo deberá pasar por el cadáver del poderoso Hatcher, el supuesto dueño de la estatuilla.</desc>
+  </programme>
+  <programme start="20260905132200 -0500" stop="20260905151200 -0500" channel="WARNER_AN.co">
+    <title lang="es">El Tesoro del Amazonas</title>
+    <desc lang="es">Beck, un exitoso cazador de recompensas debe viajar hasta el Amazonas para capturar a un convicto y pagar así una deuda. Pero cuando llega a la jungla, Beck descubre que Travis, su presa, es un simpático muchacho obsesionado con encontrar una valiosa y legendaria estatuilla. Beck se une entonces a los planes del joven. Pero antes de llevarse el tesoro, el dúo deberá pasar por el cadáver del poderoso Hatcher, el supuesto dueño de la estatuilla.</desc>
+  </programme>
+  <programme start="20260905133100 -0600" stop="20260905153600 -0600" channel="WARNER_MX.mx">
+    <title lang="es">La Gran Estafa</title>
+    <desc lang="es">"Un elenco de lujo conformado por George Clooney, Andy Garcia, Julia Roberts, Brad Pitt y Matt Damon protagonizan esta remake llena de humor, diálogos ágiles e intriga. Durante su estadía en prisión, el carismático Danny Ocean (Clooney) planeó un gran golpe: robar en simultáneo 3 casinos de Las Vegas. Apenas recupera su libertad, Danny recluta a una banda de especialistas para robar 150 millones de dólares durante la celebración de una importante pelea de boxeo. Pero un problema inesperado complicará las cosas: Terry Benedic (Garcia), el dueño de los casinos, está saliendo con Tess (Julia Roberts), la ex mujer de Danny. ""La Gran Estafa"" fue dirigida por Steven Soderbergh. "</desc>
+  </programme>
+  <programme start="20260905135100 -0400" stop="20260905153600 -0400" channel="WARNER_VE.ve">
+    <title lang="es">El Tesoro del Amazonas</title>
+    <desc lang="es">Beck, un exitoso cazador de recompensas debe viajar hasta el Amazonas para capturar a un convicto y pagar así una deuda. Pero cuando llega a la jungla, Beck descubre que Travis, su presa, es un simpático muchacho obsesionado con encontrar una valiosa y legendaria estatuilla. Beck se une entonces a los planes del joven. Pero antes de llevarse el tesoro, el dúo deberá pasar por el cadáver del poderoso Hatcher, el supuesto dueño de la estatuilla.</desc>
+  </programme>
+  <programme start="20260905140400 -0300" stop="20260905155200 -0300" channel="WARNER_BR.br">
+    <title lang="pt">Bem-Vindo à Selva</title>
+    <desc lang="pt">Em "Bem-vindo à Selva", The Rock faz um bem-sucedido caçador de recompensas, Beck, que viaja ao Amazonas para capturar um fugitivo e assim pagar uma dívida. Mas, quando chega à selva, Beck descobre que seu alvo, Travis (Seann William Scott), é um simpático rapaz obcecado por encontrar uma valiosa e lendária estatueta. Beck decide então se unir ao jovem mas antes, a dupla deverá passar pelo cadáver do poderoso Hatcher (Christopher Walken), o suposto dono da estatueta. Uma comédia repleta de ação e aventura, com uma pequena participação de Arnold Schwarzenegger e direção do ator Peter Berg.</desc>
+  </programme>
+  <programme start="20260905145300 -0300" stop="20260905171100 -0300" channel="WARNER_AR.ar">
+    <title lang="es">La Gran Estafa</title>
+    <desc lang="es">"Un elenco de lujo conformado por George Clooney, Andy Garcia, Julia Roberts, Brad Pitt y Matt Damon protagonizan esta remake llena de humor, diálogos ágiles e intriga. Durante su estadía en prisión, el carismático Danny Ocean (Clooney) planeó un gran golpe: robar en simultáneo 3 casinos de Las Vegas. Apenas recupera su libertad, Danny recluta a una banda de especialistas para robar 150 millones de dólares durante la celebración de una importante pelea de boxeo. Pero un problema inesperado complicará las cosas: Terry Benedic (Garcia), el dueño de los casinos, está saliendo con Tess (Julia Roberts), la ex mujer de Danny. ""La Gran Estafa"" fue dirigida por Steven Soderbergh. "</desc>
+  </programme>
+  <programme start="20260905150400 -0500" stop="20260905172100 -0500" channel="WARNER_CO.co">
+    <title lang="es">La Gran Estafa</title>
+    <desc lang="es">"Un elenco de lujo conformado por George Clooney, Andy Garcia, Julia Roberts, Brad Pitt y Matt Damon protagonizan esta remake llena de humor, diálogos ágiles e intriga. Durante su estadía en prisión, el carismático Danny Ocean (Clooney) planeó un gran golpe: robar en simultáneo 3 casinos de Las Vegas. Apenas recupera su libertad, Danny recluta a una banda de especialistas para robar 150 millones de dólares durante la celebración de una importante pelea de boxeo. Pero un problema inesperado complicará las cosas: Terry Benedic (Garcia), el dueño de los casinos, está saliendo con Tess (Julia Roberts), la ex mujer de Danny. ""La Gran Estafa"" fue dirigida por Steven Soderbergh. "</desc>
+  </programme>
+  <programme start="20260905150600 -0400" stop="20260905172100 -0400" channel="WARNER_CL.cl">
+    <title lang="es">La Gran Estafa</title>
+    <desc lang="es">"Un elenco de lujo conformado por George Clooney, Andy Garcia, Julia Roberts, Brad Pitt y Matt Damon protagonizan esta remake llena de humor, diálogos ágiles e intriga. Durante su estadía en prisión, el carismático Danny Ocean (Clooney) planeó un gran golpe: robar en simultáneo 3 casinos de Las Vegas. Apenas recupera su libertad, Danny recluta a una banda de especialistas para robar 150 millones de dólares durante la celebración de una importante pelea de boxeo. Pero un problema inesperado complicará las cosas: Terry Benedic (Garcia), el dueño de los casinos, está saliendo con Tess (Julia Roberts), la ex mujer de Danny. ""La Gran Estafa"" fue dirigida por Steven Soderbergh. "</desc>
+  </programme>
+  <programme start="20260905151200 -0500" stop="20260905172500 -0500" channel="WARNER_AN.co">
+    <title lang="es">La Gran Estafa</title>
+    <desc lang="es">"Un elenco de lujo conformado por George Clooney, Andy Garcia, Julia Roberts, Brad Pitt y Matt Damon protagonizan esta remake llena de humor, diálogos ágiles e intriga. Durante su estadía en prisión, el carismático Danny Ocean (Clooney) planeó un gran golpe: robar en simultáneo 3 casinos de Las Vegas. Apenas recupera su libertad, Danny recluta a una banda de especialistas para robar 150 millones de dólares durante la celebración de una importante pelea de boxeo. Pero un problema inesperado complicará las cosas: Terry Benedic (Garcia), el dueño de los casinos, está saliendo con Tess (Julia Roberts), la ex mujer de Danny. ""La Gran Estafa"" fue dirigida por Steven Soderbergh. "</desc>
+  </programme>
+  <programme start="20260905153600 -0400" stop="20260905174100 -0400" channel="WARNER_VE.ve">
+    <title lang="es">La Gran Estafa</title>
+    <desc lang="es">"Un elenco de lujo conformado por George Clooney, Andy Garcia, Julia Roberts, Brad Pitt y Matt Damon protagonizan esta remake llena de humor, diálogos ágiles e intriga. Durante su estadía en prisión, el carismático Danny Ocean (Clooney) planeó un gran golpe: robar en simultáneo 3 casinos de Las Vegas. Apenas recupera su libertad, Danny recluta a una banda de especialistas para robar 150 millones de dólares durante la celebración de una importante pelea de boxeo. Pero un problema inesperado complicará las cosas: Terry Benedic (Garcia), el dueño de los casinos, está saliendo con Tess (Julia Roberts), la ex mujer de Danny. ""La Gran Estafa"" fue dirigida por Steven Soderbergh. "</desc>
+  </programme>
+  <programme start="20260905153600 -0600" stop="20260905175000 -0600" channel="WARNER_MX.mx">
+    <title lang="es">La Nueva Gran Estafa</title>
+    <desc lang="es">Segunda entrega de la saga más glamorosa que tiene como protagonistas a personajes bellos, simpáticos, astutos y¿ ladrones, La nueva gran estafa. Con un elenco envidiable, la banda de Dany Ocean (George Clooney) regresa y esta vez el objetivo se encuentra en un museo europeo: robar el famoso huevo de Fabergé que se expondrá en Roma. Pero el plan se complica cuando aparece Isabel Lahiri (Catherine Zeta-Jones), detective y ex de Rusty (Brad Pitt), la mano derecha de Dany. Persecuciones que tienen como escenario los mejores paisajes europeos, diálogos disparatados y muchas estrellas, entre ellos Matt Damon, Julia Roberts, Andy García y hasta Bruce Willis, haciendo de sí mismo. La dirección está a cargo de Steven Soderbergh, responsable por las tres entregas de la saga Ocean's, y también reconocido por Sexo, Mentiras y videos, Traffic y Erin Brockovich.</desc>
+  </programme>
+  <programme start="20260905155200 -0300" stop="20260905180200 -0300" channel="WARNER_BR.br">
+    <title lang="pt">Onze Homens e um Segredo</title>
+    <desc lang="pt">Como realizar um tremendo blockbuster? Resgate um dos maiores clássicos do cinema e adicione um talentoso elenco de megastars como Brad Pitt, Andy Garcia, George Clooney, Julia Roberts, entre outros. Assim é Onze Homens e Um Segredo. Dany Ocean (Clooney) mal recebeu sua liberdade condicional e já tem planejado o seu próximo golpe, no qual precisará do reforço de antigos amigos. Pretende assaltar três cassinos em Las Vegas e levar 150 milhões de dólares na noite da disputa do título mundial de boxe. Mas, na verdade, o que Ocean quer é sua mulher de volta, Tess (Julia Roberts), que agora namora o dono dos cassinos (Andy Garcia). O filme promete bons assaltos.</desc>
+  </programme>
+  <programme start="20260905171100 -0300" stop="20260905193600 -0300" channel="WARNER_AR.ar">
+    <title lang="es">La Nueva Gran Estafa</title>
+    <desc lang="es">Segunda entrega de la saga más glamorosa que tiene como protagonistas a personajes bellos, simpáticos, astutos y¿ ladrones, La nueva gran estafa. Con un elenco envidiable, la banda de Dany Ocean (George Clooney) regresa y esta vez el objetivo se encuentra en un museo europeo: robar el famoso huevo de Fabergé que se expondrá en Roma. Pero el plan se complica cuando aparece Isabel Lahiri (Catherine Zeta-Jones), detective y ex de Rusty (Brad Pitt), la mano derecha de Dany. Persecuciones que tienen como escenario los mejores paisajes europeos, diálogos disparatados y muchas estrellas, entre ellos Matt Damon, Julia Roberts, Andy García y hasta Bruce Willis, haciendo de sí mismo. La dirección está a cargo de Steven Soderbergh, responsable por las tres entregas de la saga Ocean's, y también reconocido por Sexo, Mentiras y videos, Traffic y Erin Brockovich.</desc>
+  </programme>
+  <programme start="20260905172100 -0400" stop="20260905194100 -0400" channel="WARNER_CL.cl">
+    <title lang="es">La Nueva Gran Estafa</title>
+    <desc lang="es">Segunda entrega de la saga más glamorosa que tiene como protagonistas a personajes bellos, simpáticos, astutos y¿ ladrones, La nueva gran estafa. Con un elenco envidiable, la banda de Dany Ocean (George Clooney) regresa y esta vez el objetivo se encuentra en un museo europeo: robar el famoso huevo de Fabergé que se expondrá en Roma. Pero el plan se complica cuando aparece Isabel Lahiri (Catherine Zeta-Jones), detective y ex de Rusty (Brad Pitt), la mano derecha de Dany. Persecuciones que tienen como escenario los mejores paisajes europeos, diálogos disparatados y muchas estrellas, entre ellos Matt Damon, Julia Roberts, Andy García y hasta Bruce Willis, haciendo de sí mismo. La dirección está a cargo de Steven Soderbergh, responsable por las tres entregas de la saga Ocean's, y también reconocido por Sexo, Mentiras y videos, Traffic y Erin Brockovich.</desc>
+  </programme>
+  <programme start="20260905172100 -0500" stop="20260905194000 -0500" channel="WARNER_CO.co">
+    <title lang="es">La Nueva Gran Estafa</title>
+    <desc lang="es">Segunda entrega de la saga más glamorosa que tiene como protagonistas a personajes bellos, simpáticos, astutos y¿ ladrones, La nueva gran estafa. Con un elenco envidiable, la banda de Dany Ocean (George Clooney) regresa y esta vez el objetivo se encuentra en un museo europeo: robar el famoso huevo de Fabergé que se expondrá en Roma. Pero el plan se complica cuando aparece Isabel Lahiri (Catherine Zeta-Jones), detective y ex de Rusty (Brad Pitt), la mano derecha de Dany. Persecuciones que tienen como escenario los mejores paisajes europeos, diálogos disparatados y muchas estrellas, entre ellos Matt Damon, Julia Roberts, Andy García y hasta Bruce Willis, haciendo de sí mismo. La dirección está a cargo de Steven Soderbergh, responsable por las tres entregas de la saga Ocean's, y también reconocido por Sexo, Mentiras y videos, Traffic y Erin Brockovich.</desc>
+  </programme>
+  <programme start="20260905172500 -0500" stop="20260905194200 -0500" channel="WARNER_AN.co">
+    <title lang="es">La Nueva Gran Estafa</title>
+    <desc lang="es">Segunda entrega de la saga más glamorosa que tiene como protagonistas a personajes bellos, simpáticos, astutos y¿ ladrones, La nueva gran estafa. Con un elenco envidiable, la banda de Dany Ocean (George Clooney) regresa y esta vez el objetivo se encuentra en un museo europeo: robar el famoso huevo de Fabergé que se expondrá en Roma. Pero el plan se complica cuando aparece Isabel Lahiri (Catherine Zeta-Jones), detective y ex de Rusty (Brad Pitt), la mano derecha de Dany. Persecuciones que tienen como escenario los mejores paisajes europeos, diálogos disparatados y muchas estrellas, entre ellos Matt Damon, Julia Roberts, Andy García y hasta Bruce Willis, haciendo de sí mismo. La dirección está a cargo de Steven Soderbergh, responsable por las tres entregas de la saga Ocean's, y también reconocido por Sexo, Mentiras y videos, Traffic y Erin Brockovich.</desc>
+  </programme>
+  <programme start="20260905174100 -0400" stop="20260905195000 -0400" channel="WARNER_VE.ve">
+    <title lang="es">La Nueva Gran Estafa</title>
+    <desc lang="es">Segunda entrega de la saga más glamorosa que tiene como protagonistas a personajes bellos, simpáticos, astutos y¿ ladrones, La nueva gran estafa. Con un elenco envidiable, la banda de Dany Ocean (George Clooney) regresa y esta vez el objetivo se encuentra en un museo europeo: robar el famoso huevo de Fabergé que se expondrá en Roma. Pero el plan se complica cuando aparece Isabel Lahiri (Catherine Zeta-Jones), detective y ex de Rusty (Brad Pitt), la mano derecha de Dany. Persecuciones que tienen como escenario los mejores paisajes europeos, diálogos disparatados y muchas estrellas, entre ellos Matt Damon, Julia Roberts, Andy García y hasta Bruce Willis, haciendo de sí mismo. La dirección está a cargo de Steven Soderbergh, responsable por las tres entregas de la saga Ocean's, y también reconocido por Sexo, Mentiras y videos, Traffic y Erin Brockovich.</desc>
+  </programme>
+  <programme start="20260905175000 -0600" stop="20260905200200 -0600" channel="WARNER_MX.mx">
+    <title lang="es">Ahora Son 13</title>
+    <desc lang="es">Cuando uno de los hombres de Danny Ocean, Reuben Tishkoff, construye un hotel con otro dueño de casino, Willy Bank, lo último que podía imaginarse era que el repulsivo Bank le tendería una trampa y lo dejaría fuera del negocio. Para empeorar las cosas, Reuben termina en el hospital víctima de un infarto. Eso es mucho más de lo que Danny puede soportar sin hacer nada. Junto a su banda y su viejo enemigo Benedict -que también tiene temas pendientes con Bank-, Ocean ejecutará un plan espectacular la noche de apertura del imponente hotel de Bank.</desc>
+  </programme>
+  <programme start="20260905180200 -0300" stop="20260905201600 -0300" channel="WARNER_BR.br">
+    <title lang="pt">Doze Homens e Outro Segredo</title>
+    <desc lang="pt">Três anos após Onze Homens e um Segredo, o diretor Steven Soderbergh repete o êxito nesta seqüência que preserva o mesmo humor afiado e a sagacidade do primeiro filme. Danny Ocean agora vive longe do crime ao lado da mulher, Tess (Julia Roberts). Tudo vai muito bem até o ex-marido de Tess e dono de cassinos, Terry Benedict (Andy Garcia), resolver recuperar tudo o que teve roubado pelos onze homens no primeiro filme. Desta vez, eles partirão para a Europa, onde terão de realizar um novo roubo e enfrentar a bela agente do FBI Isabel Lahiri (Catherine Zeta-Jones), que tem umas contas para acertar com Rusty Ryan (Brad Pitt).</desc>
+  </programme>
+  <programme start="20260905193600 -0300" stop="20260905220000 -0300" channel="WARNER_AR.ar">
+    <title lang="es">Ahora Son 13</title>
+    <desc lang="es">Cuando uno de los hombres de Danny Ocean, Reuben Tishkoff, construye un hotel con otro dueño de casino, Willy Bank, lo último que podía imaginarse era que el repulsivo Bank le tendería una trampa y lo dejaría fuera del negocio. Para empeorar las cosas, Reuben termina en el hospital víctima de un infarto. Eso es mucho más de lo que Danny puede soportar sin hacer nada. Junto a su banda y su viejo enemigo Benedict -que también tiene temas pendientes con Bank-, Ocean ejecutará un plan espectacular la noche de apertura del imponente hotel de Bank.</desc>
+  </programme>
+  <programme start="20260905194000 -0500" stop="20260905220000 -0500" channel="WARNER_CO.co">
+    <title lang="es">Ahora Son 13</title>
+    <desc lang="es">Cuando uno de los hombres de Danny Ocean, Reuben Tishkoff, construye un hotel con otro dueño de casino, Willy Bank, lo último que podía imaginarse era que el repulsivo Bank le tendería una trampa y lo dejaría fuera del negocio. Para empeorar las cosas, Reuben termina en el hospital víctima de un infarto. Eso es mucho más de lo que Danny puede soportar sin hacer nada. Junto a su banda y su viejo enemigo Benedict -que también tiene temas pendientes con Bank-, Ocean ejecutará un plan espectacular la noche de apertura del imponente hotel de Bank.</desc>
+  </programme>
+  <programme start="20260905194100 -0400" stop="20260905220000 -0400" channel="WARNER_CL.cl">
+    <title lang="es">Ahora Son 13</title>
+    <desc lang="es">Cuando uno de los hombres de Danny Ocean, Reuben Tishkoff, construye un hotel con otro dueño de casino, Willy Bank, lo último que podía imaginarse era que el repulsivo Bank le tendería una trampa y lo dejaría fuera del negocio. Para empeorar las cosas, Reuben termina en el hospital víctima de un infarto. Eso es mucho más de lo que Danny puede soportar sin hacer nada. Junto a su banda y su viejo enemigo Benedict -que también tiene temas pendientes con Bank-, Ocean ejecutará un plan espectacular la noche de apertura del imponente hotel de Bank.</desc>
+  </programme>
+  <programme start="20260905194200 -0500" stop="20260905220000 -0500" channel="WARNER_AN.co">
+    <title lang="es">Ahora Son 13</title>
+    <desc lang="es">Cuando uno de los hombres de Danny Ocean, Reuben Tishkoff, construye un hotel con otro dueño de casino, Willy Bank, lo último que podía imaginarse era que el repulsivo Bank le tendería una trampa y lo dejaría fuera del negocio. Para empeorar las cosas, Reuben termina en el hospital víctima de un infarto. Eso es mucho más de lo que Danny puede soportar sin hacer nada. Junto a su banda y su viejo enemigo Benedict -que también tiene temas pendientes con Bank-, Ocean ejecutará un plan espectacular la noche de apertura del imponente hotel de Bank.</desc>
+  </programme>
+  <programme start="20260905195000 -0400" stop="20260905220000 -0400" channel="WARNER_VE.ve">
+    <title lang="es">Ahora Son 13</title>
+    <desc lang="es">Cuando uno de los hombres de Danny Ocean, Reuben Tishkoff, construye un hotel con otro dueño de casino, Willy Bank, lo último que podía imaginarse era que el repulsivo Bank le tendería una trampa y lo dejaría fuera del negocio. Para empeorar las cosas, Reuben termina en el hospital víctima de un infarto. Eso es mucho más de lo que Danny puede soportar sin hacer nada. Junto a su banda y su viejo enemigo Benedict -que también tiene temas pendientes con Bank-, Ocean ejecutará un plan espectacular la noche de apertura del imponente hotel de Bank.</desc>
+  </programme>
+  <programme start="20260905200200 -0600" stop="20260905220000 -0600" channel="WARNER_MX.mx">
+    <title lang="es">Ocean's 8: Las Estafadoras</title>
+    <desc lang="es">Cinco años, ocho meses y 12 días; esa es la cantidad que Debbie Ocean lleva planeando el golpe más importante de su vida. Ella sabe lo que necesita: un grupo de la mejor gente en el rubro, empezando por su cómplice Lou Miller. Juntas reclutarán a un grupo de especialistas, compuesto por la joyera Amita, la carterista Constance, la madre de los suburbios Tammy, la hacker Nine Ball y la diseñadora de moda Rose. El objetivo es robar un collar valuado en más de 150 millones de dólares.</desc>
+  </programme>
+  <programme start="20260905201600 -0300" stop="20260905223000 -0300" channel="WARNER_BR.br">
+    <title lang="pt">Treze Homens e um Novo Segredo</title>
+    <desc lang="pt">Quando um dos homens de Danny Ocean, Reuben Tishkoff, constrói um hotel com outro dono de cassino, Willy Bank, a última coisa que ele imagina é ser passado para trás pelo repulsivo Bank. Para piorar as coisas, ele acaba indo parar no hospital após sofrer um infarto. Isso é muito para Danny encarar. Ao lado de sua gangue e de seu velho inimigo Benedict - que também tem umas contas para acertar com Bank -, Ocean está prestes a executar um plano espetacular na noite em que Bank abrir seu badalado hotel.</desc>
+  </programme>
+  <programme start="20260905220000 -0300" stop="20260906000300 -0300" channel="WARNER_AR.ar">
+    <title lang="es">Ocean's 8: Las Estafadoras</title>
+    <desc lang="es">Cinco años, ocho meses y 12 días; esa es la cantidad que Debbie Ocean lleva planeando el golpe más importante de su vida. Ella sabe lo que necesita: un grupo de la mejor gente en el rubro, empezando por su cómplice Lou Miller. Juntas reclutarán a un grupo de especialistas, compuesto por la joyera Amita, la carterista Constance, la madre de los suburbios Tammy, la hacker Nine Ball y la diseñadora de moda Rose. El objetivo es robar un collar valuado en más de 150 millones de dólares.</desc>
+  </programme>
+  <programme start="20260905220000 -0400" stop="20260906000100 -0400" channel="WARNER_CL.cl">
+    <title lang="es">Ocean's 8: Las Estafadoras</title>
+    <desc lang="es">Cinco años, ocho meses y 12 días; esa es la cantidad que Debbie Ocean lleva planeando el golpe más importante de su vida. Ella sabe lo que necesita: un grupo de la mejor gente en el rubro, empezando por su cómplice Lou Miller. Juntas reclutarán a un grupo de especialistas, compuesto por la joyera Amita, la carterista Constance, la madre de los suburbios Tammy, la hacker Nine Ball y la diseñadora de moda Rose. El objetivo es robar un collar valuado en más de 150 millones de dólares.</desc>
+  </programme>
+  <programme start="20260905220000 -0400" stop="20260905235600 -0400" channel="WARNER_VE.ve">
+    <title lang="es">Ocean's 8: Las Estafadoras</title>
+    <desc lang="es">Cinco años, ocho meses y 12 días; esa es la cantidad que Debbie Ocean lleva planeando el golpe más importante de su vida. Ella sabe lo que necesita: un grupo de la mejor gente en el rubro, empezando por su cómplice Lou Miller. Juntas reclutarán a un grupo de especialistas, compuesto por la joyera Amita, la carterista Constance, la madre de los suburbios Tammy, la hacker Nine Ball y la diseñadora de moda Rose. El objetivo es robar un collar valuado en más de 150 millones de dólares.</desc>
+  </programme>
+  <programme start="20260905220000 -0500" stop="20260906000700 -0500" channel="WARNER_CO.co">
+    <title lang="es">Ocean's 8: Las Estafadoras</title>
+    <desc lang="es">Cinco años, ocho meses y 12 días; esa es la cantidad que Debbie Ocean lleva planeando el golpe más importante de su vida. Ella sabe lo que necesita: un grupo de la mejor gente en el rubro, empezando por su cómplice Lou Miller. Juntas reclutarán a un grupo de especialistas, compuesto por la joyera Amita, la carterista Constance, la madre de los suburbios Tammy, la hacker Nine Ball y la diseñadora de moda Rose. El objetivo es robar un collar valuado en más de 150 millones de dólares.</desc>
+  </programme>
+  <programme start="20260905220000 -0500" stop="20260906000300 -0500" channel="WARNER_AN.co">
+    <title lang="es">Ocean's 8: Las Estafadoras</title>
+    <desc lang="es">Cinco años, ocho meses y 12 días; esa es la cantidad que Debbie Ocean lleva planeando el golpe más importante de su vida. Ella sabe lo que necesita: un grupo de la mejor gente en el rubro, empezando por su cómplice Lou Miller. Juntas reclutarán a un grupo de especialistas, compuesto por la joyera Amita, la carterista Constance, la madre de los suburbios Tammy, la hacker Nine Ball y la diseñadora de moda Rose. El objetivo es robar un collar valuado en más de 150 millones de dólares.</desc>
+  </programme>
+  <programme start="20260905220000 -0600" stop="20260906000000 -0600" channel="WARNER_MX.mx">
+    <title lang="es">COMO SI FUERA LA PRIMERA VEZ</title>
+  </programme>
+  <programme start="20260905223000 -0300" stop="20260906002800 -0300" channel="WARNER_BR.br">
+    <title lang="pt">Oito Mulheres e um Segredo</title>
+    <desc lang="pt">Debbie Ocean foi condenada por um golpe cometido pelo então namorado. Na cadeia, ela formulou um super plano para se vingar do ex. Recém-liberada da prisão, Debbie logo procura sua ex-parceira Lou para colocar em prática o seu plano. Inspirada por seu irmão Danny, a mulher deseja executar um dos maiores assaltos da história, que consiste em roubar um colar de diamantes no valor de US$ 150 milhões, guardado pela joalheria Cartier em um protegido cofre. O plano será convencer a empresa a emprestar a joia para que Daphne Kluger a use no badalado evento Met Gala, em Nova Iorque. Ao lado de Lou, Debbie reúne mais integrantes para a equipe composta apenas por mulheres: Nine Ball, Amita, Constance, Rose e Tammy.</desc>
+  </programme>
+  <programme start="20260905235600 -0400" stop="20260906023300 -0400" channel="WARNER_VE.ve">
+    <title lang="es">TRANSFORMERS: EL ÚLTIMO CABALLERO</title>
+  </programme>
+  <programme start="20260906000000 -0600" stop="20260906023600 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TRANSFORMERS: EL ÚLTIMO CABALLERO</title>
+  </programme>
+  <programme start="20260906000100 -0400" stop="20260906024400 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TRANSFORMERS: EL ÚLTIMO CABALLERO</title>
+  </programme>
+  <programme start="20260906000300 -0300" stop="20260906024600 -0300" channel="WARNER_AR.ar">
+    <title lang="es">TRANSFORMERS: EL ÚLTIMO CABALLERO</title>
+  </programme>
+  <programme start="20260906000300 -0500" stop="20260906024500 -0500" channel="WARNER_AN.co">
+    <title lang="es">TRANSFORMERS: EL ÚLTIMO CABALLERO</title>
+  </programme>
+  <programme start="20260906000700 -0500" stop="20260906024700 -0500" channel="WARNER_CO.co">
+    <title lang="es">TRANSFORMERS: EL ÚLTIMO CABALLERO</title>
+  </programme>
+  <programme start="20260906002800 -0300" stop="20260906030500 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TRANSFORMERS: O ÚLTIMO CAVALEIRO</title>
+    <desc lang="pt">Humanos e Transformers estão em guerra e Optimus Prime desapareceu. Agora, a chave para salvar o futuro está enterrada nos segredos do passado, na história oculta dos Transformers na Terra.</desc>
+  </programme>
+  <programme start="20260906023300 -0400" stop="20260906025400 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906023600 -0600" stop="20260906025800 -0600" channel="WARNER_MX.mx">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906024400 -0400" stop="20260906030500 -0400" channel="WARNER_CL.cl">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906024500 -0500" stop="20260906030600 -0500" channel="WARNER_AN.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906024600 -0300" stop="20260906030500 -0300" channel="WARNER_AR.ar">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906024700 -0500" stop="20260906030900 -0500" channel="WARNER_CO.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906025400 -0400" stop="20260906031500 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906025800 -0600" stop="20260906031900 -0600" channel="WARNER_MX.mx">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906030500 -0300" stop="20260906032600 -0300" channel="WARNER_AR.ar">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906030500 -0300" stop="20260906032600 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">CORNHUSKER VORTEX, THE</sub-title>
+    <desc lang="pt">Sheldon ensina Leonard a jogar futebol e uma briga boba coloca em risco a amizade entre Howard e Raj.</desc>
+  </programme>
+  <programme start="20260906030500 -0400" stop="20260906032600 -0400" channel="WARNER_CL.cl">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906030600 -0500" stop="20260906032700 -0500" channel="WARNER_AN.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906030900 -0500" stop="20260906033000 -0500" channel="WARNER_CO.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906031500 -0400" stop="20260906033800 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906031900 -0600" stop="20260906034100 -0600" channel="WARNER_MX.mx">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906032600 -0300" stop="20260906034800 -0300" channel="WARNER_AR.ar">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906032600 -0300" stop="20260906034600 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">GUITARIST AMPLIFICATION, THE</sub-title>
+    <desc lang="pt">Um pequeno atrito entre Leonard e Penny fará com que Sheldon sirva de mediador entre eles, só para livrar sua pele da chateação e não por altruísmo.</desc>
+  </programme>
+  <programme start="20260906032600 -0400" stop="20260906034900 -0400" channel="WARNER_CL.cl">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906032700 -0500" stop="20260906034900 -0500" channel="WARNER_AN.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906033000 -0500" stop="20260906035200 -0500" channel="WARNER_CO.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906033800 -0400" stop="20260906035800 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906034100 -0600" stop="20260906040200 -0600" channel="WARNER_MX.mx">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906034600 -0300" stop="20260906040700 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">ADHESIVE DUCK DEFICIENCY, THE</sub-title>
+    <desc lang="pt">Quando a maioria do grupo tira umas férias no campo, Sheldon terá que fazer as vezes de heroi para salvar Penny, que está ferida.</desc>
+  </programme>
+  <programme start="20260906034800 -0300" stop="20260906040600 -0300" channel="WARNER_AR.ar">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906034900 -0400" stop="20260906040900 -0400" channel="WARNER_CL.cl">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906034900 -0500" stop="20260906040900 -0500" channel="WARNER_AN.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906035200 -0500" stop="20260906041300 -0500" channel="WARNER_CO.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906035800 -0400" stop="20260906042100 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906040200 -0600" stop="20260906042500 -0600" channel="WARNER_MX.mx">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906040600 -0300" stop="20260906042900 -0300" channel="WARNER_AR.ar">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906040700 -0300" stop="20260906042700 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">VENGEANCE FORMULATION, THE</sub-title>
+    <desc lang="pt">Barry Kripke faz uma brincadeira de mau gosto com Sheldon, deixando nosso neurótico mais querido com sede de vingança. Wolowitz não agüenta a pressão de Bernadette e decide pedir conselhos a uma Katee Sackhoff de mentira.</desc>
+  </programme>
+  <programme start="20260906040900 -0400" stop="20260906043300 -0400" channel="WARNER_CL.cl">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906040900 -0500" stop="20260906043200 -0500" channel="WARNER_AN.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906041300 -0500" stop="20260906043600 -0500" channel="WARNER_CO.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906042100 -0400" stop="20260906044300 -0400" channel="WARNER_VE.ve">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906042500 -0600" stop="20260906044600 -0600" channel="WARNER_MX.mx">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906042700 -0300" stop="20260906045000 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">GORILLA EXPERIMENT, THE</sub-title>
+    <desc lang="pt">Sheldon ajudará Penny a entender melhor a profissão de Leonard. Por outro lado, Wolowitz começa a sentir ciúmes da aproximação de Leonard com a namorada de Howard.</desc>
+  </programme>
+  <programme start="20260906042900 -0300" stop="20260906045000 -0300" channel="WARNER_AR.ar">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906043200 -0500" stop="20260906045200 -0500" channel="WARNER_AN.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906043300 -0400" stop="20260906045400 -0400" channel="WARNER_CL.cl">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906043600 -0500" stop="20260906045700 -0500" channel="WARNER_CO.co">
+    <title lang="es">THE BIG BANG THEORY</title>
+  </programme>
+  <programme start="20260906044300 -0400" stop="20260906050600 -0400" channel="WARNER_VE.ve">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260906044600 -0600" stop="20260906050900 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260906045000 -0300" stop="20260906051100 -0300" channel="WARNER_AR.ar">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260906045000 -0300" stop="20260906050900 -0300" channel="WARNER_BR.br">
+    <title lang="pt">THE BIG BANG THEORY</title>
+    <sub-title lang="pt">MATERNAL CONGRUENCE, THE</sub-title>
+    <desc lang="pt">Leonard se sentirá pressionado pelo fato de não saber se sua mãe aprovará seu relacionamento com Penny. Logo depois, Leonard descobrirá que ela também lhe escondeu alguns segredinhos.</desc>
+  </programme>
+  <programme start="20260906045200 -0500" stop="20260906051500 -0500" channel="WARNER_AN.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260906045400 -0400" stop="20260906045600 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TNT BUZZ</title>
+  </programme>
+  <programme start="20260906045600 -0400" stop="20260906060000 -0400" channel="WARNER_CL.cl">
+    <title lang="es">TNT BUZZ</title>
+  </programme>
+  <programme start="20260906045700 -0500" stop="20260906052000 -0500" channel="WARNER_CO.co">
+    <title lang="es">TWO AND A HALF MEN</title>
+  </programme>
+  <programme start="20260906050600 -0400" stop="20260906055000 -0400" channel="WARNER_VE.ve">
+    <title lang="es">Encontrados: Temporada 1</title>
+  </programme>
+  <programme start="20260906050900 -0300" stop="20260906053200 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TWO AND A HALF MEN</title>
+    <sub-title lang="pt">WALNUTS AND DEMEROL</sub-title>
+    <desc lang="pt">Quando Charlie se prepara para uma apaixonada Véspera de Natal sozinho com seu par, seus amigos e familiares continuam aparecendo e ficando até que Charlie se descobre sendo o anfitrião de uma festa natalina não planejada e não desejada. Ao descobrir quem é a nova namorada de Charlie, Evelyn se põe inexplicavelmente desesperada para separá-los antes que seu relacionamento vá longe demais.</desc>
+  </programme>
+  <programme start="20260906050900 -0600" stop="20260906055600 -0600" channel="WARNER_MX.mx">
+    <title lang="es">Encontrados: Temporada 1</title>
+  </programme>
+  <programme start="20260906051100 -0300" stop="20260906060000 -0300" channel="WARNER_AR.ar">
+    <title lang="es">Encontrados: Temporada 1</title>
+  </programme>
+  <programme start="20260906051500 -0500" stop="20260906060000 -0500" channel="WARNER_AN.co">
+    <title lang="es">Encontrados: Temporada 1</title>
+  </programme>
+  <programme start="20260906052000 -0500" stop="20260906054300 -0500" channel="WARNER_CO.co">
+    <title lang="es">MIRACLE WORKERS: SEASON 4</title>
+  </programme>
+  <programme start="20260906053200 -0300" stop="20260906055500 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TWO AND A HALF MEN</title>
+    <sub-title lang="pt">CASTRATING SHEEP IN MONTANA</sub-title>
+    <desc lang="pt">Quando Berta descobre que Alan ha estado saindo às escondidas com sua filha, Naomi, Alan espera problemas. Porém a reação de Berta é surpreendente, e muito pior, de qualquer uma que Alan pudesse imaginar.</desc>
+  </programme>
+  <programme start="20260906054300 -0500" stop="20260906055700 -0500" channel="WARNER_CO.co">
+    <title lang="es">HOLLYWOOD ONE ON ONE 2026</title>
+  </programme>
+  <programme start="20260906055000 -0400" stop="20260906060000 -0400" channel="WARNER_VE.ve">
+    <title lang="es">HOLLYWOOD ONE ON ONE 2026</title>
+  </programme>
+  <programme start="20260906055500 -0300" stop="20260906060000 -0300" channel="WARNER_BR.br">
+    <title lang="pt">TNT BUZZ</title>
+  </programme>
+  <programme start="20260906055600 -0600" stop="20260906060000 -0600" channel="WARNER_MX.mx">
+    <title lang="es">TNT BUZZ</title>
+  </programme>
+  <programme start="20260906055700 -0500" stop="20260906060000 -0500" channel="WARNER_CO.co">
+    <title lang="es">TNT BUZZ</title>
+  </programme>
 </tv>
